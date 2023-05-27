@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Sales",
-    "slug": "sales",
+    "name": "Sales History",
+    "slug": "sales-history",
     "layouts": [
       {
         "viewMode": false,
@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 710,
           "containerStyle": "none",
           "snapRows": 60,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
+          "version": 79,
           "minHeight": 620,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -32,6 +32,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 0,
               "isSortable": true,
+              "onPageChange": "{{GetSalesOverview.run()}}",
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
@@ -44,9 +45,6 @@
                 },
                 {
                   "key": "boxShadow"
-                },
-                {
-                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.SaleDate.computedValue"
@@ -67,6 +65,7 @@
               "needsHeightForContent": true,
               "leftColumn": 0,
               "delimiter": ",",
+              "variant": "VARIANT3",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
@@ -99,7 +98,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681832078288,
+              "columnUpdatedAt": 1681842696184,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -114,7 +113,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 34,
+              "bottomRow": 71,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -126,7 +125,11 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 14.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "SaleDate": {
@@ -220,7 +223,7 @@
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -268,7 +271,7 @@
               "widgetId": "e3hydespwn",
               "allowAddNewRow": false,
               "minWidth": 450,
-              "tableData": "{{GetSalesOverview.data}}",
+              "tableData": "",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -282,21 +285,10 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Sales_GetSalesOverview",
-              "name": "GetSalesOverview",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Sales",
+        "id": "Sales History",
         "deleted": false,
         "policies": [],
         "userPermissions": []

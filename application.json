@@ -5,11 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "Brands",
-      "isDefault": false
-    },
-    {
-      "id": "Sales",
+      "id": "Sales History",
       "isDefault": false
     }
   ],
@@ -45,7 +41,7 @@
   "color": "#FFDEDE",
   "icon": "bar-graph",
   "unpublishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "TABLET_LARGE"
