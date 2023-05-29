@@ -1,0 +1,9 @@
+{
+	barcodeId: {{edit_BarcodeId.inputText}},
+	brand: {{edit_Brand.inputText}},
+	name: {{edit_Name.inputText}},
+	variantName: {{edit_VariantName.inputText}},
+	measurement: {{edit_Measurement.inputText}},
+	price: {{edit_Price.inputText}},
+	stockCount: {{edit_StockCount.inputText}}
+}

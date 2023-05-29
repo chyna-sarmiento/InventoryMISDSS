@@ -7,6 +7,10 @@
     {
       "id": "Sales History",
       "isDefault": false
+    },
+    {
+      "id": "Products",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -41,10 +45,10 @@
   "color": "#FFDEDE",
   "icon": "bar-graph",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "FLUID"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
