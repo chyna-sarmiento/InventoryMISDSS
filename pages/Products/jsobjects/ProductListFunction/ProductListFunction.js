@@ -1,5 +1,8 @@
 export default {
-	refreshOnAdd () {
+	refreshOnAdd() {
 		{{ ShowProductListDetails.run(() => {}, () => {}) }}
+	},
+	scanBarcodeId() {
+		{{add_BarcodeId.inputText = scan_AddProduct.value}}
 	}
 }
