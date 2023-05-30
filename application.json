@@ -37,6 +37,9 @@
     }
   },
   "publishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    },
     "navigationSetting": {
       "showNavbar": true,
       "orientation": "top",

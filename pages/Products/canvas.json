@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 962,
+          "bottomRow": 2082,
           "containerStyle": "none",
           "snapRows": 60,
           "parentRowSpace": 1,
@@ -94,7 +94,7 @@
               "type": "RADIO_GROUP_WIDGET",
               "defaultOptionValue": "N",
               "animateLoading": true,
-              "leftColumn": 47.69426751592357,
+              "leftColumn": 47.60725720384205,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -160,6 +160,7 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
+              "widthInPercentage": 0.9915343915343915,
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 8.2,
@@ -272,7 +273,7 @@
               ],
               "compactMode": "DEFAULT",
               "displayName": "Table",
-              "bottomRow": 96.2,
+              "bottomRow": 208.2,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -601,8 +602,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 97.4,
-              "bottomRow": 147,
+              "topRow": 209.39999999999998,
+              "bottomRow": 273.525,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -623,7 +624,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 490,
+                  "bottomRow": 640,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -673,7 +674,7 @@
                       "key": "d3b9z0sayq",
                       "flexVerticalAlignment": "end",
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 58.26008968609865,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "c5j23hydf9",
@@ -719,7 +720,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 58,
+                      "leftColumn": 58.26008968609865,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -761,7 +762,7 @@
                         "group"
                       ],
                       "topRow": 5.2,
-                      "bottomRow": 47.60000000000001,
+                      "bottomRow": 62.125000000000014,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -785,7 +786,7 @@
                           "widgetName": "Canvas1Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 424.00000000000006,
+                          "bottomRow": 569.2500000000001,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -840,7 +841,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 4,
+                              "bottomRow": 6.075,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -870,7 +871,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 5.2,
+                              "topRow": 7.275,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -910,7 +911,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 9.2,
+                              "bottomRow": 13.350000000000001,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -940,7 +941,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 10.399999999999999,
+                              "topRow": 14.55,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -980,7 +981,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 14.399999999999999,
+                              "bottomRow": 20.625,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1010,7 +1011,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 15.599999999999998,
+                              "topRow": 21.825,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -1050,7 +1051,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 19.599999999999998,
+                              "bottomRow": 27.9,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1080,7 +1081,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 20.799999999999997,
+                              "topRow": 29.099999999999998,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -1120,7 +1121,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 24.799999999999997,
+                              "bottomRow": 35.175,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1150,7 +1151,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 25.999999999999996,
+                              "topRow": 36.375,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -1192,7 +1193,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 29.999999999999996,
+                              "bottomRow": 42.45,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1223,7 +1224,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 31.199999999999996,
+                              "topRow": 43.650000000000006,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -1263,7 +1264,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 35.2,
+                              "bottomRow": 49.72500000000001,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1303,8 +1304,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 36.400000000000006,
-                              "bottomRow": 40.400000000000006,
+                              "topRow": 50.92500000000001,
+                              "bottomRow": 54.92500000000001,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 46,
@@ -1357,8 +1358,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 36.400000000000006,
-                              "bottomRow": 40.400000000000006,
+                              "topRow": 50.92500000000001,
+                              "bottomRow": 54.92500000000001,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 62,
@@ -1558,7 +1559,7 @@
                 }
               ],
               "key": "9k18nr3lke",
-              "height": 498.0000000000001,
+              "height": 643.2500000000001,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
@@ -1592,8 +1593,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 148.2,
-              "bottomRow": 229,
+              "topRow": 274.72499999999997,
+              "bottomRow": 370.05,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1614,7 +1615,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 810,
+                  "bottomRow": 950,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1664,7 +1665,7 @@
                       "key": "k5cy0d9sie",
                       "flexVerticalAlignment": "end",
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 58.26008968609865,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "wv05e5r64a",
@@ -1708,7 +1709,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 58,
+                      "leftColumn": 58.26008968609865,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1750,7 +1751,7 @@
                         "group"
                       ],
                       "topRow": 5.2,
-                      "bottomRow": 78.80000000000001,
+                      "bottomRow": 93.32500000000005,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -1774,7 +1775,7 @@
                           "widgetName": "Canvas1Copy1",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 736.0000000000001,
+                          "bottomRow": 881.2500000000005,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -1826,7 +1827,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 4,
+                              "bottomRow": 6.075,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1928,8 +1929,8 @@
                                 "code detector",
                                 "barcode reader"
                               ],
-                              "topRow": 5.2,
-                              "bottomRow": 35.2,
+                              "topRow": 7.275,
+                              "bottomRow": 37.275000000000006,
                               "parentRowSpace": 10,
                               "type": "CODE_SCANNER_WIDGET",
                               "hideCard": false,
@@ -1972,7 +1973,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 36.400000000000006,
+                              "topRow": 38.47500000000001,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -2009,7 +2010,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 40.400000000000006,
+                              "bottomRow": 44.55000000000001,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -2039,7 +2040,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 41.60000000000001,
+                              "topRow": 45.750000000000014,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -2076,7 +2077,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 45.60000000000001,
+                              "bottomRow": 51.82500000000002,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -2106,7 +2107,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 46.80000000000001,
+                              "topRow": 53.02500000000002,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -2143,7 +2144,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 50.80000000000001,
+                              "bottomRow": 59.10000000000002,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -2173,7 +2174,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 52.000000000000014,
+                              "topRow": 60.300000000000026,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -2210,7 +2211,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 56.000000000000014,
+                              "bottomRow": 66.37500000000003,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -2240,7 +2241,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 57.20000000000002,
+                              "topRow": 67.57500000000003,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -2278,7 +2279,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 61.20000000000002,
+                              "bottomRow": 73.65000000000003,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -2309,7 +2310,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 62.40000000000002,
+                              "topRow": 74.85000000000004,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -2327,7 +2328,7 @@
                               "inputType": "NUMBER",
                               "isDisabled": false,
                               "flexVerticalAlignment": "end",
-                              "isRequired": false,
+                              "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "showStepArrows": false,
@@ -2347,7 +2348,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 66.4,
+                              "bottomRow": 80.92500000000004,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -2361,7 +2362,7 @@
                               "rightColumn": 64,
                               "widgetId": "7mjktogwmk",
                               "minWidth": 450,
-                              "label": "Stock Count",
+                              "label": "Stock Count*",
                               "parentId": "2l1fmewg7b",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
@@ -2387,8 +2388,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 67.60000000000001,
-                              "bottomRow": 71.60000000000001,
+                              "topRow": 82.12500000000004,
+                              "bottomRow": 86.12500000000004,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 46,
@@ -2441,8 +2442,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 67.60000000000001,
-                              "bottomRow": 71.60000000000001,
+                              "topRow": 82.12500000000004,
+                              "bottomRow": 86.12500000000004,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 62,
@@ -2654,7 +2655,7 @@
                 }
               ],
               "key": "hew28ld6ub",
-              "height": 810.0000000000001,
+              "height": 955.2500000000005,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
