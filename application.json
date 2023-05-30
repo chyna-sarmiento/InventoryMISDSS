@@ -11,12 +11,19 @@
     {
       "id": "Products",
       "isDefault": false
+    },
+    {
+      "id": "Survey",
+      "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    },
     "navigationSetting": {
       "showNavbar": true,
       "orientation": "top",
@@ -48,7 +55,7 @@
     "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],

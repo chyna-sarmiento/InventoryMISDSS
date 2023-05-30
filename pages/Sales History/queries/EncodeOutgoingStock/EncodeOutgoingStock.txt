@@ -1,0 +1,4 @@
+{
+  outgoingProductId: ,
+  quantity: 
+}
