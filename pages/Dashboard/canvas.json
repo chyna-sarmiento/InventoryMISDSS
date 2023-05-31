@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 593.9999999999999,
+          "bottomRow": 594,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -154,7 +154,7 @@
                               "key": "ek5q0dhd77",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 55.476137624861266,
+                              "rightColumn": 53.565217391304344,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "7d42utzxeb",
@@ -199,7 +199,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 55.476137624861266,
+                              "leftColumn": 53.565217391304344,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -411,7 +411,7 @@
                 "group"
               ],
               "topRow": 14.399999999999999,
-              "bottomRow": 59.39999999999999,
+              "bottomRow": 59.4,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -432,7 +432,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 449.99999999999994,
+                  "bottomRow": 450,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -740,7 +740,7 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 60.599999999999994,
+              "topRow": 60.6,
               "bottomRow": 81,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
@@ -1014,7 +1014,7 @@
                                   "widgetName": "Canvas6",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 59.99999999999999,
+                                  "bottomRow": 60,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,

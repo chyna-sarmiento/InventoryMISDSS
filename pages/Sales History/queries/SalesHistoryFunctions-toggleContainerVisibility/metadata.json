@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "scanBarcodeId",
-    "fullyQualifiedName": "ProductListFunction.scanBarcodeId",
+    "name": "toggleContainerVisibility",
+    "fullyQualifiedName": "SalesHistoryFunctions.toggleContainerVisibility",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Products",
-    "collectionId": "Products_ProductListFunction",
+    "pageId": "Sales History",
+    "collectionId": "Sales History_SalesHistoryFunctions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Products_ProductListFunction.scanBarcodeId",
+  "id": "Sales History_SalesHistoryFunctions.toggleContainerVisibility",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6475e60fcf89e442ca6d0423"
+  "gitSyncId": "6439874f26013158789b34e6_6476e01a417fc66c66daa4fc"
 }
