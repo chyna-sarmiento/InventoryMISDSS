@@ -1,4 +1,4 @@
 {
-  outgoingProductId: ,
-  quantity: 
+  outgoingProductId: {{tbl_OutgoingPreview.selectedRow.id}},
+  quantity: {{tbl_OutgoingPreview.selectedRow.quantity}}
 }

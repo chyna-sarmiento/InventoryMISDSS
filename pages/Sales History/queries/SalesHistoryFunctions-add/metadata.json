@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "addOutgoingProductInput",
-    "fullyQualifiedName": "SalesHistoryFunctions.addOutgoingProductInput",
+    "name": "add",
+    "fullyQualifiedName": "SalesHistoryFunctions.add",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -20,8 +20,12 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
-      "isAsync": false
+      "jsArguments": [
+        {
+          "name": "item"
+        }
+      ],
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_SalesHistoryFunctions.addOutgoingProductInput",
+  "id": "Sales History_SalesHistoryFunctions.add",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6476e2a3417fc66c66daa549"
+  "gitSyncId": "6439874f26013158789b34e6_64774fa1948d2172037901d2"
 }

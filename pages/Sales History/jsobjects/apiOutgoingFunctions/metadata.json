@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "apiOutgoingFunctions",
+    "pageId": "Sales History",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Sales History_apiOutgoingFunctions",
+  "deleted": false,
+  "gitSyncId": "6439874f26013158789b34e6_6477715f948d21720379053a"
+}

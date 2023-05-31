@@ -6,7 +6,16 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "cart",
+        "value": "[]"
+      },
+      {
+        "name": "totalPrice",
+        "value": "''"
+      }
+    ],
     "userPermissions": []
   },
   "id": "Sales History_SalesHistoryFunctions",

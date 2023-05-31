@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "toggleContainerVisibility",
-    "fullyQualifiedName": "SalesHistoryFunctions.toggleContainerVisibility",
+    "name": "refreshOnAdd",
+    "fullyQualifiedName": "apiOutgoingFunctions.refreshOnAdd",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_SalesHistoryFunctions",
+    "collectionId": "Sales History_apiOutgoingFunctions",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_SalesHistoryFunctions.toggleContainerVisibility",
+  "id": "Sales History_apiOutgoingFunctions.refreshOnAdd",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6476e01a417fc66c66daa4fc"
+  "gitSyncId": "6439874f26013158789b34e6_647774f1948d217203790567"
 }

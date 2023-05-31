@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 594,
+          "bottomRow": 890,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -154,7 +154,7 @@
                               "key": "ek5q0dhd77",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 53.565217391304344,
+                              "rightColumn": 55.476137624861266,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "7d42utzxeb",
@@ -199,7 +199,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 53.565217391304344,
+                              "leftColumn": 55.476137624861266,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -760,7 +760,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 200,
+                  "bottomRow": 204,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
