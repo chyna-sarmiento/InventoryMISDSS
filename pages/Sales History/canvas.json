@@ -919,7 +919,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685550227858,
+              "columnUpdatedAt": 1685724440056,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -929,12 +929,12 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "id",
+                "dateTimeOutgoing",
                 "quantity",
                 "product",
                 "outgoingProductId",
                 "productPrice",
                 "totalPrice",
-                "dateTimeOutgoing",
                 "lastUpdated"
               ],
               "dynamicPropertyPathList": [],
@@ -1655,7 +1655,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 24.625,
                               "widgetName": "btn_AddProductPreview",
-                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);}}",
+                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);\nresetWidget(\"input_SearchProduct\", true);}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
