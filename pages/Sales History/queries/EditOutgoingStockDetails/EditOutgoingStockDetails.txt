@@ -1,0 +1,5 @@
+{
+  "outgoingProductId": {{edit_SearchOutgoing.selectedOptionValue}},
+  "quantity": {{edit_OutgoingQuantity.inputText}},
+	"dateTimeOutgoing": {{edit_OutgoingDate.selectedDate}}
+}

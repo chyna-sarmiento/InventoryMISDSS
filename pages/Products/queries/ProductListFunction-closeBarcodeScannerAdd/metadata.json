@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "refreshOnAdd",
-    "fullyQualifiedName": "apiOutgoingFunctions.refreshOnAdd",
+    "name": "closeBarcodeScannerAdd",
+    "fullyQualifiedName": "ProductListFunction.closeBarcodeScannerAdd",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,15 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Sales History",
-    "collectionId": "Sales History_apiOutgoingFunctions",
+    "pageId": "Products",
+    "collectionId": "Products_ProductListFunction",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_apiOutgoingFunctions.refreshOnAdd",
+  "id": "Products_ProductListFunction.closeBarcodeScannerAdd",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647774f1948d217203790567"
+  "gitSyncId": "6439874f26013158789b34e6_64784b55e0628f767969775e"
 }

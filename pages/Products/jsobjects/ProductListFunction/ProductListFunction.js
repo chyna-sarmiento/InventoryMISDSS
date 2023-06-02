@@ -2,6 +2,12 @@ export default {
 	refreshOnAdd() {
 		{{ ShowProductListDetails.run(() => {}, () => {}) }}
 	},
+	closeBarcodeScannerAdd() {
+			{{scan_AddProduct.isVisible = false}}
+	},
+	closeBarcodeScannerEdit() {
+			{{scan_AddProduct.isVisible = false}}
+	},
 	toggleBarcodeScannerAdd() {
 		if (scan_AddProduct.isVisible == true) {
 			{{scan_AddProduct.isVisible = false}}

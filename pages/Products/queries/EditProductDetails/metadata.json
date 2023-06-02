@@ -47,9 +47,6 @@
       },
       {
         "key": "body"
-      },
-      {
-        "key": "headers[0].key"
       }
     ],
     "isValid": true,

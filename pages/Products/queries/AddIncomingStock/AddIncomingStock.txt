@@ -1,0 +1,4 @@
+{
+  "incomingProductId": {{input_SearchIncomingStock.selectedOptionValue}},
+  "incomingStockQuantity": {{input_IncomingStockCount.inputText}}
+}

@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  outgoingProductId: {{tbl_OutgoingPreview.selectedRow.id}},\n  quantity: {{tbl_OutgoingPreview.selectedRow.quantity}}\n}",
+      "body": "{\n  \"outgoingProductId\": {{tbl_OutgoingPreview.selectedRow.id}},\n  \"quantity\": {{tbl_OutgoingPreview.selectedRow.quantity}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],

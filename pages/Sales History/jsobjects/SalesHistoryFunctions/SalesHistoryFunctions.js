@@ -16,5 +16,23 @@ export default {
       console.error('Error adding item to cart:', error);
     }
   },
-  clear: () => storeValue('cart', undefined)
+  clear: () => storeValue('cart', undefined),
+	scanBarcodeIdAdd() {
+		//const barcodeId = scan_AddOutgoingProduct.value;
+		//const item = ShowProductListDetails.data.find(product => product.id === barcodeId);
+		
+		//if (item) {
+		//	this.push(item);
+		//}
+},
+	toggleBarcodeScannerAdd() {
+		if (scan_AddOutgoingProduct.isVisible == true) {
+			{{scan_AddOutgoingProduct.isVisible = false}}
+		} else {
+			{{scan_AddOutgoingProduct.isVisible = true}}
+		}
+	},
+	closeBarcodeScannerAdd(){
+		{{scan_AddOutgoingProduct.isVisible = false}}
+	}
 }

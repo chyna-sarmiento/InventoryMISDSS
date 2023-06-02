@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "refreshOnAdd",
-    "fullyQualifiedName": "apiOutgoingFunctions.refreshOnAdd",
+    "name": "scanBarcodeIdAdd",
+    "fullyQualifiedName": "SalesHistoryFunctions.scanBarcodeIdAdd",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_apiOutgoingFunctions",
+    "collectionId": "Sales History_SalesHistoryFunctions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_apiOutgoingFunctions.refreshOnAdd",
+  "id": "Sales History_SalesHistoryFunctions.scanBarcodeIdAdd",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647774f1948d217203790567"
+  "gitSyncId": "6439874f26013158789b34e6_64787e7e1907bf7975f565b3"
 }
