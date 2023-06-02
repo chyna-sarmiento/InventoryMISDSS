@@ -5,7 +5,7 @@ export default {
     try {
 			const outgoingDateTime = input_OutgoingDateTime.selectedDate;
 			const productName = input_SearchProduct.selectedOptionLabel;
-			const quantity = 1;
+			const quantity = input_outgoingQuantity.inputText;
 			
       const { id, barcodeId, price } = item;
       const cartItem = { quantity, id, outgoingDateTime, barcodeId, productName, price };
