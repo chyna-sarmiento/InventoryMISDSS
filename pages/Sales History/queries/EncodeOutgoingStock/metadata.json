@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"outgoingProductId\": {{tbl_OutgoingPreview.selectedRow.id}},\n  \"quantity\": {{tbl_OutgoingPreview.selectedRow.quantity}}\n}",
+      "body": "{\n  \"outgoingProductId\": {{appsmith.store.cart.map(p => p.id)}},\n  \"quantity\": {{appsmith.store.cart.map(p => p.quantity)}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -50,8 +50,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "tbl_OutgoingPreview.selectedRow.id",
-      "tbl_OutgoingPreview.selectedRow.quantity"
+      "appsmith.store.cart.map(p => p.id)",
+      "appsmith.store.cart.map(p => p.quantity)"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

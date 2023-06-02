@@ -9,7 +9,7 @@
           "mobileBottomRow": 1542.7499999999998,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 762,
+          "bottomRow": 2303.7500000000005,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -19,6 +19,79 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
+            {
+              "boxShadow": "none",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "Search Product",
+              "topRow": 216.30000000000007,
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "defaultOptionValue": "",
+              "animateLoading": true,
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "options"
+                }
+              ],
+              "labelTooltip": "Cannot find product? You must add the product first.",
+              "options": "{{ShowProductList.data.map(p => ({label: p.displayName, value: p.id}))}}",
+              "placeholderText": "Select Product",
+              "isDisabled": false,
+              "isRequired": false,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "alignment": "start",
+              "mobileBottomRow": 6.075,
+              "widgetName": "input_SearchProductCopy",
+              "isFilterable": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Select",
+              "searchTags": [
+                "dropdown"
+              ],
+              "bottomRow": 222.37500000000006,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 64,
+              "parentColumnSpace": 10.71875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onDropdownClose"
+                },
+                {
+                  "key": "onOptionChange"
+                }
+              ],
+              "labelPosition": "Top",
+              "onDropdownClose": "",
+              "key": "69ma5ie1id",
+              "labelTextSize": "0.875rem",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "aqs357rl60",
+              "minWidth": 450,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 0,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 0,
+              "maxDynamicHeight": 9000,
+              "onOptionChange": "{{ShowProductDetailsId.run();}}",
+              "minDynamicHeight": 4
+            },
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
@@ -55,7 +128,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 402.25,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -71,7 +144,7 @@
                     {
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Product",
+                      "labelText": "Product*",
                       "topRow": 32.15,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -97,7 +170,7 @@
                       "options": "{{ShowProductList.data.map(p => ({label: p.displayName, value: p.id}))}}",
                       "placeholderText": "Select Product",
                       "isDisabled": false,
-                      "isRequired": false,
+                      "isRequired": true,
                       "dynamicHeight": "FIXED",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -141,7 +214,7 @@
                       "responsiveBehavior": "fill",
                       "mobileLeftColumn": 0,
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{ShowProductDetailsId.run();}}",
+                      "onOptionChange": "",
                       "minDynamicHeight": 4
                     },
                     {
@@ -307,7 +380,7 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "dateFormat": "DD MMMM YYYY, HH:mm",
                               "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                               "topRow": 0,
                               "labelWidth": 5,
@@ -320,10 +393,16 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "maxDate"
                                 }
                               ],
                               "isDisabled": false,
-                              "isRequired": false,
+                              "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
@@ -337,6 +416,17 @@
                               "mobileBottomRow": 11.6,
                               "widgetName": "edit_OutgoingDate",
                               "minDate": "1920-12-31T18:30:00.000Z",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "maxDate"
+                                },
+                                {
+                                  "key": "dateFormat"
+                                }
+                              ],
                               "displayName": "DatePicker",
                               "searchTags": [
                                 "calendar"
@@ -351,12 +441,12 @@
                               "labelPosition": "Top",
                               "key": "gd3izzxvqn",
                               "labelTextSize": "0.875rem",
-                              "defaultDate": "2023-06-01T13:22:46.721Z",
+                              "defaultDate": "{{tbl_ListSales.selectedRow.dateTimeOutgoing}}",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "widgetId": "9mvjlozr4g",
                               "minWidth": 450,
-                              "label": "Outgoing Date",
+                              "label": "Outgoing Date*",
                               "parentId": "0u593zdaql",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
@@ -365,7 +455,7 @@
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
                               "firstDayOfWeek": 0,
-                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "maxDate": "{{new Date().toISOString().replace('Z', '+08:00')}}",
                               "minDynamicHeight": 4
                             },
                             {
@@ -392,12 +482,13 @@
                               "inputType": "NUMBER",
                               "isDisabled": false,
                               "flexVerticalAlignment": "end",
-                              "isRequired": false,
+                              "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "showStepArrows": false,
                               "isVisible": true,
                               "version": 2,
+                              "minNum": "1",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "originalBottomRow": 34,
@@ -425,7 +516,7 @@
                               "rightColumn": 64,
                               "widgetId": "pnx2m2xomd",
                               "minWidth": 450,
-                              "label": "Quantity",
+                              "label": "Quantity*",
                               "parentId": "0u593zdaql",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
@@ -575,7 +666,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.65366972477064,
+                              "leftColumn": 21.653669724770637,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -794,7 +885,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.191035218783352,
+              "rightColumn": 11.13163481953291,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -928,7 +1019,9 @@
                 "status": 85,
                 "TotalPrice": 249,
                 "SaleTime": 150,
-                "SaleDate": 150
+                "SaleDate": 150,
+                "totalPrice": 112,
+                "dateTimeOutgoing": 149
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -1125,7 +1218,8 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
-                  "outputFormat": "YYYY-MM-DD HH:mm"
+                  "outputFormat": "YYYY-MM-DD HH:mm",
+                  "inputFormat": "YYYY-MM-DD HH:mm"
                 },
                 "product": {
                   "allowCellWrapping": false,
@@ -2691,6 +2785,14 @@
                 {
                   "id": "kwrwq8226m",
                   "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "aqs357rl60",
+                  "align": "start"
                 }
               ]
             }

@@ -14,7 +14,7 @@ export default {
         "outgoingProductId": item.outgoingProductId,
         "quantity": item.quantity
       });
-
+			
       console.log('HTTP POST success:', response.data);
 
       showAlert(
