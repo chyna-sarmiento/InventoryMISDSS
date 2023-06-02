@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "toggleBarcodeScannerAdd",
-    "fullyQualifiedName": "SalesHistoryFunctions.toggleBarcodeScannerAdd",
+    "name": "createAddOutgoingEntriesStore",
+    "fullyQualifiedName": "apiOutgoingFunctions.createAddOutgoingEntriesStore",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_SalesHistoryFunctions",
+    "collectionId": "Sales History_apiOutgoingFunctions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_SalesHistoryFunctions.toggleBarcodeScannerAdd",
+  "id": "Sales History_apiOutgoingFunctions.createAddOutgoingEntriesStore",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647849c45cd3533baed4fc35"
+  "gitSyncId": "6439874f26013158789b34e6_6479f96015d4df259dd6988b"
 }

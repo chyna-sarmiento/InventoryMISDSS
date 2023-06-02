@@ -3,11 +3,12 @@ export default {
 	totalPrice: '',
   add: async (item) => {
     try {
+			const outgoingDateTime = input_OutgoingDateTime.selectedDate;
 			const productName = input_SearchProduct.selectedOptionLabel;
 			const quantity = 1;
 			
       const { id, barcodeId, price } = item;
-      const cartItem = { quantity, id, barcodeId, productName, price };
+      const cartItem = { quantity, id, outgoingDateTime, barcodeId, productName, price };
 			
       const cart = appsmith.store.cart || [];
       cart.push(cartItem);
@@ -34,5 +35,16 @@ export default {
 	},
 	closeBarcodeScannerAdd(){
 		{{scan_AddOutgoingProduct.isVisible = false}}
-	}
+	},
+	getLastSelectedRow(table) {
+		const lastSelectedRow = appsmith.store.lastSelectedRow || {};
+		const tableData = appsmith.store[table] || [];
+		
+		if (tableData.length > 0) {
+			lastSelectedRow[table] = tableData[tableData.length - 1];
+		}
+		
+		appsmith.store.lastSelectedRow = lastSelectedRow;
+}
+
 }

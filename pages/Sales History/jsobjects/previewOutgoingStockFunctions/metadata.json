@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "SalesHistoryFunctions",
+    "name": "previewOutgoingStockFunctions",
     "pageId": "Sales History",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -18,7 +18,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Sales History_SalesHistoryFunctions",
+  "id": "Sales History_previewOutgoingStockFunctions",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_6476dfdf948d21720378ef2e"
 }

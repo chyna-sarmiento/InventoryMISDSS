@@ -9,7 +9,7 @@
           "mobileBottomRow": 1542.7499999999998,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 2303.7500000000005,
+          "bottomRow": 2231.000000000001,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -19,79 +19,6 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
-            {
-              "boxShadow": "none",
-              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "Search Product",
-              "topRow": 216.30000000000007,
-              "labelWidth": 5,
-              "type": "SELECT_WIDGET",
-              "serverSideFiltering": false,
-              "defaultOptionValue": "",
-              "animateLoading": true,
-              "leftColumn": 0,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "options"
-                }
-              ],
-              "labelTooltip": "Cannot find product? You must add the product first.",
-              "options": "{{ShowProductList.data.map(p => ({label: p.displayName, value: p.id}))}}",
-              "placeholderText": "Select Product",
-              "isDisabled": false,
-              "isRequired": false,
-              "dynamicHeight": "FIXED",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "alignment": "start",
-              "mobileBottomRow": 6.075,
-              "widgetName": "input_SearchProductCopy",
-              "isFilterable": true,
-              "dynamicPropertyPathList": [],
-              "displayName": "Select",
-              "searchTags": [
-                "dropdown"
-              ],
-              "bottomRow": 222.37500000000006,
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "mobileRightColumn": 64,
-              "parentColumnSpace": 10.71875,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onDropdownClose"
-                },
-                {
-                  "key": "onOptionChange"
-                }
-              ],
-              "labelPosition": "Top",
-              "onDropdownClose": "",
-              "key": "69ma5ie1id",
-              "labelTextSize": "0.875rem",
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "widgetId": "aqs357rl60",
-              "minWidth": 450,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "mobileTopRow": 0,
-              "responsiveBehavior": "fill",
-              "mobileLeftColumn": 0,
-              "maxDynamicHeight": 9000,
-              "onOptionChange": "{{ShowProductDetailsId.run();}}",
-              "minDynamicHeight": 4
-            },
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
@@ -885,7 +812,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.13163481953291,
+              "rightColumn": 11.191035218783352,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -1416,7 +1343,7 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 8.8,
                       "widgetName": "btn_CloseOutgoingStock",
-                      "onClick": "{{SalesHistoryFunctions.clear();\nSalesHistoryFunctions.closeBarcodeScannerAdd();\ncloseModal('mdl_AddOutgoingStock');}}",
+                      "onClick": "{{previewOutgoingStockFunctions.clear();\npreviewOutgoingStockFunctions.closeBarcodeScannerAdd();\ncloseModal('mdl_AddOutgoingStock');}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1516,6 +1443,77 @@
                           "children": [
                             {
                               "boxShadow": "none",
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                              "topRow": 0,
+                              "labelWidth": 5,
+                              "type": "DATE_PICKER_WIDGET2",
+                              "animateLoading": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "maxDate"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "datePickerType": "DATE_PICKER",
+                              "version": 2,
+                              "isLoading": false,
+                              "timePrecision": "minute",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "closeOnSelection": true,
+                              "alignment": "start",
+                              "mobileBottomRow": 8.6,
+                              "widgetName": "input_OutgoingDateTime",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "maxDate"
+                                }
+                              ],
+                              "displayName": "DatePicker",
+                              "searchTags": [
+                                "calendar"
+                              ],
+                              "bottomRow": 6.075,
+                              "shortcuts": false,
+                              "parentRowSpace": 10,
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "parentColumnSpace": 13.58984375,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "knj4vx0hmt",
+                              "labelTextSize": "0.875rem",
+                              "defaultDate": "2023-06-02T13:39:26.071Z",
+                              "isDeprecated": false,
+                              "rightColumn": 30.518604247439384,
+                              "widgetId": "ojdop5feu5",
+                              "minWidth": 450,
+                              "label": "Outgoing Date/Time",
+                              "parentId": "bacnjjdeyu",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "mobileTopRow": 2,
+                              "responsiveBehavior": "fill",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "firstDayOfWeek": 0,
+                              "maxDate": "{{new Date().toISOString().replace('Z', '+08:00')}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                               "labelText": "Search Product",
                               "topRow": 0,
@@ -1524,7 +1522,7 @@
                               "serverSideFiltering": false,
                               "defaultOptionValue": "",
                               "animateLoading": true,
-                              "leftColumn": 0,
+                              "leftColumn": 30.518604247439384,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "accentColor"
@@ -1591,7 +1589,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 7,
                               "widgetName": "btn_AddProductPreview",
-                              "onClick": "{{SalesHistoryFunctions.add(ShowProductDetailsId.data);}}",
+                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1708,6 +1706,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.id.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.outgoingDateTime.computedValue"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -1746,7 +1747,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1685549347205,
+                              "columnUpdatedAt": 1685713844154,
                               "defaultSelectedRowIndices": [
                                 0
                               ],
@@ -1760,6 +1761,7 @@
                                 "customColumn2",
                                 "customColumn4",
                                 "quantity",
+                                "outgoingDateTime",
                                 "barcodeId",
                                 "productName",
                                 "price",
@@ -1803,6 +1805,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.customColumn4.onClick"
+                                },
+                                {
+                                  "key": "onRowSelected"
                                 }
                               ],
                               "borderWidth": "1",
@@ -2131,8 +2136,39 @@
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": ""
+                                },
+                                "outgoingDateTime": {
+                                  "allowCellWrapping": false,
+                                  "allowSameOptionsInNewRow": true,
+                                  "index": 2,
+                                  "width": 150,
+                                  "originalId": "outgoingDateTime",
+                                  "id": "outgoingDateTime",
+                                  "alias": "outgoingDateTime",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "date",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": true,
+                                  "isEditable": true,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Outgoing Date",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{tbl_OutgoingPreview.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"outgoingDateTime\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
+                              "onRowSelected": "{{previewOutgoingStockFunctions.getLastSelectedRow(tbl_OutgoingPreview);}}",
                               "key": "qin4jj4gha",
                               "canFreezeColumn": true,
                               "isDeprecated": false,
@@ -2150,7 +2186,7 @@
                               "isVisibleSearch": false,
                               "responsiveBehavior": "fill",
                               "mobileLeftColumn": 0,
-                              "isVisiblePagination": false,
+                              "isVisiblePagination": true,
                               "verticalAlignment": "CENTER"
                             },
                             {
@@ -2164,7 +2200,7 @@
                                 "label"
                               ],
                               "topRow": 7.275,
-                              "bottomRow": 11.275,
+                              "bottomRow": 11.275000000000002,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2259,7 +2295,7 @@
                               "rightColumn": 64,
                               "isDefaultClickDisabled": true,
                               "widgetId": "p9rb4b53uz",
-                              "onCodeDetected": "{{SalesHistoryFunctions.scanBarcodeIdAdd();}}",
+                              "onCodeDetected": "{{previewOutgoingStockFunctions.scanBarcodeIdAdd();}}",
                               "isVisible": false,
                               "label": "Scan a QR/Barcode",
                               "version": 1,
@@ -2278,7 +2314,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 10.875,
                               "widgetName": "btn_ScanProduct",
-                              "onClick": "{{SalesHistoryFunctions.toggleBarcodeScannerAdd();}}",
+                              "onClick": "{{previewOutgoingStockFunctions.toggleBarcodeScannerAdd();}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Button",
@@ -2288,7 +2324,7 @@
                                 "submit"
                               ],
                               "topRow": 7.275,
-                              "bottomRow": 11.275,
+                              "bottomRow": 11.275000000000002,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -2457,7 +2493,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 67.675,
                               "widgetName": "btn_Close2OutgoingStock",
-                              "onClick": "{{SalesHistoryFunctions.clear();\nSalesHistoryFunctions.closeBarcodeScannerAdd();\ncloseModal('mdl_AddOutgoingStock');}}",
+                              "onClick": "{{previewOutgoingStockFunctions.clear();\npreviewOutgoingStockFunctions.closeBarcodeScannerAdd();\ncloseModal('mdl_AddOutgoingStock');}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -2517,7 +2553,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 67.675,
                               "widgetName": "btn_ConfirmOutgoingStock",
-                              "onClick": "{{EncodeOutgoingStock.run(() => {\n  showAlert('Successfully added the outgoing product/s: ' + appsmith.store.cart.map(p => p.productName), 'success');\n  closeModal('mdl_AddOutgoingStock');\n  apiOutgoingFunctions.refreshOnAdd();\n}, () => {\n  showAlert('Error occurred in adding the outgoing product/s: ' + appsmith.store.cart.map(p => p.productName), 'error');\n}, {}).then(() => {}).catch(() => {});}}",
+                              "onClick": "{{apiOutgoingFunctions.createAddOutgoingEntriesStore();\nEncodeOutgoingStock.run().then(() => {\n  showAlert('Successfully added the outgoing product/s: ' + appsmith.store.cart.map(p => p.productName), 'success');\n  closeModal('mdl_AddOutgoingStock');\n  apiOutgoingFunctions.refreshOnAdd();\n}).catch(() => {\n  showAlert('Error occurred in adding the outgoing product/s: ' + appsmith.store.cart.map(p => p.productName), 'error');\n});}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -2591,6 +2627,10 @@
                           "flexLayers": [
                             {
                               "children": [
+                                {
+                                  "id": "ojdop5feu5",
+                                  "align": "start"
+                                },
                                 {
                                   "id": "vj793kb8bi",
                                   "align": "start"
@@ -2785,14 +2825,6 @@
                 {
                   "id": "kwrwq8226m",
                   "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "aqs357rl60",
-                  "align": "start"
                 }
               ]
             }

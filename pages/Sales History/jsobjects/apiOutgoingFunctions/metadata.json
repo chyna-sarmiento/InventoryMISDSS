@@ -6,7 +6,12 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "addOutgoingEntries",
+        "value": "[]"
+      }
+    ],
     "userPermissions": []
   },
   "id": "Sales History_apiOutgoingFunctions",

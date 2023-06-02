@@ -1,4 +1,1 @@
-{
-  "outgoingProductId": {{appsmith.store.cart.map(p => p.id)}},
-  "quantity": {{appsmith.store.cart.map(p => p.quantity)}}
-}
+{{appsmith.store.addOutgoingEntries}}

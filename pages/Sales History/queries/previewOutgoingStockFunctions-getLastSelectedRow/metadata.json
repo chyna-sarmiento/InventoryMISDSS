@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "add",
-    "fullyQualifiedName": "SalesHistoryFunctions.add",
+    "name": "getLastSelectedRow",
+    "fullyQualifiedName": "previewOutgoingStockFunctions.getLastSelectedRow",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_SalesHistoryFunctions",
+    "collectionId": "Sales History_previewOutgoingStockFunctions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,10 +22,10 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "item"
+          "name": "table"
         }
       ],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_SalesHistoryFunctions.add",
+  "id": "Sales History_previewOutgoingStockFunctions.getLastSelectedRow",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_64774fa1948d2172037901d2"
+  "gitSyncId": "6439874f26013158789b34e6_6479f4f115d4df259dd697e2"
 }
