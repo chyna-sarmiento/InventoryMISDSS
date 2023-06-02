@@ -55,7 +55,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 402.25,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -593,7 +593,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.653669724770637,
+                              "leftColumn": 21.65366972477064,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -870,9 +870,6 @@
                   "key": "primaryColumns.totalPrice.computedValue"
                 },
                 {
-                  "key": "primaryColumns.dateTimeOutgoing.computedValue"
-                },
-                {
                   "key": "primaryColumns.lastUpdated.computedValue"
                 },
                 {
@@ -880,6 +877,9 @@
                 },
                 {
                   "key": "primaryColumns.outgoingProductId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.dateTimeOutgoing.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -948,7 +948,7 @@
                 "SaleTime": 150,
                 "SaleDate": 150,
                 "totalPrice": 112,
-                "dateTimeOutgoing": 149
+                "dateTimeOutgoing": 172
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -1094,7 +1094,7 @@
                   "alias": "dateTimeOutgoing",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "date",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -1109,12 +1109,12 @@
                   "label": "Outgoing Date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dateTimeOutgoing\"]))}}",
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"dateTimeOutgoing\"], moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
-                  "inputFormat": "YYYY-MM-DD HH:mm",
-                  "outputFormat": "YYYY-MM-DD HH:mm"
+                  "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
+                  "outputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ"
                 },
                 "lastUpdated": {
                   "allowCellWrapping": false,
@@ -1126,7 +1126,7 @@
                   "alias": "lastUpdated",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "date",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -1141,7 +1141,7 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastUpdated\"]))}}",
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"lastUpdated\"], moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
@@ -1268,7 +1268,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 960,
+                  "bottomRow": 962.7500000000003,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,

@@ -104,7 +104,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 50.04670912951168,
+              "leftColumn": 49.97225186766275,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -523,7 +523,7 @@
                   "alias": "lastUpdated",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "date",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -538,7 +538,7 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastUpdated\"]))}}",
+                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"lastUpdated\"], moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
