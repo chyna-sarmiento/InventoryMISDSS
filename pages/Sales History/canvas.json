@@ -593,7 +593,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.653669724770637,
+                              "leftColumn": 21.653669724770644,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1141,7 +1141,7 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"lastUpdated\"], \"Asia/Singapore\").format('DD MMMM YYYY, HH:mm')))}}",
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"lastUpdated\"], moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
@@ -1247,7 +1247,7 @@
                 "notification"
               ],
               "topRow": 77.4,
-              "bottomRow": 173.67500000000004,
+              "bottomRow": 173.67500000000007,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1268,7 +1268,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 962.7500000000003,
+                  "bottomRow": 960,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2122,7 +2122,7 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "",
-                                  "sticky": "right",
+                                  "sticky": "",
                                   "validation": {},
                                   "buttonStyle": "rgb(3, 179, 101)",
                                   "saveIconAlign": "left",
