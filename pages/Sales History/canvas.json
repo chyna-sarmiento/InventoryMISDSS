@@ -9,7 +9,7 @@
           "mobileBottomRow": 2567.0000000000005,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 762,
+          "bottomRow": 2231.000000000001,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -55,7 +55,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 402.2500000000001,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -593,7 +593,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.653669724770644,
+                              "leftColumn": 21.653669724770637,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -812,7 +812,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.191035218783352,
+              "rightColumn": 11.13163481953291,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -880,6 +880,9 @@
                 },
                 {
                   "key": "primaryColumns.lastUpdated.computedValue"
+                },
+                {
+                  "key": "primaryColumns.dateTimeOutgoing.outputFormat"
                 }
               ],
               "needsHeightForContent": true,
@@ -937,7 +940,11 @@
                 "totalPrice",
                 "lastUpdated"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.dateTimeOutgoing.outputFormat"
+                }
+              ],
               "displayName": "Table",
               "bottomRow": 76.2,
               "columnWidthMap": {
@@ -948,7 +955,7 @@
                 "SaleTime": 150,
                 "SaleDate": 150,
                 "totalPrice": 112,
-                "dateTimeOutgoing": 172
+                "dateTimeOutgoing": 200
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -1109,12 +1116,12 @@
                   "label": "Outgoing Date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment(currentRow[\"dateTimeOutgoing\"]).utc().format('DD MMMM YYYY, HH:mm')))}}",
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"dateTimeOutgoing\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
                   "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
-                  "outputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ"
+                  "outputFormat": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"dateTimeOutgoing\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}"
                 },
                 "lastUpdated": {
                   "allowCellWrapping": false,
@@ -1141,12 +1148,12 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"lastUpdated\"], moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"lastUpdated\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
-                  "outputFormat": "YYYY-MM-DD HH:mm",
-                  "inputFormat": "YYYY-MM-DD HH:mm"
+                  "outputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
+                  "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ"
                 },
                 "product": {
                   "allowCellWrapping": false,
@@ -1247,7 +1254,7 @@
                 "notification"
               ],
               "topRow": 77.4,
-              "bottomRow": 173.67500000000007,
+              "bottomRow": 173.67500000000004,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1268,7 +1275,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 960,
+                  "bottomRow": 962.7500000000003,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1443,7 +1450,7 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "dateFormat": "DD MMMM YYYY, HH:mm",
                               "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                               "topRow": 0,
                               "labelWidth": 5,
@@ -1459,6 +1466,9 @@
                                 },
                                 {
                                   "key": "maxDate"
+                                },
+                                {
+                                  "key": "defaultDate"
                                 }
                               ],
                               "isDisabled": false,
@@ -1479,6 +1489,12 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "maxDate"
+                                },
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "dateFormat"
                                 }
                               ],
                               "displayName": "DatePicker",
@@ -1495,7 +1511,7 @@
                               "labelPosition": "Top",
                               "key": "knj4vx0hmt",
                               "labelTextSize": "0.875rem",
-                              "defaultDate": "2023-06-02T13:39:26.071Z",
+                              "defaultDate": "{{moment()}}",
                               "isDeprecated": false,
                               "rightColumn": 20.352208489029415,
                               "widgetId": "ojdop5feu5",
@@ -1509,7 +1525,7 @@
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
                               "firstDayOfWeek": 0,
-                              "maxDate": "{{new Date().toISOString().replace('Z', '+08:00')}}",
+                              "maxDate": "{{new Date().toUTCString()}}",
                               "minDynamicHeight": 4
                             },
                             {
@@ -1655,7 +1671,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 24.625,
                               "widgetName": "btn_AddProductPreview",
-                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);\nresetWidget(\"input_SearchProduct\", true);}}",
+                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);\nresetWidget(\"input_SearchProduct\", true);\nresetWidget(\"input_OutgoingDateTime\", true);}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1813,7 +1829,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1685713844154,
+                              "columnUpdatedAt": 1685796411393,
                               "defaultSelectedRowIndices": [
                                 0
                               ],
@@ -2213,7 +2229,7 @@
                                   "alias": "outgoingDateTime",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
-                                  "columnType": "date",
+                                  "columnType": "text",
                                   "textColor": "",
                                   "textSize": "0.875rem",
                                   "fontStyle": "",
@@ -2221,16 +2237,18 @@
                                   "enableSort": true,
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "isCellEditable": true,
-                                  "isEditable": true,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "Outgoing Date",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{tbl_OutgoingPreview.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"outgoingDateTime\"]))}}",
+                                  "computedValue": "{{tbl_OutgoingPreview.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"outgoingDateTime\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                                   "sticky": "",
-                                  "validation": {},
+                                  "validation": {
+                                    "maxDate": "2023-06-03T19:14:50.5050+08:00"
+                                  },
                                   "cellBackground": ""
                                 }
                               },

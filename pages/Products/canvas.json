@@ -56,7 +56,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 9.664543524416136,
+              "rightColumn": 9.716115261472785,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ybr41tjpiv",
@@ -104,7 +104,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 49.97225186766275,
+              "leftColumn": 49.972251867662756,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -247,6 +247,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.lastUpdated.outputFormat"
                 }
               ],
               "compactMode": "DEFAULT",
@@ -260,7 +263,8 @@
                 "price": 81,
                 "variantName": 144,
                 "stockCount": 132,
-                "measurement": 143
+                "measurement": 143,
+                "lastUpdated": 183
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -538,11 +542,11 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( moment.tz(currentRow[\"lastUpdated\"], moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
+                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"lastUpdated\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
-                  "inputFormat": "YYYY-MM-DD HH:mm",
+                  "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
                   "outputFormat": "YYYY-MM-DD HH:mm"
                 }
               },
