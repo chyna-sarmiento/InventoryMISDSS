@@ -9,7 +9,7 @@
           "mobileBottomRow": 2974,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 2052,
+          "bottomRow": 582,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -104,7 +104,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 49.972251867662756,
+              "leftColumn": 50.046709129511676,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -138,7 +138,7 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
-              "widthInPercentage": 0.9915343915343915,
+              "widthInPercentage": 0.991578947368421,
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 5.2,
@@ -254,7 +254,7 @@
               ],
               "compactMode": "DEFAULT",
               "displayName": "Table",
-              "bottomRow": 205.2,
+              "bottomRow": 58.2,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -586,8 +586,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 206.39999999999998,
-              "bottomRow": 306.925,
+              "topRow": 59.400000000000006,
+              "bottomRow": 159.92500000000004,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1769,8 +1769,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 308.125,
-              "bottomRow": 403.45000000000005,
+              "topRow": 161.12500000000006,
+              "bottomRow": 256.4500000000001,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -2867,8 +2867,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 404.65000000000003,
-              "bottomRow": 432.40000000000003,
+              "topRow": 257.6500000000001,
+              "bottomRow": 285.4000000000001,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
