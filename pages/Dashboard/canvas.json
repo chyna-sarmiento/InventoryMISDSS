@@ -594,7 +594,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
-                              "yAxisName": "Number of Customers",
+                              "yAxisName": "Number of Sales",
                               "originalTopRow": 10,
                               "chartName": "Customer Demand",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -714,7 +714,7 @@
                                   "key": "customFusionChartConfig"
                                 }
                               ],
-                              "customFusionChartConfig": "{{chartInventoryStock.lineBarChart()}}",
+                              "customFusionChartConfig": "{{chartData.InventoryStock()}}",
                               "onDataPointClick": "",
                               "key": "f2fx271y27",
                               "flexVerticalAlignment": "end",

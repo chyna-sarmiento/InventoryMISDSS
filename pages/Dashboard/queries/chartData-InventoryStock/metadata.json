@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "lineBarChart",
-    "fullyQualifiedName": "chartInventoryStock.lineBarChart",
+    "name": "InventoryStock",
+    "fullyQualifiedName": "chartData.InventoryStock",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Dashboard",
-    "collectionId": "Dashboard_chartInventoryStock",
+    "collectionId": "Dashboard_chartData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_chartInventoryStock.lineBarChart",
+  "id": "Dashboard_chartData.InventoryStock",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647c533815d4df259dd6b3f7"
+  "gitSyncId": "6439874f26013158789b34e6_647c8f7e06e75233aab7fbfe"
 }

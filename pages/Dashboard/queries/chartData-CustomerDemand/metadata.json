@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "refreshOnAdd",
-    "fullyQualifiedName": "apiOutgoingFunctions.refreshOnAdd",
+    "name": "CustomerDemand",
+    "fullyQualifiedName": "chartData.CustomerDemand",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Sales History",
-    "collectionId": "Sales History_apiOutgoingFunctions",
+    "pageId": "Dashboard",
+    "collectionId": "Dashboard_chartData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_apiOutgoingFunctions.refreshOnAdd",
+  "id": "Dashboard_chartData.CustomerDemand",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647774f1948d217203790567"
+  "gitSyncId": "6439874f26013158789b34e6_647c533815d4df259dd6b3f7"
 }

@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Sales History",
+    "pageId": "Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -34,7 +34,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -45,7 +45,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_ShowOutgoingStocks",
+  "id": "Dashboard_ShowOutgoingStocks",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647c904b8ab22b5e2e93af64"
+  "gitSyncId": "6439874f26013158789b34e6_6474f48e16e12f22da074dce"
 }

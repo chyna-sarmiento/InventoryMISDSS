@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "chartInventoryStock",
+    "name": "chartData",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Dashboard_chartInventoryStock",
+  "id": "Dashboard_chartData",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_647c5313f5644b29bb5c7e4e"
 }
