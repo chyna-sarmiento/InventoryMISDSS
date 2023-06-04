@@ -14,6 +14,10 @@
       {
         "name": "totalPrice",
         "value": "''"
+      },
+      {
+        "name": "prev",
+        "value": "prev"
       }
     ],
     "userPermissions": []

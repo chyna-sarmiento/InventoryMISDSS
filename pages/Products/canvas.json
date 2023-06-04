@@ -56,7 +56,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 8.814300960512274,
+              "rightColumn": 9.716115261472785,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ybr41tjpiv",
@@ -104,7 +104,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 51.3564567769477,
+              "leftColumn": 49.972251867662756,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -1523,7 +1523,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 20.278669724770637,
+                              "leftColumn": 20.278669724770644,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1538,7 +1538,7 @@
                               "iconName": "trash",
                               "widgetId": "okekgqq3fr",
                               "minWidth": 120,
-                              "isVisible": true,
+                              "isVisible": false,
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "sqdgq7xvdr",

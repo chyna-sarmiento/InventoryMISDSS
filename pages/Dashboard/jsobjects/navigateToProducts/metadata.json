@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "navigateToProducts",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Dashboard_navigateToProducts",
+  "deleted": false,
+  "gitSyncId": "6439874f26013158789b34e6_647c72b815d4df259dd6b611"
+}
