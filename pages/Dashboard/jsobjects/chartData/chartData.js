@@ -1,8 +1,48 @@
 export default {
+	CustomerDemand() {
+		const barData = forecastOutgoingStocksData.data
+		.filter(p => p.outgoingDemandVolume >= 5)
+		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
+		.sort((a, b) => b.value - a.value);
+
+		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
+
+		const outputDataSource = {
+			type: "mscombi2d",
+			dataSource: {
+				chart: {
+					caption: "Customer Demand",
+					xaxisname: "Popular Items",
+					yaxisname: "Volume of Demand",
+					yaxismaxvalue: maxBarValue,
+					theme: "fusion",
+					baseFont: "Montserrat",
+					captionFontSize: "24",
+					captionFontColor: "#333333",
+					xAxisNameFontSize: "14",
+					slantLabels: "1",
+					labelDisplay: "rotate",
+					labelWrap: "1",
+					labelPadding: "10"
+				},
+				categories: [{
+					category: barData.map(data => ({ label: data.label }))
+				}],
+				dataset: [{
+					seriesname: "Current",
+					data: barData,
+					color: "#64748b"
+				}]
+			}
+		};
+
+		return JSON.stringify(outputDataSource);
+	},
 	InventoryStock() {
 		const barData = ShowProductList.data
 		.filter(p => p.stockCount < 20)
-		.map(p => ({ label: p.displayName, value: p.stockCount }));
+		.map(p => ({ label: p.displayName, value: p.stockCount }))
+		 .sort((a, b) => a.value - b.value);
 
 		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
 
@@ -21,6 +61,7 @@ export default {
 					xAxisNameFontSize: "14",
 					slantLabels: "1",
 					labelDisplay: "rotate",
+					labelWrap: "1"
 				},
 				categories: [{
 					category: barData.map(data => ({ label: data.label }))
@@ -51,42 +92,6 @@ export default {
 									 showontop: "1",
 									 alpha: "80"
 								 }]
-				}]
-			}
-		};
-
-		return JSON.stringify(outputDataSource);
-	},
-	CustomerDemand() {
-		const barData = forecastOutgoingStocksData.data
-		.filter(p => p.outgoingDemandVolume >= 10)
-		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }));
-
-		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
-
-		const outputDataSource = {
-			type: "mscombi2d",
-			dataSource: {
-				chart: {
-					caption: "Customer Demand",
-					xaxisname: "Popular Items",
-					yaxisname: "Volume of Demand",
-					yaxismaxvalue: maxBarValue,
-					theme: "fusion",
-					baseFont: "Montserrat",
-					captionFontSize: "24",
-					captionFontColor: "#333333",
-					xAxisNameFontSize: "14",
-					slantLabels: "1",
-					labelDisplay: "rotate",
-				},
-				categories: [{
-					category: barData.map(data => ({ label: data.label }))
-				}],
-				dataset: [{
-					seriesname: "Current",
-					data: barData,
-					color: "#64748b"
 				}]
 			}
 		};

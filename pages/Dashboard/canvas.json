@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 950,
+          "bottomRow": 860,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -154,7 +154,7 @@
                               "key": "ek5q0dhd77",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 55.476137624861266,
+                              "rightColumn": 55.47613762486126,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "7d42utzxeb",
@@ -199,7 +199,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 55.476137624861266,
+                              "leftColumn": 55.47613762486126,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -411,7 +411,7 @@
                 "group"
               ],
               "topRow": 14.399999999999999,
-              "bottomRow": 65.4,
+              "bottomRow": 56.4,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -432,7 +432,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 510.00000000000006,
+                  "bottomRow": 420,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -452,7 +452,7 @@
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 0,
-                      "bottomRow": 49,
+                      "bottomRow": 40,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -473,7 +473,7 @@
                           "mobileBottomRow": 150,
                           "widgetName": "Canvas7",
                           "displayName": "Canvas",
-                          "bottomRow": 450,
+                          "bottomRow": 360,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -489,9 +489,10 @@
                           "children": [
                             {
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                              "setAdaptiveYMin": true,
+                              "mobileBottomRow": 35,
                               "widgetName": "report_CustomerDemand",
                               "allowScroll": false,
+                              "widthInPercentage": 0.9536842105263158,
                               "displayName": "Chart",
                               "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
                               "searchTags": [
@@ -500,23 +501,33 @@
                                 "visualisations"
                               ],
                               "topRow": 0,
-                              "bottomRow": 43,
+                              "bottomRow": 34,
                               "parentRowSpace": 10,
                               "type": "CHART_WIDGET",
                               "hideCard": false,
+                              "mobileRightColumn": 64,
                               "chartData": {
-                                "pjvob4qvlz": {
-                                  "seriesName": "Current",
-                                  "data": ""
-                                },
-                                "u6sz4ayy4g": {
-                                  "seriesName": "Forecast",
-                                  "data": "[{\"x\":\"label\",\"y\":50}]"
+                                "sp884mchx6": {
+                                  "seriesName": "Sales",
+                                  "data": [
+                                    {
+                                      "x": "Product1",
+                                      "y": 20000
+                                    },
+                                    {
+                                      "x": "Product2",
+                                      "y": 22000
+                                    },
+                                    {
+                                      "x": "Product3",
+                                      "y": 32000
+                                    }
+                                  ]
                                 }
                               },
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 17.625,
+                              "parentColumnSpace": 14.15625,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
@@ -537,26 +548,25 @@
                                 }
                               ],
                               "customFusionChartConfig": "{{chartData.CustomerDemand()}}",
-                              "key": "f2fx271y27",
-                              "flexVerticalAlignment": "end",
+                              "key": "xo41l3rc6q",
                               "isDeprecated": false,
                               "rightColumn": 64,
-                              "widgetId": "l37v813t8k",
+                              "widgetId": "my4wzjd20r",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "minWidth": 450,
                               "isVisible": true,
                               "version": 1,
                               "parentId": "fmgtivh5p6",
-                              "labelOrientation": "slant",
+                              "labelOrientation": "auto",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "mobileTopRow": 3,
                               "responsiveBehavior": "fill",
-                              "yAxisName": "Number of Sales",
-                              "originalTopRow": 10,
-                              "chartName": "Customer Demand",
+                              "yAxisName": "Revenue($)",
+                              "chartName": "Sales Report",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "xAxisName": "Popular Items",
-                              "originalBottomRow": 53,
+                              "mobileLeftColumn": 0,
+                              "xAxisName": "Product Line",
                               "chartType": "CUSTOM_FUSION_CHART",
                               "alignment": "start"
                             }
@@ -581,7 +591,7 @@
                             {
                               "children": [
                                 {
-                                  "id": "l37v813t8k",
+                                  "id": "my4wzjd20r",
                                   "align": "start"
                                 }
                               ]
@@ -593,7 +603,7 @@
                           "mobileBottomRow": 150,
                           "widgetName": "Canvas8",
                           "displayName": "Canvas",
-                          "bottomRow": 450,
+                          "bottomRow": 360,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -609,9 +619,10 @@
                           "children": [
                             {
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                              "setAdaptiveYMin": true,
+                              "mobileBottomRow": 42,
                               "widgetName": "report_StockForecast",
                               "allowScroll": false,
+                              "widthInPercentage": 0.9536842105263158,
                               "displayName": "Chart",
                               "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
                               "searchTags": [
@@ -620,33 +631,34 @@
                                 "visualisations"
                               ],
                               "topRow": 0,
-                              "bottomRow": 43,
+                              "bottomRow": 34,
                               "parentRowSpace": 10,
                               "type": "CHART_WIDGET",
                               "hideCard": false,
+                              "mobileRightColumn": 64,
                               "chartData": {
-                                "pjvob4qvlz": {
-                                  "seriesName": "Current",
-                                  "data": "{{ShowProductListDetails.data.filter(p => p.stockCount < 20).map(p => ({x: p.name, y: p.stockCount}))}}"
-                                },
-                                "h91o6qb7gy": {
-                                  "seriesName": "Forecast",
-                                  "data": ""
-                                },
-                                "dtxxyz3w66": {
-                                  "seriesName": "Warning",
-                                  "data": "{{ShowProductListDetails.data.filter(p => p.stockCount < 20).map(p => ({x: p.name, y: 10}))}}",
-                                  "color": "#fde047"
+                                "sp884mchx6": {
+                                  "seriesName": "Sales",
+                                  "data": [
+                                    {
+                                      "x": "Product1",
+                                      "y": 20000
+                                    },
+                                    {
+                                      "x": "Product2",
+                                      "y": 22000
+                                    },
+                                    {
+                                      "x": "Product3",
+                                      "y": 32000
+                                    }
+                                  ]
                                 }
                               },
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 17.625,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onDataPointClick"
-                                }
-                              ],
+                              "parentColumnSpace": 14.15625,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -662,35 +674,29 @@
                                   "key": "fontFamily"
                                 },
                                 {
-                                  "key": "chartData.pjvob4qvlz.data"
-                                },
-                                {
-                                  "key": "chartData.dtxxyz3w66.data"
-                                },
-                                {
                                   "key": "customFusionChartConfig"
                                 }
                               ],
                               "customFusionChartConfig": "{{chartData.InventoryStock()}}",
-                              "onDataPointClick": "",
-                              "key": "f2fx271y27",
-                              "flexVerticalAlignment": "end",
+                              "key": "xo41l3rc6q",
                               "isDeprecated": false,
                               "rightColumn": 64,
-                              "widgetId": "77h0wvh6mi",
+                              "widgetId": "xk1bg02l35",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "minWidth": 450,
                               "isVisible": true,
                               "version": 1,
                               "parentId": "rzeg30ta7h",
-                              "labelOrientation": "slant",
+                              "labelOrientation": "auto",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "mobileTopRow": 10,
                               "responsiveBehavior": "fill",
-                              "yAxisName": "Number of Items",
-                              "chartName": "Inventory Stock",
+                              "yAxisName": "Revenue($)",
+                              "chartName": "Sales Report",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "xAxisName": "Low Items",
+                              "mobileLeftColumn": 0,
+                              "xAxisName": "Product Line",
                               "chartType": "CUSTOM_FUSION_CHART",
                               "alignment": "start"
                             }
@@ -715,7 +721,7 @@
                             {
                               "children": [
                                 {
-                                  "id": "77h0wvh6mi",
+                                  "id": "xk1bg02l35",
                                   "align": "start"
                                 }
                               ]
@@ -828,8 +834,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 66.60000000000001,
-              "bottomRow": 87,
+              "topRow": 57.6,
+              "bottomRow": 78,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
