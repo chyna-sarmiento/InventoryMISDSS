@@ -1,5 +1,5 @@
 export default {
-	CustomerDemand() {
+	Demand() {
 		const barData = forecastOutgoingStocksData.data
 		.filter(p => p.outgoingDemandVolume >= 5)
 		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
@@ -11,7 +11,7 @@ export default {
 			type: "mscombi2d",
 			dataSource: {
 				chart: {
-					caption: "Customer Demand",
+					caption: "Demand",
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yaxismaxvalue: maxBarValue,

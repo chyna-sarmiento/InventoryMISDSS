@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "CustomerDemand",
-    "fullyQualifiedName": "chartData.CustomerDemand",
+    "name": "Demand",
+    "fullyQualifiedName": "chartData.Demand",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_chartData.CustomerDemand",
+  "id": "Dashboard_chartData.Demand",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_647caab515d4df259dd6b744"
 }
