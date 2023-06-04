@@ -608,7 +608,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1000,
+                  "bottomRow": 1005.2500000000005,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -782,6 +782,73 @@
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
+                              "topRow": 85.25000000000004,
+                              "defaultCurrencyCode": "PHP",
+                              "labelWidth": 5,
+                              "type": "CURRENCY_INPUT_WIDGET",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "alignment": "start",
+                              "mobileBottomRow": 74.6,
+                              "widgetName": "edit_Price",
+                              "displayName": "Currency Input",
+                              "searchTags": [
+                                "amount",
+                                "total"
+                              ],
+                              "bottomRow": 91.32500000000005,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "parentColumnSpace": 6.6875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "jtj4zbyfc8",
+                              "labelTextSize": "0.875rem",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "0wn5krmzu6",
+                              "minWidth": 450,
+                              "label": "Price (Php)*",
+                              "parentId": "sqdgq7xvdr",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "mobileTopRow": 68,
+                              "responsiveBehavior": "fill",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "decimals": 2,
+                              "iconAlign": "left",
+                              "defaultText": "{{tbl_ProductList.selectedRow.price}}",
+                              "minDynamicHeight": 4
+                            },
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -1279,79 +1346,6 @@
                               "showStepArrows": false,
                               "isVisible": true,
                               "version": 2,
-                              "minNum": "0",
-                              "isLoading": false,
-                              "regex": "",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 30,
-                              "alignment": "start",
-                              "mobileBottomRow": 79.04999999999998,
-                              "widgetName": "edit_Price",
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 73.65000000000003,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "parentColumnSpace": 6.4140625,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Top",
-                              "key": "w0rdklyiaw",
-                              "labelTextSize": "0.875rem",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "widgetId": "oee02wo7hl",
-                              "minWidth": 450,
-                              "label": "Price (Php)*",
-                              "parentId": "sqdgq7xvdr",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "mobileTopRow": 72.97499999999998,
-                              "responsiveBehavior": "fill",
-                              "originalTopRow": 26,
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "shouldAllowAutofill": false,
-                              "iconAlign": "left",
-                              "defaultText": "{{tbl_ProductList.selectedRow.price}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 74.85000000000004,
-                              "labelWidth": "14",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultText"
-                                }
-                              ],
-                              "labelStyle": "",
-                              "inputType": "NUMBER",
-                              "isDisabled": false,
-                              "flexVerticalAlignment": "end",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "isVisible": true,
-                              "version": 2,
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "originalBottomRow": 34,
@@ -1365,7 +1359,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 80.92500000000004,
+                              "bottomRow": 73.65000000000003,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -1405,8 +1399,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 82.12500000000004,
-                              "bottomRow": 86.12500000000004,
+                              "topRow": 74.85000000000004,
+                              "bottomRow": 78.85000000000004,
                               "tooltip": "Revert back previous information prior to changes.",
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -1461,8 +1455,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 82.12500000000004,
-                              "bottomRow": 86.12500000000004,
+                              "topRow": 74.85000000000004,
+                              "bottomRow": 78.85000000000004,
                               "tooltip": "",
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -1520,8 +1514,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 87.32500000000005,
-                              "bottomRow": 91.32500000000005,
+                              "topRow": 80.05000000000004,
+                              "bottomRow": 84.05000000000004,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -1633,14 +1627,6 @@
                             {
                               "children": [
                                 {
-                                  "id": "oee02wo7hl",
-                                  "align": "start"
-                                }
-                              ]
-                            },
-                            {
-                              "children": [
-                                {
                                   "id": "1h0rhoschj",
                                   "align": "start"
                                 }
@@ -1663,6 +1649,14 @@
                                 {
                                   "id": "okekgqq3fr",
                                   "align": "center"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "0wn5krmzu6",
+                                  "align": "start"
                                 }
                               ]
                             }
@@ -2417,10 +2411,11 @@
                             },
                             {
                               "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
                               "topRow": 67.57500000000003,
-                              "labelWidth": "14",
-                              "type": "INPUT_WIDGET_V2",
+                              "defaultCurrencyCode": "PHP",
+                              "labelWidth": 5,
+                              "type": "CURRENCY_INPUT_WIDGET",
                               "animateLoading": true,
                               "resetOnSubmit": true,
                               "leftColumn": 0,
@@ -2433,53 +2428,47 @@
                                 }
                               ],
                               "labelStyle": "",
-                              "inputType": "NUMBER",
                               "isDisabled": false,
-                              "flexVerticalAlignment": "end",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "showStepArrows": false,
                               "isVisible": true,
-                              "version": 2,
-                              "minNum": "1",
+                              "allowCurrencyChange": false,
+                              "version": 1,
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 65,
                               "alignment": "start",
-                              "mobileBottomRow": 84.6,
+                              "mobileBottomRow": 74.6,
                               "widgetName": "add_Price",
-                              "displayName": "Input",
+                              "displayName": "Currency Input",
                               "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
+                                "amount",
+                                "total"
                               ],
                               "bottomRow": 73.65000000000003,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
                               "mobileRightColumn": 64,
-                              "parentColumnSpace": 6.4140625,
+                              "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
                               "labelPosition": "Top",
-                              "key": "w0rdklyiaw",
+                              "key": "jtj4zbyfc8",
                               "labelTextSize": "0.875rem",
                               "isDeprecated": false,
                               "rightColumn": 64,
-                              "widgetId": "f1xy3cj5sx",
+                              "widgetId": "0zawmg77ld",
                               "minWidth": 450,
                               "label": "Price (Php)*",
                               "parentId": "2l1fmewg7b",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
-                              "mobileTopRow": 77.6,
+                              "mobileTopRow": 68,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 61,
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "shouldAllowAutofill": false,
+                              "decimals": 2,
                               "iconAlign": "left",
                               "defaultText": "",
                               "minDynamicHeight": 4
@@ -2740,7 +2729,7 @@
                             {
                               "children": [
                                 {
-                                  "id": "f1xy3cj5sx",
+                                  "id": "0zawmg77ld",
                                   "align": "start"
                                 }
                               ]

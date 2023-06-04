@@ -10,7 +10,7 @@
           "mobileBottomRow": 2567,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 582,
+          "bottomRow": 1687.0000000000005,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 402.2500000000001,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -842,7 +842,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 5.2,
               "isSortable": true,
-              "onPageChange": "{{ShowOutgoingStocks.run()}}",
+              "onPageChange": "",
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
@@ -1279,7 +1279,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 600,
+                  "bottomRow": 598.7500000000002,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1354,7 +1354,7 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 8.8,
                       "widgetName": "btn_CloseOutgoingStock",
-                      "onClick": "{{previewOutgoingStockFunctions.clear();\ncloseModal('mdl_AddOutgoingStock');}}",
+                      "onClick": "{{closeModal('mdl_AddOutgoingStock');}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1495,10 +1495,10 @@
                                   "key": "maxDate"
                                 },
                                 {
-                                  "key": "defaultDate"
+                                  "key": "dateFormat"
                                 },
                                 {
-                                  "key": "dateFormat"
+                                  "key": "defaultDate"
                                 }
                               ],
                               "displayName": "DatePicker",
@@ -1675,7 +1675,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 24.625,
                               "widgetName": "btn_AddProductPreview",
-                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);\nresetWidget(\"input_SearchProduct\", true);}}",
+                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);\nresetWidget(\"input_SearchProduct\", true);\npreviewOutgoingStockFunctions.resetOutgoingDateTime();}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1871,8 +1871,8 @@
                                 "step": 70,
                                 "status": 85,
                                 "customColumn1": 68,
-                                "customColumn2": 104,
-                                "quantity": 107,
+                                "customColumn2": 99,
+                                "quantity": 101,
                                 "barcodeId": 125,
                                 "productName": 228,
                                 "customColumn3": 167,
@@ -2405,7 +2405,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 113.225,
                               "widgetName": "btn_Close2OutgoingStock",
-                              "onClick": "{{previewOutgoingStockFunctions.clear();\ncloseModal('mdl_AddOutgoingStock');}}",
+                              "onClick": "{{closeModal('mdl_AddOutgoingStock');}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",

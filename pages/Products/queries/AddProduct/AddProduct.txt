@@ -4,6 +4,6 @@
 	name: {{add_Name.inputText}},
 	variantName: {{add_VariantName.inputText}},
 	measurement: {{add_Measurement.inputText}},
-	price: {{add_Price.inputText}},
+	price: {{add_Price.value}},
 	stockCount: {{add_StockCount.inputText}}
 }

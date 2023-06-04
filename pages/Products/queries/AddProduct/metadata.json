@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\tbarcodeId: {{add_BarcodeId.inputText}},\n\tbrand: {{add_Brand.inputText}},\n\tname: {{add_Name.inputText}},\n\tvariantName: {{add_VariantName.inputText}},\n\tmeasurement: {{add_Measurement.inputText}},\n\tprice: {{add_Price.inputText}},\n\tstockCount: {{add_StockCount.inputText}}\n}",
+      "body": "{\n\tbarcodeId: {{add_BarcodeId.inputText}},\n\tbrand: {{add_Brand.inputText}},\n\tname: {{add_Name.inputText}},\n\tvariantName: {{add_VariantName.inputText}},\n\tmeasurement: {{add_Measurement.inputText}},\n\tprice: {{add_Price.value}},\n\tstockCount: {{add_StockCount.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -54,7 +54,7 @@
       "add_Brand.inputText",
       "add_Measurement.inputText",
       "add_Name.inputText",
-      "add_Price.inputText",
+      "add_Price.value",
       "add_StockCount.inputText",
       "add_VariantName.inputText"
     ],

@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\tbarcodeId: {{edit_BarcodeId.inputText}},\n\tbrand: {{edit_Brand.inputText}},\n\tname: {{edit_Name.inputText}},\n\tvariantName: {{edit_VariantName.inputText}},\n\tmeasurement: {{edit_Measurement.inputText}},\n\tprice: {{edit_Price.inputText}},\n\tstockCount: {{edit_StockCount.inputText}}\n}",
+      "body": "{\n\tbarcodeId: {{edit_BarcodeId.inputText}},\n\tbrand: {{edit_Brand.inputText}},\n\tname: {{edit_Name.inputText}},\n\tvariantName: {{edit_VariantName.inputText}},\n\tmeasurement: {{edit_Measurement.inputText}},\n\tprice: {{edit_Price.value}},\n\tstockCount: {{edit_StockCount.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -57,7 +57,7 @@
       "edit_Brand.inputText",
       "edit_Measurement.inputText",
       "edit_Name.inputText",
-      "edit_Price.inputText",
+      "edit_Price.value",
       "edit_StockCount.inputText",
       "edit_VariantName.inputText",
       "tbl_ProductList.selectedRow.id"
