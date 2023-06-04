@@ -317,7 +317,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{\"Today is \" + Date()}}",
+                      "text": "{{\"Today is \" + moment.tz(moment(), moment.tz.guess()).format('DD MMMM YYYY | HH:mm')}} ({{moment.tz(moment()).zoneAbbr()}})",
                       "key": "rtre7rnhra",
                       "flexVerticalAlignment": "end",
                       "isDeprecated": false,

@@ -11,8 +11,9 @@ export default {
       const cartItem = { quantity, id, outgoingDateTime, barcodeId, productName, price };
 			
       const cart = appsmith.store.cart || [];
-      cart.push(cartItem);
-      storeValue('cart', cart);
+			
+			cart.push(cartItem);
+			storeValue('cart', cart);
     } catch (error) {
       console.error('Error adding item to cart:', error);
     }
@@ -45,6 +46,8 @@ export default {
 		}
 		
 		appsmith.store.lastSelectedRow = lastSelectedRow;
-}
-
+	},
+	resetOutgoingDateTime() {
+		input_OutgoingDateTime.selectedDate = moment();
+	}
 }

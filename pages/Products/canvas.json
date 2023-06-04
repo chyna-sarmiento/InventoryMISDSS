@@ -56,7 +56,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 9.716115261472785,
+              "rightColumn": 8.814300960512274,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ybr41tjpiv",
@@ -104,7 +104,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 50.046709129511676,
+              "leftColumn": 51.3564567769477,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -587,7 +587,7 @@
                 "notification"
               ],
               "topRow": 59.400000000000006,
-              "bottomRow": 159.92500000000004,
+              "bottomRow": 159.92500000000007,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1529,7 +1529,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 20.27866972477064,
+                              "leftColumn": 20.278669724770637,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1791,7 +1791,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 950,
+                  "bottomRow": 953.2500000000005,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2889,7 +2889,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 270,
+                  "bottomRow": 277.50000000000006,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
