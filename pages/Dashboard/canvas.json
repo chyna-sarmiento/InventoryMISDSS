@@ -432,7 +432,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 510,
+                  "bottomRow": 510.00000000000006,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -446,7 +446,7 @@
                     {
                       "boxShadow": "none",
                       "mobileBottomRow": 21,
-                      "widgetName": "Tabs1",
+                      "widgetName": "tab_Charts",
                       "borderColor": "",
                       "isCanvas": true,
                       "displayName": "Tabs",
@@ -531,55 +531,12 @@
                                 },
                                 {
                                   "key": "fontFamily"
+                                },
+                                {
+                                  "key": "customFusionChartConfig"
                                 }
                               ],
-                              "customFusionChartConfig": {
-                                "type": "column2d",
-                                "dataSource": {
-                                  "data": [
-                                    {
-                                      "label": "Product1",
-                                      "value": 20000
-                                    },
-                                    {
-                                      "label": "Product2",
-                                      "value": 22000
-                                    },
-                                    {
-                                      "label": "Product3",
-                                      "value": 32000
-                                    }
-                                  ],
-                                  "chart": {
-                                    "caption": "Sales Report",
-                                    "xAxisName": "Product Line",
-                                    "yAxisName": "Revenue($)",
-                                    "theme": "fusion",
-                                    "alignCaptionWithCanvas": 1,
-                                    "captionFontSize": "24",
-                                    "captionAlignment": "center",
-                                    "captionPadding": "20",
-                                    "captionFontColor": "#231F20",
-                                    "legendIconSides": "4",
-                                    "legendIconBgAlpha": "100",
-                                    "legendIconAlpha": "100",
-                                    "legendPosition": "top",
-                                    "canvasPadding": "0",
-                                    "chartLeftMargin": "20",
-                                    "chartTopMargin": "10",
-                                    "chartRightMargin": "40",
-                                    "chartBottomMargin": "10",
-                                    "xAxisNameFontSize": "14",
-                                    "labelFontSize": "12",
-                                    "labelFontColor": "#716e6e",
-                                    "xAxisNameFontColor": "#716e6e",
-                                    "yAxisNameFontSize": "14",
-                                    "yAxisValueFontSize": "12",
-                                    "yAxisValueFontColor": "#716e6e",
-                                    "yAxisNameFontColor": "#716e6e"
-                                  }
-                                }
-                              },
+                              "customFusionChartConfig": "{{chartData.CustomerDemand()}}",
                               "key": "f2fx271y27",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
@@ -600,7 +557,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "xAxisName": "Popular Items",
                               "originalBottomRow": 53,
-                              "chartType": "LINE_CHART",
+                              "chartType": "CUSTOM_FUSION_CHART",
                               "alignment": "start"
                             }
                           ],
@@ -774,7 +731,7 @@
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "whp3mkdcvz",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "defaultTab": "Inventory Stock",
+                      "defaultTab": "Customer Demand",
                       "shouldShowTabs": true,
                       "minWidth": 450,
                       "tabsObj": {
@@ -1473,6 +1430,14 @@
             {
               "id": "Dashboard_ShowProductList",
               "name": "ShowProductList",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_forecastOutgoingStocksData",
+              "name": "forecastOutgoingStocksData",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
