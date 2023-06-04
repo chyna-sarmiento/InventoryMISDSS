@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "navigateToProducts",
+    "name": "dashboardFunctions",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Dashboard_navigateToProducts",
+  "id": "Dashboard_dashboardFunctions",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_647c72b815d4df259dd6b611"
 }

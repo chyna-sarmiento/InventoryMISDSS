@@ -45,7 +45,9 @@ export default {
 		 .sort((a, b) => a.value - b.value);
 
 		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
-
+		const userWarningThreshold = input_WarningThreshold.isValid ? (input_WarningThreshold.inputText || 10) : 10;
+		const userRestockThreshold = input_RestockThreshold.isValid ? (input_RestockThreshold.inputText || 5) : 5;
+		
 		const outputDataSource = {
 			type: "mscombi2d",
 			dataSource: {
@@ -73,7 +75,7 @@ export default {
 				}],
 				trendlines: [{
 					line: [{
-						startvalue: "10",
+						startvalue: userWarningThreshold,
 						endvalue: "",
 						color: "#fde047",
 						displayvalue: "Warning",
@@ -83,7 +85,7 @@ export default {
 						alpha: "80"
 					},
 								 {
-									 startvalue: "5",
+									 startvalue: userRestockThreshold,
 									 endvalue: "",
 									 color: "#ef4444",
 									 displayvalue: "Restock ASAP",
