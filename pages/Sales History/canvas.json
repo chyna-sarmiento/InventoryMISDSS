@@ -10,7 +10,7 @@
           "mobileBottomRow": 2567,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 582,
+          "bottomRow": 1687.0000000000005,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -609,7 +609,7 @@
                               "iconName": "trash",
                               "widgetId": "uqb2z86e3r",
                               "minWidth": 120,
-                              "isVisible": true,
+                              "isVisible": false,
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "0u593zdaql",
@@ -781,7 +781,7 @@
               "boxShadow": "none",
               "mobileBottomRow": 4,
               "widgetName": "btn_AddOutgoingStock",
-              "onClick": "{{showModal('mdl_AddOutgoingStock');}}",
+              "onClick": "",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -813,7 +813,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.13163481953291,
+              "rightColumn": 11.191035218783352,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -857,9 +857,6 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
@@ -870,9 +867,6 @@
                 },
                 {
                   "key": "primaryColumns.totalPrice.computedValue"
-                },
-                {
-                  "key": "primaryColumns.product.computedValue"
                 },
                 {
                   "key": "primaryColumns.outgoingProductId.computedValue"
@@ -1186,7 +1180,7 @@
                   "label": "Product Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => (  ShowProductList.data.find(product => product.id === currentRow['outgoingProductId'])?.displayName ))}}",
+                  "computedValue": "",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1222,7 +1216,7 @@
                   "cellBackground": ""
                 }
               },
-              "onRowSelected": "{{showModal('mdl_EditOutgoingDetails');}}",
+              "onRowSelected": "",
               "key": "fdoz8o390s",
               "canFreezeColumn": true,
               "isDeprecated": false,
@@ -1231,7 +1225,7 @@
               "widgetId": "e3hydespwn",
               "allowAddNewRow": false,
               "minWidth": 450,
-              "tableData": "{{ShowOutgoingStocks.data}}",
+              "tableData": "",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -2737,9 +2731,7 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Sales History_ShowProductList",
               "name": "ShowProductList",

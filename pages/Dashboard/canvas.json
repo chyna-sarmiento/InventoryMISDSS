@@ -531,9 +531,6 @@
                         },
                         {
                           "key": "validation"
-                        },
-                        {
-                          "key": "minNum"
                         }
                       ],
                       "labelStyle": "",
@@ -546,7 +543,7 @@
                       "showStepArrows": false,
                       "isVisible": true,
                       "version": 2,
-                      "minNum": "{{input_RestockThreshold.inputText+1}}",
+                      "minNum": "",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "alignment": "start",
