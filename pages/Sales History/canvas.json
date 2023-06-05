@@ -257,7 +257,7 @@
                               ],
                               "labelTooltip": "Cannot find product? You must add the product first.",
                               "options": "{{ShowProductList.data.map(p => ({label: p.displayName, value: p.id}))}}",
-                              "placeholderText": "Select Product",
+                              "placeholderText": "",
                               "isDisabled": false,
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
@@ -594,7 +594,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.653669724770637,
+                              "leftColumn": 21.65366972477064,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -813,7 +813,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.13163481953291,
+              "rightColumn": 11.191035218783352,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -881,6 +881,9 @@
                   "key": "primaryColumns.dateTimeOutgoing.outputFormat"
                 },
                 {
+                  "key": "primaryColumns.outgoingProductId.computedValue"
+                },
+                {
                   "key": "primaryColumns.productName.computedValue"
                 }
               ],
@@ -921,7 +924,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685986173002,
+              "columnUpdatedAt": 1685991481514,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -932,11 +935,12 @@
               "columnOrder": [
                 "id",
                 "dateTimeOutgoing",
-                "productName",
                 "quantity",
+                "productName",
                 "productPrice",
                 "totalPrice",
-                "lastUpdated"
+                "lastUpdated",
+                "outgoingProductId"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -952,10 +956,12 @@
                 "TotalPrice": 249,
                 "SaleTime": 150,
                 "SaleDate": 150,
-                "totalPrice": 112,
+                "totalPrice": 124,
                 "dateTimeOutgoing": 200,
                 "product": 297,
-                "lastUpdated": 193
+                "lastUpdated": 193,
+                "quantity": 104,
+                "productPrice": 82
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -1155,10 +1161,40 @@
                   "outputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
                   "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ"
                 },
+                "outgoingProductId": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "outgoingProductId",
+                  "id": "outgoingProductId",
+                  "alias": "outgoingProductId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "outgoingProductId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"outgoingProductId\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
                 "productName": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
-                  "index": 2,
+                  "index": 3,
                   "width": 150,
                   "originalId": "productName",
                   "id": "productName",
@@ -1186,7 +1222,7 @@
                   "cellBackground": ""
                 }
               },
-              "onRowSelected": "{{showModal('mdl_EditOutgoingDetails');}}",
+              "onRowSelected": "{{ShowProductList.run().then(() => {\n  showModal('mdl_EditOutgoingDetails');\n}).catch(() => {\n  showAlert('Error fetching ShowProductList.', 'error');\n});}}",
               "key": "fdoz8o390s",
               "canFreezeColumn": true,
               "isDeprecated": false,
