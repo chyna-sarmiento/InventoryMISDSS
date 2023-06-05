@@ -10,7 +10,7 @@
           "mobileBottomRow": 2567,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 582,
+          "bottomRow": 1687.0000000000005,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -594,7 +594,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.65366972477064,
+                              "leftColumn": 21.653669724770637,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -813,7 +813,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.191035218783352,
+              "rightColumn": 11.13163481953291,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -924,7 +924,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685991481514,
+              "columnUpdatedAt": 1685992425570,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -993,7 +993,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
