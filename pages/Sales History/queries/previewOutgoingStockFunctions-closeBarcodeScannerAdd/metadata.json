@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_previewOutgoingStockFunctions",
+    "collectionId": "647dfab78b0aaa6cdbba7dd7",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
