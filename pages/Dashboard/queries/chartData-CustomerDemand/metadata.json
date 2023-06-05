@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getLastSelectedRow",
-    "fullyQualifiedName": "previewOutgoingStockFunctions.getLastSelectedRow",
+    "name": "CustomerDemand",
+    "fullyQualifiedName": "chartData.CustomerDemand",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,14 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Sales History",
-    "collectionId": "647dfab78b0aaa6cdbba7dd7",
+    "pageId": "Dashboard",
+    "collectionId": "Dashboard_chartData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "table"
-        }
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -41,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_previewOutgoingStockFunctions.getLastSelectedRow",
+  "id": "Dashboard_chartData.CustomerDemand",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6479f4f115d4df259dd697e2"
+  "gitSyncId": "6439874f26013158789b34e6_647caab515d4df259dd6b744"
 }
