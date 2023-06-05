@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "clear",
-    "fullyQualifiedName": "previewOutgoingStockFunctions.clear",
+    "fullyQualifiedName": "previewOutgoingStockFunctionsx.clear",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_previewOutgoingStockFunctions",
+    "collectionId": "Sales History_previewOutgoingStockFunctionsx",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_previewOutgoingStockFunctions.clear",
+  "id": "Sales History_previewOutgoingStockFunctionsx.clear",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_64774fa1948d2172037901d1"
+  "gitSyncId": "647dfab68b0aaa6cdbba7da4_647e016c05d8736bde286ae1"
 }

@@ -609,7 +609,7 @@
                               "iconName": "trash",
                               "widgetId": "uqb2z86e3r",
                               "minWidth": 120,
-                              "isVisible": true,
+                              "isVisible": false,
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "0u593zdaql",
@@ -813,7 +813,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.13163481953291,
+              "rightColumn": 11.191035218783352,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -1668,14 +1668,14 @@
                               "responsiveBehavior": "fill",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
-                              "onOptionChange": "{{ShowProductDetailsId.run();}}",
+                              "onOptionChange": "",
                               "minDynamicHeight": 4
                             },
                             {
                               "boxShadow": "none",
                               "mobileBottomRow": 24.625,
                               "widgetName": "btn_AddProductPreview",
-                              "onClick": "{{previewOutgoingStockFunctions.add(ShowProductDetailsId.data);\nresetWidget(\"input_outgoingQuantity\", true);\nresetWidget(\"input_SearchProduct\", true);\npreviewOutgoingStockFunctions.resetOutgoingDateTime();}}",
+                              "onClick": "{{previewOutgoingStockFunctionsx.add();}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1751,12 +1751,6 @@
                                   "key": "tableData"
                                 },
                                 {
-                                  "key": "primaryColumns.barcodeId.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.price.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.productName.computedValue"
                                 },
                                 {
@@ -1791,9 +1785,6 @@
                                 },
                                 {
                                   "key": "primaryColumns.customColumn4.boxShadow"
-                                },
-                                {
-                                  "key": "primaryColumns.id.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.outgoingDateTime.computedValue"
@@ -1835,7 +1826,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1685861023378,
+                              "columnUpdatedAt": 1685980053998,
                               "defaultSelectedRowIndices": [
                                 0
                               ],
@@ -1844,15 +1835,12 @@
                               "widgetName": "tbl_OutgoingPreview",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "id",
                                 "customColumn1",
                                 "customColumn2",
                                 "customColumn4",
                                 "quantity",
                                 "outgoingDateTime",
-                                "barcodeId",
                                 "productName",
-                                "price",
                                 "customColumn3",
                                 "EditActions1"
                               ],
@@ -1900,66 +1888,6 @@
                               ],
                               "borderWidth": "1",
                               "primaryColumns": {
-                                "barcodeId": {
-                                  "allowCellWrapping": false,
-                                  "allowSameOptionsInNewRow": true,
-                                  "index": 1,
-                                  "width": 150,
-                                  "originalId": "barcodeId",
-                                  "id": "barcodeId",
-                                  "alias": "barcodeId",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Barcode ID",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{tbl_OutgoingPreview.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"barcodeId\"]))}}",
-                                  "sticky": "",
-                                  "validation": {},
-                                  "cellBackground": ""
-                                },
-                                "price": {
-                                  "allowCellWrapping": false,
-                                  "allowSameOptionsInNewRow": true,
-                                  "index": 6,
-                                  "width": 150,
-                                  "originalId": "price",
-                                  "id": "price",
-                                  "alias": "price",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Price",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{tbl_OutgoingPreview.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
-                                  "sticky": "",
-                                  "validation": {},
-                                  "cellBackground": ""
-                                },
                                 "productName": {
                                   "allowCellWrapping": false,
                                   "allowSameOptionsInNewRow": true,
@@ -2194,36 +2122,6 @@
                                   "iconName": "trash",
                                   "buttonVariant": "PRIMARY",
                                   "onClick": "{{previewAddRemoveQuantity.deleteProduct(tbl_OutgoingPreview.selectedRowIndex);}}"
-                                },
-                                "id": {
-                                  "allowCellWrapping": false,
-                                  "allowSameOptionsInNewRow": true,
-                                  "index": 1,
-                                  "width": 150,
-                                  "originalId": "id",
-                                  "id": "id",
-                                  "alias": "id",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "number",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "id",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{tbl_OutgoingPreview.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
-                                  "sticky": "",
-                                  "validation": {},
-                                  "cellBackground": ""
                                 },
                                 "outgoingDateTime": {
                                   "allowCellWrapping": false,

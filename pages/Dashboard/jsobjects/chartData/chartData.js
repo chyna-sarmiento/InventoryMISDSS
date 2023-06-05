@@ -11,7 +11,7 @@ export default {
 			type: "mscombi2d",
 			dataSource: {
 				chart: {
-					caption: "Customer Demand",
+					caption: "Demand",
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yaxismaxvalue: maxBarValue,

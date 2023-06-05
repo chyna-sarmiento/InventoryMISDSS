@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "previewOutgoingStockFunctions",
+    "name": "previewOutgoingStockFunctionsx",
     "pageId": "Sales History",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -14,15 +14,11 @@
       {
         "name": "totalPrice",
         "value": "''"
-      },
-      {
-        "name": "prev",
-        "value": "prev"
       }
     ],
     "userPermissions": []
   },
-  "id": "Sales History_previewOutgoingStockFunctions",
+  "id": "Sales History_previewOutgoingStockFunctionsx",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6476dfdf948d21720378ef2e"
+  "gitSyncId": "647dfab68b0aaa6cdbba7da4_647e0121cca1cc02dce695cb"
 }
