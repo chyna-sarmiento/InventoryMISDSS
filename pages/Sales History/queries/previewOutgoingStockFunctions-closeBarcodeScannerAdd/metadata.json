@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "deleteProduct",
-    "fullyQualifiedName": "previewAddRemoveQuantity.deleteProduct",
+    "name": "closeBarcodeScannerAdd",
+    "fullyQualifiedName": "previewOutgoingStockFunctions.closeBarcodeScannerAdd",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,17 +14,13 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_previewAddRemoveQuantity",
+    "collectionId": "647dfab78b0aaa6cdbba7dd7",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "index"
-        }
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -41,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_previewAddRemoveQuantity.deleteProduct",
+  "id": "Sales History_previewOutgoingStockFunctions.closeBarcodeScannerAdd",
   "deleted": false,
-  "gitSyncId": "647dfab68b0aaa6cdbba7da4_647dfac5cca1cc02dce69550"
+  "gitSyncId": "6439874f26013158789b34e6_64784a9c5cd3533baed4fc53"
 }

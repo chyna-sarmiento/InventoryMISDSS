@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "deleteProduct",
-    "fullyQualifiedName": "previewAddRemoveQuantity.deleteProduct",
+    "name": "getLastSelectedRow",
+    "fullyQualifiedName": "previewOutgoingStockFunctionsx.getLastSelectedRow",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_previewAddRemoveQuantity",
+    "collectionId": "Sales History_previewOutgoingStockFunctionsx",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "index"
+          "name": "table"
         }
       ],
       "isAsync": false
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_previewAddRemoveQuantity.deleteProduct",
+  "id": "Sales History_previewOutgoingStockFunctionsx.getLastSelectedRow",
   "deleted": false,
-  "gitSyncId": "647dfab68b0aaa6cdbba7da4_647dfac5cca1cc02dce69550"
+  "gitSyncId": "647dfab68b0aaa6cdbba7da4_647e016c05d8736bde286ada"
 }

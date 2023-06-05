@@ -40,12 +40,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
   "id": "Sales History_ShowOutgoingStocks",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_647d7b43f77e3a3543316e08"
+  "gitSyncId": "6439874f26013158789b34e6_647c904b8ab22b5e2e93af64"
 }

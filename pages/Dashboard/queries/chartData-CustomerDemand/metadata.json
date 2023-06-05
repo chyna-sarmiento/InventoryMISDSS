@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "deleteProduct",
-    "fullyQualifiedName": "previewAddRemoveQuantity.deleteProduct",
+    "name": "CustomerDemand",
+    "fullyQualifiedName": "chartData.CustomerDemand",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,14 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Sales History",
-    "collectionId": "Sales History_previewAddRemoveQuantity",
+    "pageId": "Dashboard",
+    "collectionId": "Dashboard_chartData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "index"
-        }
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -41,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_previewAddRemoveQuantity.deleteProduct",
+  "id": "Dashboard_chartData.CustomerDemand",
   "deleted": false,
-  "gitSyncId": "647dfab68b0aaa6cdbba7da4_647dfac5cca1cc02dce69550"
+  "gitSyncId": "6439874f26013158789b34e6_647caab515d4df259dd6b744"
 }
