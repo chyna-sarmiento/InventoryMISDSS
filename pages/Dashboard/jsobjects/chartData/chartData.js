@@ -1,5 +1,5 @@
 export default {
-	CustomerDemand() {
+	Demand() {
 		const barData = forecastOutgoingStocksData.data
 		.filter(p => p.outgoingDemandVolume >= 5)
 		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
