@@ -10,7 +10,7 @@
           "mobileBottomRow": 2567,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1687.0000000000005,
+          "bottomRow": 582,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -872,12 +872,6 @@
                   "key": "primaryColumns.totalPrice.computedValue"
                 },
                 {
-                  "key": "primaryColumns.product.computedValue"
-                },
-                {
-                  "key": "primaryColumns.outgoingProductId.computedValue"
-                },
-                {
                   "key": "primaryColumns.dateTimeOutgoing.computedValue"
                 },
                 {
@@ -885,6 +879,9 @@
                 },
                 {
                   "key": "primaryColumns.dateTimeOutgoing.outputFormat"
+                },
+                {
+                  "key": "primaryColumns.productName.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -924,7 +921,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685861023362,
+              "columnUpdatedAt": 1685986173002,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -935,9 +932,8 @@
               "columnOrder": [
                 "id",
                 "dateTimeOutgoing",
+                "productName",
                 "quantity",
-                "product",
-                "outgoingProductId",
                 "productPrice",
                 "totalPrice",
                 "lastUpdated"
@@ -1159,14 +1155,14 @@
                   "outputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
                   "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ"
                 },
-                "product": {
+                "productName": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
-                  "index": 6,
+                  "index": 2,
                   "width": 150,
-                  "originalId": "product",
-                  "id": "product",
-                  "alias": "product",
+                  "originalId": "productName",
+                  "id": "productName",
+                  "alias": "productName",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -1184,37 +1180,7 @@
                   "label": "Product Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => (  ShowProductList.data.find(product => product.id === currentRow['outgoingProductId'])?.displayName ))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "outgoingProductId": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 7,
-                  "width": 150,
-                  "originalId": "outgoingProductId",
-                  "id": "outgoingProductId",
-                  "alias": "outgoingProductId",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "outgoingProductId",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"outgoingProductId\"]))}}",
+                  "computedValue": "{{tbl_ListSales.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"productName\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1229,7 +1195,7 @@
               "widgetId": "e3hydespwn",
               "allowAddNewRow": false,
               "minWidth": 450,
-              "tableData": "{{ShowOutgoingStocks.data}}",
+              "tableData": "{{ShowOutgoingList.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -2729,8 +2695,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Sales History_ShowOutgoingStocks",
-              "name": "ShowOutgoingStocks",
+              "id": "Sales History_ShowProductList",
+              "name": "ShowProductList",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
@@ -2739,8 +2705,8 @@
           ],
           [
             {
-              "id": "Sales History_ShowProductList",
-              "name": "ShowProductList",
+              "id": "Sales History_ShowOutgoingList",
+              "name": "ShowOutgoingList",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
