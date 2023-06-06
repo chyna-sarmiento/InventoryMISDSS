@@ -43,7 +43,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-05-29T18:53:02Z"
   },
   "id": "Dashboard_ShowOutgoingStocks",
   "deleted": false,
