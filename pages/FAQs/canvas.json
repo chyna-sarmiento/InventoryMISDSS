@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Survey",
-    "slug": "survey",
+    "name": "FAQs",
+    "slug": "faqs",
     "layouts": [
       {
         "viewMode": false,
@@ -9,7 +9,7 @@
           "mobileBottomRow": 640,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1100,
+          "bottomRow": 620,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -23,17 +23,17 @@
               "mobileWidthInPercentage": 0.9768115942028985,
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "mobileBottomRow": 56,
-              "widgetName": "frame_SystemSurvey",
+              "widgetName": "iframe_UserGuide",
               "widthInPercentage": 0.991578947368421,
               "displayName": "Iframe",
-              "iconSVG": "/static/media/icon.34169b6acebc8ace125dd1f638974aae.svg",
+              "iconSVG": "/static/media/icon.19c3fa45ba777cc28a04f390d5703b53.svg",
               "searchTags": [
                 "embed"
               ],
               "topRow": 0,
-              "bottomRow": 102,
+              "bottomRow": 49,
               "parentRowSpace": 10,
-              "source": "https://forms.gle/A3usX3WUzasmzE678",
+              "source": "https://scribehow.com/page/User_Guide__InventoryMISDSS__DZcSV74mRceBp-i9KoyL7Q",
               "type": "IFRAME_WIDGET",
               "hideCard": false,
               "mobileRightColumn": 64,
@@ -51,10 +51,10 @@
                 }
               ],
               "borderWidth": 1,
-              "key": "afl2452xzb",
+              "key": "pbx3wga72l",
               "isDeprecated": false,
               "rightColumn": 64,
-              "widgetId": "2rtlxofk7z",
+              "widgetId": "sb4q64uv6o",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
@@ -82,7 +82,7 @@
             {
               "children": [
                 {
-                  "id": "2rtlxofk7z",
+                  "id": "sb4q64uv6o",
                   "align": "start"
                 }
               ]
@@ -92,7 +92,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Survey",
+        "id": "FAQs",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -103,5 +103,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_64759707126ea252bfe4a939"
+  "gitSyncId": "6439874f26013158789b34e6_647f85afae88102ee9fcd6b2"
 }
