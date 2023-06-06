@@ -1,6 +1,6 @@
 export default {
 	refreshOnAdd() {
-		{{ ShowOutgoingStocks.run(() => {}, () => {}) }}
+		{{ ShowOutgoingList.run(() => {}, () => {}) }}
 	},
 	addOutgoingEntries: [],
 	createAddOutgoingEntriesStore() {
