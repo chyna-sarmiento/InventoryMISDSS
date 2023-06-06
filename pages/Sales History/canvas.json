@@ -924,7 +924,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685992425570,
+              "columnUpdatedAt": 1686039884591,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -993,7 +993,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
