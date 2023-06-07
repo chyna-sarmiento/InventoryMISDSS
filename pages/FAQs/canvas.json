@@ -6,7 +6,7 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 640,
+          "mobileBottomRow": 630,
           "widgetName": "MainContainer",
           "topRow": 0,
           "bottomRow": 620,
@@ -22,7 +22,7 @@
             {
               "mobileWidthInPercentage": 0.9768115942028985,
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "mobileBottomRow": 56,
+              "mobileBottomRow": 55,
               "widgetName": "iframe_UserGuide",
               "widthInPercentage": 0.991578947368421,
               "displayName": "Iframe",
