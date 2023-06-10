@@ -10,7 +10,7 @@
           "mobileBottomRow": 1077,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 716,
+          "bottomRow": 786.75,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -34,7 +34,7 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 8.4,
+              "bottomRow": 8,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -55,7 +55,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 84,
+                  "bottomRow": 80,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -80,7 +80,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 6.4,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -104,7 +104,7 @@
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 64,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -126,7 +126,7 @@
                                 "label"
                               ],
                               "topRow": 0,
-                              "bottomRow": 4.4,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -284,8 +284,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 9.6,
-              "bottomRow": 71.6,
+              "topRow": 9.2,
+              "bottomRow": 70.675,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -306,7 +306,7 @@
                   "mobileBottomRow": 847,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 579.9999999999999,
+                  "bottomRow": 574.75,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -334,7 +334,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 13.8,
+                      "bottomRow": 13.275000000000002,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -355,7 +355,7 @@
                           "widgetName": "Canvas9CopyCopy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 138,
+                          "bottomRow": 132.75000000000003,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -374,7 +374,7 @@
                               "labelWidth": 5,
                               "type": "DATE_PICKER_WIDGET2",
                               "animateLoading": true,
-                              "leftColumn": 5.23517382413088,
+                              "leftColumn": 5.739910313901345,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "accentColor"
@@ -416,7 +416,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 11.8,
+                              "bottomRow": 11.275,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -476,7 +476,7 @@
                               "isDisabled": false,
                               "key": "vbtgd3ik4f",
                               "isDeprecated": false,
-                              "rightColumn": 5.23517382413088,
+                              "rightColumn": 5.739910313901345,
                               "iconName": "chevron-left",
                               "widgetId": "0qyzxfr3vp",
                               "minWidth": 50,
@@ -600,7 +600,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 11.8,
+                              "bottomRow": 11.275,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -612,7 +612,7 @@
                               "labelTextSize": "0.875rem",
                               "defaultDate": "{{moment(input_CurrentDemandStartDate.selectedDate).add(6, 'days')}}",
                               "isDeprecated": false,
-                              "rightColumn": 58.76482617586912,
+                              "rightColumn": 58.26008968609865,
                               "widgetId": "zb7mgp9f1d",
                               "minWidth": 450,
                               "label": "Set End Week*",
@@ -647,7 +647,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.8984375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 58.76482617586912,
+                              "leftColumn": 58.26008968609865,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -757,7 +757,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 13.8,
+                      "bottomRow": 13.275000000000002,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -778,7 +778,7 @@
                           "widgetName": "Canvas9Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 138,
+                          "bottomRow": 132.75000000000003,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -898,7 +898,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 11.8,
+                              "bottomRow": 11.275,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -974,7 +974,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 11.8,
+                              "bottomRow": 11.275,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -1077,8 +1077,8 @@
                         "visuals",
                         "visualisations"
                       ],
-                      "topRow": 15,
-                      "bottomRow": 56,
+                      "topRow": 14.475000000000001,
+                      "bottomRow": 55.475,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -1192,7 +1192,7 @@
                   "mobileBottomRow": 1052.5,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 699.5,
+                  "bottomRow": 719.5,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
