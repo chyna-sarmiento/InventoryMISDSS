@@ -10,7 +10,7 @@
           "mobileBottomRow": 1077,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 838.75,
+          "bottomRow": 758.75,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -323,7 +323,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 29.35,
-                      "widgetName": "cont_CurrentDemandDates",
+                      "widgetName": "cont_DemandCurrentDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "Container",
@@ -352,7 +352,7 @@
                       "children": [
                         {
                           "mobileBottomRow": 293.5,
-                          "widgetName": "Canvas9CopyCopy",
+                          "widgetName": "canvasCont_DemandCurrent",
                           "displayName": "Canvas",
                           "topRow": 0,
                           "bottomRow": 184.74999999999997,
@@ -369,7 +369,7 @@
                             {
                               "boxShadow": "none",
                               "mobileBottomRow": 8.8,
-                              "widgetName": "btn_CurrentDemandLastWeek",
+                              "widgetName": "btn_DemandCurrentLastWeek",
                               "onClick": "",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
@@ -441,7 +441,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{moment(input_CurrentDemandStartDate.selectedDate).startOf('week').tz(moment.tz.guess()).format()}}",
+                              "onDateSelected": "{{moment(input_DemandCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format()}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -455,7 +455,7 @@
                               "closeOnSelection": true,
                               "alignment": "start",
                               "mobileBottomRow": 15.675,
-                              "widgetName": "input_CurrentDemandStartDate",
+                              "widgetName": "input_DemandCurrentDate",
                               "minDate": "",
                               "dynamicPropertyPathList": [
                                 {
@@ -511,7 +511,7 @@
                             },
                             {
                               "mobileBottomRow": 4,
-                              "widgetName": "title_CurrentDemandDates",
+                              "widgetName": "title_DemandCurrentDates",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -570,7 +570,7 @@
                             },
                             {
                               "mobileBottomRow": 6,
-                              "widgetName": "txt_CurrentForecastWeek",
+                              "widgetName": "txt_DemandCurrentWeek",
                               "dynamicPropertyPathList": [],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
@@ -607,7 +607,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{moment(input_CurrentDemandStartDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')}}   to   {{moment.tz(moment(input_CurrentDemandStartDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY')}}",
+                              "text": "{{moment(input_DemandCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')}}   to   {{moment.tz(moment(input_DemandCurrentDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY')}}",
                               "key": "t6v8qpq9yl",
                               "isDeprecated": false,
                               "rightColumn": 58.26008968609865,
@@ -634,8 +634,8 @@
                             {
                               "boxShadow": "none",
                               "mobileBottomRow": 27.35,
-                              "widgetName": "btn_CurrentDemandNextWeek",
-                              "onClick": "{{input_CurrentDemandStartDate.selectedDate = moment(input_CurrentDemandStartDate.selectedDate).add(7, 'days')}}",
+                              "widgetName": "btn_DemandCurrentNextWeek",
+                              "onClick": "",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -764,7 +764,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 49.900000000000006,
-                      "widgetName": "cont_ForecastDemandDates",
+                      "widgetName": "cont_DemandForecastDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "Container",
@@ -793,7 +793,7 @@
                       "children": [
                         {
                           "mobileBottomRow": 197.5,
-                          "widgetName": "Canvas9Copy",
+                          "widgetName": "canvasCont_DemandForecast",
                           "displayName": "Canvas",
                           "topRow": 0,
                           "bottomRow": 184.75,
@@ -809,7 +809,7 @@
                           "children": [
                             {
                               "mobileBottomRow": 4,
-                              "widgetName": "title_ForecastDemandDates",
+                              "widgetName": "title_DemandForecastDates",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -905,7 +905,7 @@
                               "closeOnSelection": true,
                               "alignment": "start",
                               "mobileBottomRow": 10.875,
-                              "widgetName": "input_ForecastDemandStartDate",
+                              "widgetName": "input_DemandForecastDate",
                               "minDate": "{{moment().startOf('week')}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -932,7 +932,7 @@
                               "labelPosition": "Top",
                               "key": "0x7wpgbamw",
                               "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment().startOf('week')}}",
+                              "defaultDate": "{{moment()}}",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "widgetId": "jmhr9fd7ov",
@@ -946,7 +946,7 @@
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
                               "firstDayOfWeek": "0",
-                              "maxDate": "{{moment(input_ForecastDemandStartDate.selectedDate).add(7, 'days')}}",
+                              "maxDate": "{{moment(input_DemandForecastDate.selectedDate).add(7, 'days')}}",
                               "minDynamicHeight": 4
                             },
                             {
@@ -987,7 +987,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{moment(input_ForecastDemandStartDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')}}   to   {{moment.tz(moment(input_ForecastDemandStartDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY')}}",
+                              "text": "{{moment(input_DemandForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')}}   to   {{moment.tz(moment(input_DemandForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY')}}",
                               "key": "xu6piyt8ja",
                               "isDeprecated": false,
                               "rightColumn": 64,
@@ -1206,7 +1206,7 @@
                   "mobileBottomRow": 1052.5,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 719.5,
+                  "bottomRow": 751.5,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1222,6 +1222,764 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "mobileBottomRow": 29.35,
+                      "widgetName": "cont_StockCurrentDates",
+                      "borderColor": "#E0DEDE",
+                      "isCanvas": true,
+                      "displayName": "Container",
+                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+                      "searchTags": [
+                        "div",
+                        "parent",
+                        "group"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 18.474999999999998,
+                      "parentRowSpace": 10,
+                      "type": "CONTAINER_WIDGET",
+                      "hideCard": false,
+                      "shouldScrollContents": true,
+                      "mobileRightColumn": 64,
+                      "animateLoading": true,
+                      "parentColumnSpace": 14.359375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "mobileBottomRow": 293.5,
+                          "widgetName": "Canvas9CopyCopyCopy",
+                          "displayName": "Canvas",
+                          "topRow": 0,
+                          "bottomRow": 184.74999999999997,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 100,
+                          "mobileRightColumn": 64,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [],
+                          "children": [
+                            {
+                              "boxShadow": "none",
+                              "mobileBottomRow": 8.8,
+                              "widgetName": "btn_StockCurrentLastWeek",
+                              "onClick": "",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 12.474999999999998,
+                              "bottomRow": 16.474999999999998,
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 8.284789644012944,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.8984375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "vbtgd3ik4f",
+                              "isDeprecated": false,
+                              "rightColumn": 5.739910313901345,
+                              "iconName": "chevron-left",
+                              "widgetId": "9rwt164vrz",
+                              "minWidth": 50,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "sn1qy48vdt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 4.8,
+                              "responsiveBehavior": "hug",
+                              "borderRadius": "0.375rem",
+                              "mobileLeftColumn": 0,
+                              "buttonVariant": "PRIMARY",
+                              "alignment": "start"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "dateFormat": "D MMMM, YYYY",
+                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                              "topRow": 5.2,
+                              "labelWidth": 5,
+                              "type": "DATE_PICKER_WIDGET2",
+                              "animateLoading": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "maxDate"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "onDateSelected": "{{moment(input_StockCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format()}}",
+                              "isRequired": true,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "datePickerType": "DATE_PICKER",
+                              "version": 2,
+                              "onFocus": "{{ShowOutgoingStocks.run()}}",
+                              "isLoading": false,
+                              "timePrecision": "None",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "closeOnSelection": true,
+                              "alignment": "start",
+                              "mobileBottomRow": 15.675,
+                              "widgetName": "input_StockCurrentDate",
+                              "minDate": "",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "maxDate"
+                                },
+                                {
+                                  "key": "minDate"
+                                },
+                                {
+                                  "key": "onDateSelected"
+                                }
+                              ],
+                              "displayName": "DatePicker",
+                              "searchTags": [
+                                "calendar"
+                              ],
+                              "bottomRow": 11.274999999999999,
+                              "shortcuts": false,
+                              "parentRowSpace": 10,
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "parentColumnSpace": 14.359375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onFocus"
+                                },
+                                {
+                                  "key": "onDateSelected"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "key": "0x7wpgbamw",
+                              "labelTextSize": "0.875rem",
+                              "defaultDate": "{{moment()}}",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "n2unhmkzju",
+                              "minWidth": 450,
+                              "label": "Set Date*",
+                              "parentId": "sn1qy48vdt",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "mobileTopRow": 9.600000000000001,
+                              "responsiveBehavior": "fill",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "firstDayOfWeek": "0",
+                              "maxDate": "{{moment()}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "mobileBottomRow": 4,
+                              "widgetName": "title_StockCurrentDates",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 6.8984375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "Weekly Current Date",
+                              "key": "qz8doi9fr3",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "g0tuxg2r2o",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "sn1qy48vdt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 0,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "fontSize": "1.25rem",
+                              "alignment": "start",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "mobileBottomRow": 6,
+                              "widgetName": "txt_StockCurrentForecastWeek",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 12.474999999999998,
+                              "bottomRow": 16.474999999999998,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 6.90625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 5.739910313901345,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "{{moment(input_StockCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')}}   to   {{moment.tz(moment(input_StockCurrentDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY')}}",
+                              "key": "t6v8qpq9yl",
+                              "isDeprecated": false,
+                              "rightColumn": 58.26008968609865,
+                              "textAlign": "CENTER",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "6wm607e8og",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "sn1qy48vdt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 2,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "fontSize": "1.25rem",
+                              "alignment": "start",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "mobileBottomRow": 27.35,
+                              "widgetName": "btn_StockCurrentNextWeek",
+                              "onClick": "",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 12.474999999999998,
+                              "bottomRow": 16.474999999999998,
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 8.284789644012944,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.8984375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 58.26008968609865,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "vbtgd3ik4f",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "iconName": "chevron-right",
+                              "widgetId": "szye4xpkvh",
+                              "minWidth": 50,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "sn1qy48vdt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 23.35,
+                              "responsiveBehavior": "hug",
+                              "borderRadius": "0.375rem",
+                              "mobileLeftColumn": 0,
+                              "buttonVariant": "PRIMARY",
+                              "alignment": "start"
+                            }
+                          ],
+                          "key": "9f7ns7oio1",
+                          "isDeprecated": false,
+                          "rightColumn": 64,
+                          "detachFromLayout": true,
+                          "widgetId": "sn1qy48vdt",
+                          "containerStyle": "none",
+                          "minWidth": 450,
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "y6x538jihr",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "mobileTopRow": 0,
+                          "responsiveBehavior": "fill",
+                          "mobileLeftColumn": 0,
+                          "flexLayers": [
+                            {
+                              "children": [
+                                {
+                                  "id": "g0tuxg2r2o",
+                                  "align": "start"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "n2unhmkzju",
+                                  "align": "start"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "9rwt164vrz",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "6wm607e8og",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "szye4xpkvh",
+                                  "align": "start"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "borderWidth": "1",
+                      "flexVerticalAlignment": "start",
+                      "key": "ed4z0xu1ou",
+                      "backgroundColor": "#FFFFFF",
+                      "isDeprecated": false,
+                      "rightColumn": 32,
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "y6x538jihr",
+                      "containerStyle": "card",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "rzeg30ta7h",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "mobileTopRow": 0,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "0.375rem",
+                      "mobileLeftColumn": 0,
+                      "maxDynamicHeight": 9000,
+                      "alignment": "start",
+                      "minDynamicHeight": 10
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "mobileBottomRow": 49.900000000000006,
+                      "widgetName": "cont_StockForecastDates",
+                      "borderColor": "#E0DEDE",
+                      "isCanvas": true,
+                      "displayName": "Container",
+                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+                      "searchTags": [
+                        "div",
+                        "parent",
+                        "group"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 18.475,
+                      "parentRowSpace": 10,
+                      "type": "CONTAINER_WIDGET",
+                      "hideCard": false,
+                      "shouldScrollContents": true,
+                      "mobileRightColumn": 64,
+                      "animateLoading": true,
+                      "parentColumnSpace": 14.359375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "mobileBottomRow": 197.5,
+                          "widgetName": "Canvas9CopyCopy1",
+                          "displayName": "Canvas",
+                          "topRow": 0,
+                          "bottomRow": 184.75,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 100,
+                          "mobileRightColumn": 64,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [],
+                          "children": [
+                            {
+                              "mobileBottomRow": 4,
+                              "widgetName": "title_StockForecastDates",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 6.8984375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "Weekly Forecast Date",
+                              "key": "qz8doi9fr3",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "textAlign": "LEFT",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "ku57xaq0a1",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "s7cvxvfzug",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 0,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "fontSize": "1.25rem",
+                              "alignment": "start",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "dateFormat": "D MMMM, YYYY",
+                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                              "topRow": 5.2,
+                              "labelWidth": 5,
+                              "type": "DATE_PICKER_WIDGET2",
+                              "animateLoading": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "minDate"
+                                },
+                                {
+                                  "key": "maxDate"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "datePickerType": "DATE_PICKER",
+                              "version": 2,
+                              "isLoading": false,
+                              "timePrecision": "None",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "closeOnSelection": true,
+                              "alignment": "start",
+                              "mobileBottomRow": 10.875,
+                              "widgetName": "input_StockForecastDate",
+                              "minDate": "{{moment().startOf('week')}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultDate"
+                                },
+                                {
+                                  "key": "minDate"
+                                },
+                                {
+                                  "key": "maxDate"
+                                }
+                              ],
+                              "displayName": "DatePicker",
+                              "searchTags": [
+                                "calendar"
+                              ],
+                              "bottomRow": 11.275,
+                              "shortcuts": false,
+                              "parentRowSpace": 10,
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "parentColumnSpace": 14.359375,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "0x7wpgbamw",
+                              "labelTextSize": "0.875rem",
+                              "defaultDate": "{{moment()}}",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "7bh299o1th",
+                              "minWidth": 450,
+                              "label": "Set Date*",
+                              "parentId": "s7cvxvfzug",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "mobileTopRow": 4.8,
+                              "responsiveBehavior": "fill",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "firstDayOfWeek": "0",
+                              "maxDate": "{{moment(input_DemandForecastDate.selectedDate).add(7, 'days')}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "mobileBottomRow": 14,
+                              "widgetName": "txt_StockForecastWeek",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 12.475000000000001,
+                              "bottomRow": 16.475,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 64,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 6.90625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "{{moment(input_StockForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')}}   to   {{moment.tz(moment(input_StockForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY')}}",
+                              "key": "xu6piyt8ja",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "textAlign": "CENTER",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "v9y3kuh6ll",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "s7cvxvfzug",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 10,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "fontSize": "1.25rem",
+                              "alignment": "start",
+                              "minDynamicHeight": 4
+                            }
+                          ],
+                          "key": "9f7ns7oio1",
+                          "isDeprecated": false,
+                          "rightColumn": 64,
+                          "detachFromLayout": true,
+                          "widgetId": "s7cvxvfzug",
+                          "containerStyle": "none",
+                          "minWidth": 450,
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "dhjnhg0f0o",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "mobileTopRow": 0,
+                          "responsiveBehavior": "fill",
+                          "mobileLeftColumn": 0,
+                          "flexLayers": [
+                            {
+                              "children": [
+                                {
+                                  "id": "ku57xaq0a1",
+                                  "align": "start"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "7bh299o1th",
+                                  "align": "start"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "v9y3kuh6ll",
+                                  "align": "start"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "borderWidth": "1",
+                      "flexVerticalAlignment": "start",
+                      "key": "ed4z0xu1ou",
+                      "backgroundColor": "#FFFFFF",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "dhjnhg0f0o",
+                      "containerStyle": "card",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "rzeg30ta7h",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "mobileTopRow": 30.150000000000002,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "0.375rem",
+                      "mobileLeftColumn": 0,
+                      "maxDynamicHeight": 9000,
+                      "alignment": "start",
+                      "minDynamicHeight": 10
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 82.7,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
@@ -1233,8 +1991,8 @@
                         "visuals",
                         "visualisations"
                       ],
-                      "topRow": 14.475000000000001,
-                      "bottomRow": 55.475,
+                      "topRow": 19.675,
+                      "bottomRow": 60.675,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -1305,750 +2063,6 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 29.35,
-                      "widgetName": "cont_CurrentStockDates",
-                      "borderColor": "#E0DEDE",
-                      "isCanvas": true,
-                      "displayName": "Container",
-                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
-                      "searchTags": [
-                        "div",
-                        "parent",
-                        "group"
-                      ],
-                      "topRow": 0,
-                      "bottomRow": 13.275000000000002,
-                      "parentRowSpace": 10,
-                      "type": "CONTAINER_WIDGET",
-                      "hideCard": false,
-                      "shouldScrollContents": true,
-                      "mobileRightColumn": 64,
-                      "animateLoading": true,
-                      "parentColumnSpace": 14.359375,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "boxShadow"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "mobileBottomRow": 293.5,
-                          "widgetName": "Canvas9CopyCopyCopy",
-                          "displayName": "Canvas",
-                          "topRow": 0,
-                          "bottomRow": 132.75000000000003,
-                          "parentRowSpace": 1,
-                          "type": "CANVAS_WIDGET",
-                          "canExtend": false,
-                          "hideCard": true,
-                          "minHeight": 100,
-                          "mobileRightColumn": 64,
-                          "parentColumnSpace": 1,
-                          "leftColumn": 0,
-                          "dynamicBindingPathList": [],
-                          "children": [
-                            {
-                              "boxShadow": "none",
-                              "dateFormat": "D MMMM, YYYY",
-                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 5.2,
-                              "labelWidth": 5,
-                              "type": "DATE_PICKER_WIDGET2",
-                              "animateLoading": true,
-                              "leftColumn": 9.678638941398866,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "maxDate"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "datePickerType": "DATE_PICKER",
-                              "version": 2,
-                              "onFocus": "{{ShowOutgoingStocks.run()}}",
-                              "isLoading": false,
-                              "timePrecision": "None",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "closeOnSelection": true,
-                              "alignment": "start",
-                              "mobileBottomRow": 15.675,
-                              "widgetName": "input_CurrentStockStartDate",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "maxDate"
-                                }
-                              ],
-                              "displayName": "DatePicker",
-                              "searchTags": [
-                                "calendar"
-                              ],
-                              "bottomRow": 11.275,
-                              "shortcuts": false,
-                              "parentRowSpace": 10,
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "parentColumnSpace": 14.359375,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onFocus"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "key": "0x7wpgbamw",
-                              "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment()}}",
-                              "isDeprecated": false,
-                              "rightColumn": 31.999999999999996,
-                              "widgetId": "w46ajvdkfa",
-                              "minWidth": 450,
-                              "label": "Set Start Week*",
-                              "parentId": "i1keez1ijj",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "mobileTopRow": 9.600000000000001,
-                              "responsiveBehavior": "fill",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "firstDayOfWeek": "0",
-                              "maxDate": "{{moment()}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "mobileBottomRow": 8.8,
-                              "widgetName": "btn_CurrentStockLastWeek",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Icon Button",
-                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 5.2,
-                              "bottomRow": 9.2,
-                              "parentRowSpace": 10,
-                              "type": "ICON_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "mobileRightColumn": 8.284789644012944,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.8984375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "key": "vbtgd3ik4f",
-                              "isDeprecated": false,
-                              "rightColumn": 9.678638941398866,
-                              "iconName": "chevron-left",
-                              "widgetId": "bslsu7wc7c",
-                              "minWidth": 50,
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "i1keez1ijj",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "mobileTopRow": 4.8,
-                              "responsiveBehavior": "hug",
-                              "borderRadius": "0.375rem",
-                              "mobileLeftColumn": 0,
-                              "buttonVariant": "PRIMARY",
-                              "alignment": "start"
-                            },
-                            {
-                              "mobileBottomRow": 4,
-                              "widgetName": "title_CurrentStockDates",
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 4,
-                              "parentRowSpace": 10,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "animateLoading": true,
-                              "overflow": "NONE",
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 6.8984375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "truncateButtonColor"
-                                },
-                                {
-                                  "key": "fontFamily"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Weekly Current Date",
-                              "key": "qz8doi9fr3",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "textAlign": "LEFT",
-                              "dynamicHeight": "AUTO_HEIGHT",
-                              "widgetId": "zzsqnriij6",
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "i1keez1ijj",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "mobileTopRow": 0,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "fontSize": "1.25rem",
-                              "alignment": "start",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "dateFormat": "D MMMM, YYYY",
-                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 5.2,
-                              "labelWidth": 5,
-                              "type": "DATE_PICKER_WIDGET2",
-                              "animateLoading": true,
-                              "leftColumn": 31.999999999999996,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "maxDate"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "datePickerType": "DATE_PICKER",
-                              "version": 2,
-                              "isLoading": false,
-                              "timePrecision": "None",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "closeOnSelection": true,
-                              "alignment": "start",
-                              "mobileBottomRow": 22.55,
-                              "widgetName": "input_CurrentStockEndDate",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "maxDate"
-                                }
-                              ],
-                              "displayName": "DatePicker",
-                              "searchTags": [
-                                "calendar"
-                              ],
-                              "bottomRow": 11.275,
-                              "shortcuts": false,
-                              "parentRowSpace": 10,
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "parentColumnSpace": 14.359375,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Top",
-                              "key": "0x7wpgbamw",
-                              "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment(input_CurrentStockStartDate.selectedDate).add(6, 'days')}}",
-                              "isDeprecated": false,
-                              "rightColumn": 54.32136105860113,
-                              "widgetId": "pp481z119d",
-                              "minWidth": 450,
-                              "label": "Set End Week*",
-                              "parentId": "i1keez1ijj",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "mobileTopRow": 16.475,
-                              "responsiveBehavior": "fill",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "firstDayOfWeek": 0,
-                              "maxDate": "{{moment(input_CurrentStockStartDate.selectedDate).add(6, 'days')}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "mobileBottomRow": 27.35,
-                              "widgetName": "btn_CurrentStockNextWeek",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Icon Button",
-                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 5.2,
-                              "bottomRow": 9.2,
-                              "parentRowSpace": 10,
-                              "type": "ICON_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "mobileRightColumn": 8.284789644012944,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.8984375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 54.32136105860113,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "key": "vbtgd3ik4f",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "iconName": "chevron-right",
-                              "widgetId": "b0eli38q3p",
-                              "minWidth": 50,
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "i1keez1ijj",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "mobileTopRow": 23.35,
-                              "responsiveBehavior": "hug",
-                              "borderRadius": "0.375rem",
-                              "mobileLeftColumn": 0,
-                              "buttonVariant": "PRIMARY",
-                              "alignment": "start"
-                            }
-                          ],
-                          "key": "9f7ns7oio1",
-                          "isDeprecated": false,
-                          "rightColumn": 64,
-                          "detachFromLayout": true,
-                          "widgetId": "i1keez1ijj",
-                          "containerStyle": "none",
-                          "minWidth": 450,
-                          "isVisible": true,
-                          "version": 1,
-                          "parentId": "afntkat8ro",
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
-                          "mobileTopRow": 0,
-                          "responsiveBehavior": "fill",
-                          "mobileLeftColumn": 0,
-                          "flexLayers": [
-                            {
-                              "children": [
-                                {
-                                  "id": "zzsqnriij6",
-                                  "align": "start"
-                                }
-                              ]
-                            },
-                            {
-                              "children": [
-                                {
-                                  "id": "bslsu7wc7c",
-                                  "align": "start"
-                                },
-                                {
-                                  "id": "w46ajvdkfa",
-                                  "align": "start"
-                                },
-                                {
-                                  "id": "pp481z119d",
-                                  "align": "start"
-                                },
-                                {
-                                  "id": "b0eli38q3p",
-                                  "align": "start"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "borderWidth": "1",
-                      "flexVerticalAlignment": "start",
-                      "key": "ed4z0xu1ou",
-                      "backgroundColor": "#FFFFFF",
-                      "isDeprecated": false,
-                      "rightColumn": 32,
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "afntkat8ro",
-                      "containerStyle": "card",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "rzeg30ta7h",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "mobileTopRow": 0,
-                      "responsiveBehavior": "fill",
-                      "borderRadius": "0.375rem",
-                      "mobileLeftColumn": 0,
-                      "maxDynamicHeight": 9000,
-                      "alignment": "start",
-                      "minDynamicHeight": 10
-                    },
-                    {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 49.900000000000006,
-                      "widgetName": "cont_ForecastStockDates",
-                      "borderColor": "#E0DEDE",
-                      "isCanvas": true,
-                      "displayName": "Container",
-                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
-                      "searchTags": [
-                        "div",
-                        "parent",
-                        "group"
-                      ],
-                      "topRow": 0,
-                      "bottomRow": 13.275000000000002,
-                      "parentRowSpace": 10,
-                      "type": "CONTAINER_WIDGET",
-                      "hideCard": false,
-                      "shouldScrollContents": true,
-                      "mobileRightColumn": 64,
-                      "animateLoading": true,
-                      "parentColumnSpace": 14.359375,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 32,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "boxShadow"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "mobileBottomRow": 197.5,
-                          "widgetName": "Canvas9",
-                          "displayName": "Canvas",
-                          "topRow": 0,
-                          "bottomRow": 132.75000000000003,
-                          "parentRowSpace": 1,
-                          "type": "CANVAS_WIDGET",
-                          "canExtend": false,
-                          "hideCard": true,
-                          "minHeight": 100,
-                          "mobileRightColumn": 64,
-                          "parentColumnSpace": 1,
-                          "leftColumn": 0,
-                          "dynamicBindingPathList": [],
-                          "children": [
-                            {
-                              "mobileBottomRow": 4,
-                              "widgetName": "title_StockForecastDates",
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 4,
-                              "parentRowSpace": 10,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "animateLoading": true,
-                              "overflow": "NONE",
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 6.8984375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "truncateButtonColor"
-                                },
-                                {
-                                  "key": "fontFamily"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Weekly Forecast Date",
-                              "key": "qz8doi9fr3",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "textAlign": "LEFT",
-                              "dynamicHeight": "AUTO_HEIGHT",
-                              "widgetId": "68bwqexi5k",
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "b77rdv25er",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "mobileTopRow": 0,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "fontSize": "1.25rem",
-                              "alignment": "start",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "dateFormat": "D MMMM, YYYY",
-                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 5.2,
-                              "labelWidth": 5,
-                              "type": "DATE_PICKER_WIDGET2",
-                              "animateLoading": true,
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "minDate"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "datePickerType": "DATE_PICKER",
-                              "version": 2,
-                              "isLoading": false,
-                              "timePrecision": "None",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "closeOnSelection": true,
-                              "alignment": "start",
-                              "mobileBottomRow": 10.875,
-                              "widgetName": "input_ForecastStockStartDate",
-                              "minDate": "{{moment()}}",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "minDate"
-                                }
-                              ],
-                              "displayName": "DatePicker",
-                              "searchTags": [
-                                "calendar"
-                              ],
-                              "bottomRow": 11.275,
-                              "shortcuts": false,
-                              "parentRowSpace": 10,
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "parentColumnSpace": 14.359375,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Top",
-                              "key": "0x7wpgbamw",
-                              "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment()}}",
-                              "isDeprecated": false,
-                              "rightColumn": 32,
-                              "widgetId": "5lxt7memgx",
-                              "minWidth": 450,
-                              "label": "Set Start Week*",
-                              "parentId": "b77rdv25er",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "mobileTopRow": 4.8,
-                              "responsiveBehavior": "fill",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "firstDayOfWeek": "0",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "dateFormat": "D MMMM, YYYY",
-                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 5.2,
-                              "labelWidth": 5,
-                              "type": "DATE_PICKER_WIDGET2",
-                              "animateLoading": true,
-                              "leftColumn": 32,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultDate"
-                                },
-                                {
-                                  "key": "maxDate"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "datePickerType": "DATE_PICKER",
-                              "version": 2,
-                              "isLoading": false,
-                              "timePrecision": "None",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "closeOnSelection": true,
-                              "alignment": "start",
-                              "mobileBottomRow": 17.75,
-                              "widgetName": "input_ForecastStockEndDate",
-                              "minDate": "1920-12-31T18:30:00.000Z",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "maxDate"
-                                },
-                                {
-                                  "key": "defaultDate"
-                                }
-                              ],
-                              "displayName": "DatePicker",
-                              "searchTags": [
-                                "calendar"
-                              ],
-                              "bottomRow": 11.275,
-                              "shortcuts": false,
-                              "parentRowSpace": 10,
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "parentColumnSpace": 14.359375,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Top",
-                              "key": "0x7wpgbamw",
-                              "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment(input_ForecastStockStartDate.selectedDate).add(6, 'days')}}",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "widgetId": "ca4kmwr2es",
-                              "minWidth": 450,
-                              "label": "Set End Week*",
-                              "parentId": "b77rdv25er",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "mobileTopRow": 11.675,
-                              "responsiveBehavior": "fill",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "firstDayOfWeek": 0,
-                              "maxDate": "{{moment(input_ForecastStockStartDate.selectedDate).add(6, 'days')}}",
-                              "minDynamicHeight": 4
-                            }
-                          ],
-                          "key": "9f7ns7oio1",
-                          "isDeprecated": false,
-                          "rightColumn": 64,
-                          "detachFromLayout": true,
-                          "widgetId": "b77rdv25er",
-                          "containerStyle": "none",
-                          "minWidth": 450,
-                          "isVisible": true,
-                          "version": 1,
-                          "parentId": "bq5omvmtf4",
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
-                          "mobileTopRow": 0,
-                          "responsiveBehavior": "fill",
-                          "mobileLeftColumn": 0,
-                          "flexLayers": [
-                            {
-                              "children": [
-                                {
-                                  "id": "68bwqexi5k",
-                                  "align": "start"
-                                }
-                              ]
-                            },
-                            {
-                              "children": [
-                                {
-                                  "id": "5lxt7memgx",
-                                  "align": "start"
-                                },
-                                {
-                                  "id": "ca4kmwr2es",
-                                  "align": "start"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "borderWidth": "1",
-                      "flexVerticalAlignment": "start",
-                      "key": "ed4z0xu1ou",
-                      "backgroundColor": "#FFFFFF",
-                      "isDeprecated": false,
-                      "rightColumn": 64,
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "bq5omvmtf4",
-                      "containerStyle": "card",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "rzeg30ta7h",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "mobileTopRow": 30.150000000000002,
-                      "responsiveBehavior": "fill",
-                      "borderRadius": "0.375rem",
-                      "mobileLeftColumn": 0,
-                      "maxDynamicHeight": 9000,
-                      "alignment": "start",
-                      "minDynamicHeight": 10
-                    },
-                    {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 103.25,
                       "widgetName": "cont_inputThresholds",
                       "borderColor": "#E0DEDE",
@@ -2060,8 +2074,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 56.675000000000004,
-                      "bottomRow": 69.95,
+                      "topRow": 61.875,
+                      "bottomRow": 75.15,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -2082,7 +2096,7 @@
                           "widgetName": "Canvas10",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 132.75000000000003,
+                          "bottomRow": 132.75000000000006,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -2377,11 +2391,11 @@
                     {
                       "children": [
                         {
-                          "id": "afntkat8ro",
+                          "id": "y6x538jihr",
                           "align": "start"
                         },
                         {
-                          "id": "bq5omvmtf4",
+                          "id": "dhjnhg0f0o",
                           "align": "start"
                         }
                       ]
@@ -2496,8 +2510,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "moment(input_CurrentDemandStartDate.selectedDate).week()",
-                "moment(input_CurrentDemandStartDate.selectedDate).year()"
+                "moment(input_DemandCurrentDate.selectedDate).week()",
+                "moment(input_DemandCurrentDate.selectedDate).year()"
               ],
               "timeoutInMillisecond": 10000
             }
