@@ -12,7 +12,6 @@ export default {
 			dataSource: {
 				chart: {
 					caption: "Demand",
-					subcaption: "Forecast Range: " + input_ForecastDemandStartDate.formattedDate + " to " + input_ForecastDemandEndDate.formattedDate,
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yaxismaxvalue: maxBarValue,
@@ -54,7 +53,6 @@ export default {
 			dataSource: {
 				chart: {
 					caption: "Inventory Stock",
-					subcaption: "Forecast Range: " + input_ForecastStockStartDate.formattedDate + " to " + input_ForecastStockEndDate.formattedDate,
 					xaxisname: "Low Items",
 					yaxisname: "Number of Items",
 					yaxismaxvalue: maxBarValue,
