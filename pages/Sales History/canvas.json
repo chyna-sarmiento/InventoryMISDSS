@@ -997,7 +997,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
