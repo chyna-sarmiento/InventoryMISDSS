@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-04T15:16:05Z"
   },
   "id": "Dashboard_chartData.CustomerDemand",
   "deleted": false,

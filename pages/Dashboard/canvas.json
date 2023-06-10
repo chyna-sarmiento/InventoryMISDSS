@@ -492,7 +492,7 @@
                               "labelPosition": "Top",
                               "key": "0x7wpgbamw",
                               "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment().startOf('week')}}",
+                              "defaultDate": "{{moment()}}",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "widgetId": "xam7l9rtb0",
@@ -2487,13 +2487,18 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
-              "id": "Dashboard_forecastOutgoingStocksData",
-              "name": "forecastOutgoingStocksData",
+              "id": "Dashboard_dataOutgoingDemand",
+              "name": "dataOutgoingDemand",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment(input_CurrentDemandStartDate.selectedDate).week()",
+                "moment(input_CurrentDemandStartDate.selectedDate).year()"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

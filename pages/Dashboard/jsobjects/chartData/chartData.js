@@ -1,7 +1,7 @@
 export default {
 	CustomerDemand() {
-		const barData = forecastOutgoingStocksData.data
-		.filter(p => p.outgoingDemandVolume >= 5)
+		const barData = dataOutgoingDemand.data
+		.filter(p => p.outgoingDemandVolume >= 20)
 		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
 		.sort((a, b) => b.value - a.value);
 
