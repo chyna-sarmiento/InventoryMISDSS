@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "fetchOutgoingData",
-    "fullyQualifiedName": "apiDashboardFunctions.fetchOutgoingData",
+    "name": "getOldDateOutgoing",
+    "fullyQualifiedName": "apiDashboardFunctions.getOldDateOutgoing",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -21,7 +21,7 @@
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -35,9 +35,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-06T07:38:05Z"
   },
-  "id": "Dashboard_apiDashboardFunctions.fetchOutgoingData",
+  "id": "Dashboard_apiDashboardFunctions.getOldDateOutgoing",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_647ee25dc94a871870a90a7e"
 }
