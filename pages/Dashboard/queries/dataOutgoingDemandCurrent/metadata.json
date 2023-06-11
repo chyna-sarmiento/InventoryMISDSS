@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "dataOutgoingDemand",
+    "name": "dataOutgoingDemandCurrent",
     "datasource": {
       "name": "ec2URL",
       "pluginId": "restapi-plugin",
@@ -53,7 +53,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-04T14:56:20Z"
   },
-  "id": "Dashboard_dataOutgoingDemand",
+  "id": "Dashboard_dataOutgoingDemandCurrent",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_647ca6148ab22b5e2e93aff1"
 }

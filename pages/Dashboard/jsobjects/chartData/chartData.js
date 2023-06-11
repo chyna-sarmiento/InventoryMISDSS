@@ -1,6 +1,11 @@
 export default {
 	CustomerDemand() {
-		const barData = dataOutgoingDemand.data
+		const currentStartDate = moment(input_DemandCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY');
+		const currentEndDate = moment.tz(moment(input_DemandCurrentDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
+		const forecastStartDate = moment(input_DemandForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')
+		const forecastEndDate = moment.tz(moment(input_DemandForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
+		
+		const barData = dataOutgoingDemandCurrent.data
 		.filter(p => p.outgoingDemandVolume >= 20)
 		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
 		.sort((a, b) => b.value - a.value);
@@ -12,6 +17,7 @@ export default {
 			dataSource: {
 				chart: {
 					caption: "Demand",
+					subcaption: "Current Week: " + currentStartDate + " to " + currentEndDate + "\nForecast Week: " + forecastStartDate + " to " + forecastEndDate,
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yaxismaxvalue: maxBarValue,
@@ -39,6 +45,11 @@ export default {
 		return JSON.stringify(outputDataSource);
 	},
 	InventoryStock() {
+		const currentStartDate = moment(input_StockCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY');
+		const currentEndDate = moment.tz(moment(input_StockCurrentDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
+		const forecastStartDate = moment(input_StockForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')
+		const forecastEndDate = moment.tz(moment(input_StockForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
+		
 		const barData = ShowProductList.data
 		.filter(p => p.stockCount < 20)
 		.map(p => ({ label: p.displayName, value: p.stockCount }))
@@ -53,6 +64,7 @@ export default {
 			dataSource: {
 				chart: {
 					caption: "Inventory Stock",
+					subcaption: "Current Week: " + currentStartDate + " to " + currentEndDate + "\nForecast Week: " + forecastStartDate + " to " + forecastEndDate,
 					xaxisname: "Low Items",
 					yaxisname: "Number of Items",
 					yaxismaxvalue: maxBarValue,

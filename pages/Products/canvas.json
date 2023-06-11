@@ -9,7 +9,7 @@
           "mobileBottomRow": 3130,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 2934.000000000001,
+          "bottomRow": 582,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -494,7 +494,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 15.097844112769486,
+              "rightColumn": 9.705756929637527,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ybr41tjpiv",
@@ -542,7 +542,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 42.202321724709776,
+              "leftColumn": 49.98720682302772,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -609,7 +609,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1050,
+                  "bottomRow": 1057.2500000000007,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1790,7 +1790,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1000,
+                  "bottomRow": 1005.2500000000005,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2887,7 +2887,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 330,
+                  "bottomRow": 329.5,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
