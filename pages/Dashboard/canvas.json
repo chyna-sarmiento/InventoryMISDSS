@@ -7,7 +7,7 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 1077,
+          "mobileBottomRow": 843.5,
           "widgetName": "MainContainer",
           "topRow": 0,
           "bottomRow": 786.75,
@@ -278,7 +278,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 99.7,
+              "mobileBottomRow": 76.35,
               "widgetName": "tab_Charts",
               "borderColor": "",
               "isCanvas": true,
@@ -308,7 +308,7 @@
               "children": [
                 {
                   "tabId": "tab1",
-                  "mobileBottomRow": 847,
+                  "mobileBottomRow": 613.5,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "bottomRow": 574.75,
@@ -327,7 +327,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 29.35,
+                      "mobileBottomRow": 12.875,
                       "widgetName": "cont_DemandCurrentDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -356,7 +356,7 @@
                       ],
                       "children": [
                         {
-                          "mobileBottomRow": 293.5,
+                          "mobileBottomRow": 128.75,
                           "widgetName": "canvasCont_DemandCurrent",
                           "displayName": "Canvas",
                           "topRow": 0,
@@ -411,7 +411,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "closeOnSelection": true,
                               "alignment": "start",
-                              "mobileBottomRow": 15.675,
+                              "mobileBottomRow": 10.875,
                               "widgetName": "input_DemandCurrentDate",
                               "minDate": "{{apiDashboardFunctions.getOldDateOutgoing()}}",
                               "dynamicPropertyPathList": [
@@ -455,7 +455,7 @@
                               "parentId": "cbyfbkcomf",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
-                              "mobileTopRow": 9.600000000000001,
+                              "mobileTopRow": 4.8,
                               "responsiveBehavior": "fill",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
@@ -583,7 +583,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 49.900000000000006,
+                      "mobileBottomRow": 26.55,
                       "widgetName": "cont_DemandForecastDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -612,7 +612,7 @@
                       ],
                       "children": [
                         {
-                          "mobileBottomRow": 197.5,
+                          "mobileBottomRow": 128.75,
                           "widgetName": "canvasCont_DemandForecast",
                           "displayName": "Canvas",
                           "topRow": 0,
@@ -820,7 +820,7 @@
                       "parentId": "fmgtivh5p6",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 30.150000000000002,
+                      "mobileTopRow": 13.675,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -830,7 +830,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 82.7,
+                      "mobileBottomRow": 59.35,
                       "widgetName": "report_CustomerDemand",
                       "allowScroll": false,
                       "widthInPercentage": 0.9726315789473684,
@@ -901,7 +901,7 @@
                       "labelOrientation": "auto",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 50.7,
+                      "mobileTopRow": 27.35,
                       "responsiveBehavior": "fill",
                       "yAxisName": "Revenue($)",
                       "chartName": "Sales Report",
@@ -953,7 +953,7 @@
                 },
                 {
                   "tabId": "tab2",
-                  "mobileBottomRow": 1052.5,
+                  "mobileBottomRow": 819,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "bottomRow": 719.5,
@@ -972,7 +972,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 29.35,
+                      "mobileBottomRow": 12.875,
                       "widgetName": "cont_StockCurrentDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -1001,7 +1001,7 @@
                       ],
                       "children": [
                         {
-                          "mobileBottomRow": 293.5,
+                          "mobileBottomRow": 128.75,
                           "widgetName": "Canvas9CopyCopyCopy",
                           "displayName": "Canvas",
                           "topRow": 0,
@@ -1053,7 +1053,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "closeOnSelection": true,
                               "alignment": "start",
-                              "mobileBottomRow": 15.675,
+                              "mobileBottomRow": 10.875,
                               "widgetName": "input_StockCurrentDate",
                               "minDate": "",
                               "dynamicPropertyPathList": [
@@ -1100,7 +1100,7 @@
                               "parentId": "sn1qy48vdt",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
-                              "mobileTopRow": 9.600000000000001,
+                              "mobileTopRow": 4.8,
                               "responsiveBehavior": "fill",
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
@@ -1228,7 +1228,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 49.900000000000006,
+                      "mobileBottomRow": 26.55,
                       "widgetName": "cont_StockForecastDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -1257,7 +1257,7 @@
                       ],
                       "children": [
                         {
-                          "mobileBottomRow": 197.5,
+                          "mobileBottomRow": 128.75,
                           "widgetName": "Canvas9CopyCopy1",
                           "displayName": "Canvas",
                           "topRow": 0,
@@ -1465,7 +1465,7 @@
                       "parentId": "rzeg30ta7h",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 30.150000000000002,
+                      "mobileTopRow": 13.675,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -1475,7 +1475,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 82.7,
+                      "mobileBottomRow": 59.35,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
                       "widthInPercentage": 0.9726315789473684,
@@ -1546,7 +1546,7 @@
                       "labelOrientation": "auto",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 50.7,
+                      "mobileTopRow": 27.35,
                       "responsiveBehavior": "fill",
                       "yAxisName": "Revenue($)",
                       "chartName": "Sales Report",
@@ -1558,7 +1558,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 103.25,
+                      "mobileBottomRow": 79.9,
                       "widgetName": "cont_inputThresholds",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -1857,7 +1857,7 @@
                       "parentId": "rzeg30ta7h",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 83.5,
+                      "mobileTopRow": 60.15,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -2016,8 +2016,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "moment(input_DemandCurrentDate.selectedDate).week()",
-                "moment(input_DemandCurrentDate.selectedDate).year()"
+                "moment(input_DemandCurrentDate.selectedDate).year()",
+                "moment(input_DemandCurrentDate.selectedDate).isoWeek()"
               ],
               "timeoutInMillisecond": 10000
             }
