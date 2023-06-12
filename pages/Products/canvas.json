@@ -6,10 +6,10 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 3130,
+          "mobileBottomRow": 3177.9999999999995,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 3090.0000000000005,
+          "bottomRow": 582,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -27,6 +27,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 5.2,
               "isSortable": true,
+              "onPageChange": "{{ShowProductListDetails.run().then(() => {}).catch(() => {\n  showAlert('Error on ShowPorductListDetails', 'error');\n});}}",
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
@@ -44,7 +45,10 @@
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
-                  "key": "tableData"
+                  "key": "primaryColumns.stockCount.computedValue"
+                },
+                {
+                  "key": "totalRecordsCount"
                 },
                 {
                   "key": "primaryColumns.barcodeId.computedValue"
@@ -65,10 +69,10 @@
                   "key": "primaryColumns.price.computedValue"
                 },
                 {
-                  "key": "primaryColumns.stockCount.computedValue"
+                  "key": "primaryColumns.lastUpdated.computedValue"
                 },
                 {
-                  "key": "primaryColumns.lastUpdated.computedValue"
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
@@ -82,7 +86,7 @@
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 1,
-              "totalRecordsCount": 0,
+              "totalRecordsCount": "{{GetNumberOfProducts.data}}",
               "isLoading": false,
               "childStylesheet": {
                 "button": {
@@ -108,14 +112,14 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685526578455,
+              "columnUpdatedAt": 1686561199132,
               "originalBottomRow": 94,
               "defaultSelectedRowIndices": [
                 0
               ],
               "alignment": "start",
               "mobileWidthInPercentage": 0.9800498753117207,
-              "mobileBottomRow": 57.8,
+              "mobileBottomRow": 62.599999999999994,
               "widgetName": "tbl_ProductList",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -132,9 +136,6 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.lastUpdated.outputFormat"
                 }
               ],
               "compactMode": "DEFAULT",
@@ -158,6 +159,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onRowSelected"
+                },
+                {
+                  "key": "onPageChange"
                 }
               ],
               "borderWidth": "1",
@@ -188,6 +192,36 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "stockCount": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "stockCount",
+                  "id": "stockCount",
+                  "alias": "stockCount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Stock Count",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"stockCount\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -364,40 +398,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Price (Php)",
+                  "label": "Price",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "stockCount": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 7,
-                  "width": 150,
-                  "originalId": "stockCount",
-                  "id": "stockCount",
-                  "alias": "stockCount",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Stock Count",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"stockCount\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -427,12 +431,10 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"lastUpdated\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
+                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastUpdated\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": "",
-                  "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
-                  "outputFormat": "YYYY-MM-DD HH:mm"
+                  "cellBackground": ""
                 }
               },
               "onRowSelected": "{{showModal('mdl_EditProductDetails');}}",
@@ -447,8 +449,9 @@
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
+              "serverSidePaginationEnabled": true,
               "renderMode": "CANVAS",
-              "mobileTopRow": 4.800000000000001,
+              "mobileTopRow": 9.599999999999998,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
@@ -475,7 +478,7 @@
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 23.165394402035624,
+              "mobileRightColumn": 27.014836795252226,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [
@@ -494,7 +497,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 9.705756929637527,
+              "rightColumn": 9.664543524416136,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ybr41tjpiv",
@@ -518,7 +521,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "mobileBottomRow": 4.000000000000001,
+              "mobileBottomRow": 8.8,
               "widgetName": "btn_AddIncoming",
               "onClick": "{{ShowProductList.run().then(() => {\n  showModal('mdl_AddIncoming');\n}).catch(() => {\n  showAlert('Error on fetching ShowProductList.', 'error');\n});}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -542,7 +545,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 49.98720682302772,
+              "leftColumn": 50.04670912951168,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -563,11 +566,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 0,
+              "mobileTopRow": 4.8,
               "responsiveBehavior": "hug",
               "disabledWhenInvalid": false,
               "borderRadius": "0.375rem",
-              "mobileLeftColumn": 30.55470737913486,
+              "mobileLeftColumn": 24.99703264094955,
               "buttonVariant": "SECONDARY",
               "iconAlign": "left",
               "placement": "CENTER",
@@ -576,7 +579,7 @@
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
-              "mobileBottomRow": 167.72499999999997,
+              "mobileBottomRow": 172.52499999999998,
               "widgetName": "mdl_EditProductDetails",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -1746,7 +1749,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 58.599999999999994,
+              "mobileTopRow": 63.39999999999999,
               "responsiveBehavior": "hug",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 32,
@@ -1757,7 +1760,7 @@
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
-              "mobileBottomRow": 272.84999999999997,
+              "mobileBottomRow": 277.65,
               "widgetName": "mdl_AddProduct",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -2844,7 +2847,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 168.52499999999998,
+              "mobileTopRow": 173.32499999999996,
               "responsiveBehavior": "hug",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 32,
@@ -2854,7 +2857,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 305,
+              "mobileBottomRow": 309.79999999999995,
               "widgetName": "mdl_AddIncoming",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -3444,7 +3447,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 273.65,
+              "mobileTopRow": 278.44999999999993,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 32,
               "maxDynamicHeight": 9000,
@@ -3461,7 +3464,7 @@
           "widgetId": "0",
           "containerStyle": "none",
           "snapRows": 60,
-          "version": 79,
+          "version": 80,
           "mobileTopRow": 0,
           "responsiveBehavior": "fill",
           "flexLayers": [
@@ -3514,8 +3517,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Products_ShowProductListDetails",
-              "name": "ShowProductListDetails",
+              "id": "Products_GetNumberOfProducts",
+              "name": "GetNumberOfProducts",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
@@ -3529,6 +3532,19 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Products_ShowProductListDetails",
+              "name": "ShowProductListDetails",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "tbl_ProductList.pageNo",
+                "tbl_ProductList.pageSize"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

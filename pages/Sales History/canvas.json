@@ -10,7 +10,7 @@
           "mobileBottomRow": 2103.046875,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1806.75,
+          "bottomRow": 1791.0000000000002,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -35,7 +35,7 @@
                 "notification"
               ],
               "topRow": 125.67500000000003,
-              "bottomRow": 172.675,
+              "bottomRow": 171.10000000000002,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 470,
+                  "bottomRow": 454.25000000000006,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -134,7 +134,7 @@
                         "group"
                       ],
                       "topRow": 10.4,
-                      "bottomRow": 45,
+                      "bottomRow": 43.425000000000004,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -158,7 +158,7 @@
                           "widgetName": "Canvas1CopyCopy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 346,
+                          "bottomRow": 330.25000000000006,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -215,7 +215,7 @@
                               "searchTags": [
                                 "dropdown"
                               ],
-                              "bottomRow": 6.6,
+                              "bottomRow": 6.075,
                               "parentRowSpace": 10,
                               "hideCard": false,
                               "mobileRightColumn": 64,
@@ -250,7 +250,7 @@
                               "boxShadow": "none",
                               "dateFormat": "DD MMMM YYYY, HH:mm",
                               "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 7.8,
+                              "topRow": 7.275,
                               "labelWidth": 5,
                               "type": "DATE_PICKER_WIDGET2",
                               "animateLoading": true,
@@ -299,7 +299,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 14.4,
+                              "bottomRow": 13.350000000000001,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -329,7 +329,7 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 15.600000000000001,
+                              "topRow": 14.55,
                               "labelWidth": "14",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
@@ -370,7 +370,7 @@
                                 "number",
                                 "textarea"
                               ],
-                              "bottomRow": 22.200000000000003,
+                              "bottomRow": 20.625,
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "hideCard": false,
@@ -410,8 +410,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 23.400000000000002,
-                              "bottomRow": 27.400000000000002,
+                              "topRow": 21.825,
+                              "bottomRow": 25.825,
                               "tooltip": "Revert back previous information prior to changes.",
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -466,8 +466,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 23.400000000000002,
-                              "bottomRow": 27.400000000000002,
+                              "topRow": 21.825,
+                              "bottomRow": 25.825,
                               "tooltip": "",
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -525,8 +525,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 28.6,
-                              "bottomRow": 32.6,
+                              "topRow": 27.025,
+                              "bottomRow": 31.025,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -534,7 +534,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.6875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.652522935779814,
+                              "leftColumn": 21.653669724770637,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -544,7 +544,7 @@
                               "isDisabled": false,
                               "key": "h2jakhcic3",
                               "isDeprecated": false,
-                              "rightColumn": 42.347477064220186,
+                              "rightColumn": 42.34633027522936,
                               "isDefaultClickDisabled": true,
                               "iconName": "trash",
                               "widgetId": "z353oilr9z",
@@ -760,7 +760,7 @@
                 }
               ],
               "key": "9k18nr3lke",
-              "height": 472,
+              "height": 456.25000000000006,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
@@ -817,7 +817,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.13163481953291,
+              "rightColumn": 11.17910447761194,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -846,7 +846,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 5.2,
               "isSortable": true,
-              "onPageChange": "",
+              "onPageChange": "{{ShowOutgoingList.run()}}",
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
@@ -859,9 +859,6 @@
                 },
                 {
                   "key": "boxShadow"
-                },
-                {
-                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.id.computedValue"
@@ -889,6 +886,12 @@
                 },
                 {
                   "key": "primaryColumns.productName.computedValue"
+                },
+                {
+                  "key": "totalRecordsCount"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
@@ -902,7 +905,7 @@
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 1,
-              "totalRecordsCount": "",
+              "totalRecordsCount": "{{GetNumberOfOutgoingEntries.data}}",
               "isLoading": false,
               "childStylesheet": {
                 "button": {
@@ -949,6 +952,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "primaryColumns.dateTimeOutgoing.outputFormat"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "displayName": "Table",
@@ -1239,7 +1245,7 @@
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
-              "serverSidePaginationEnabled": false,
+              "serverSidePaginationEnabled": true,
               "renderMode": "CANVAS",
               "mobileTopRow": 4.8,
               "horizontalAlignment": "LEFT",
@@ -1868,6 +1874,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                                },
+                                {
+                                  "key": "tableData"
                                 }
                               ],
                               "displayName": "Table",
@@ -2635,7 +2644,7 @@
           "widgetId": "0",
           "containerStyle": "none",
           "snapRows": 60,
-          "version": 79,
+          "version": 80,
           "mobileTopRow": 0,
           "responsiveBehavior": "fill",
           "flexLayers": [
@@ -2686,11 +2695,24 @@
           ],
           [
             {
+              "id": "Sales History_GetNumberOfOutgoingEntries",
+              "name": "GetNumberOfOutgoingEntries",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Sales History_ShowOutgoingList",
               "name": "ShowOutgoingList",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "tbl_ListSales.pageSize",
+                "tbl_ListSales.pageNo"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

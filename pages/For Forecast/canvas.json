@@ -9,7 +9,7 @@
           "mobileBottomRow": 630,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 550,
+          "bottomRow": 380,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -28,7 +28,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.8a93874870bccee17fbcd02b950c3bcd.svg",
               "topRow": 0,
-              "bottomRow": 55,
+              "bottomRow": 36,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -55,7 +55,7 @@
                   "mobileBottomRow": 510,
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
-                  "bottomRow": 510,
+                  "bottomRow": 490,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -160,7 +160,11 @@
                         "productName",
                         "outgoingDemandVolume"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 49,
                       "columnWidthMap": {
@@ -335,7 +339,7 @@
                   "isDisabled": false,
                   "key": "ll98u5zepi",
                   "isDeprecated": false,
-                  "tabName": "Current Demand",
+                  "tabName": "Current Weekly Demand",
                   "rightColumn": 64,
                   "detachFromLayout": true,
                   "widgetId": "8z5xzot7o2",
@@ -364,7 +368,7 @@
                   "mobileBottomRow": 260,
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
-                  "bottomRow": 510,
+                  "bottomRow": 320,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -395,6 +399,146 @@
                   "responsiveBehavior": "fill",
                   "mobileLeftColumn": 0,
                   "flexLayers": []
+                },
+                {
+                  "tabId": "tabg8al4zlb6e",
+                  "mobileBottomRow": 550,
+                  "widgetName": "Canvas3",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 320,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 550,
+                  "mobileRightColumn": 64,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
+                      "topRow": 0,
+                      "isSortable": true,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "ROW_LEVEL",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "needsHeightForContent": true,
+                      "leftColumn": 0,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 2,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "columnUpdatedAt": 1686566128358,
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "alignment": "start",
+                      "mobileBottomRow": 27,
+                      "widgetName": "Table1",
+                      "defaultPageSize": 0,
+                      "columnOrder": [],
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "bottomRow": 30,
+                      "columnWidthMap": {},
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "mobileRightColumn": 64,
+                      "parentColumnSpace": 14.4375,
+                      "borderWidth": "1",
+                      "primaryColumns": {},
+                      "key": "mdu1gkjglg",
+                      "canFreezeColumn": true,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "textSize": "0.875rem",
+                      "widgetId": "1f583gwcza",
+                      "minWidth": 450,
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "apdalfavzt",
+                      "renderMode": "CANVAS",
+                      "mobileTopRow": -1,
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "responsiveBehavior": "fill",
+                      "mobileLeftColumn": 0,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    }
+                  ],
+                  "key": "1evzvwd94u",
+                  "isDeprecated": false,
+                  "tabName": "Current Daily Demand",
+                  "rightColumn": 64,
+                  "detachFromLayout": true,
+                  "widgetId": "apdalfavzt",
+                  "containerStyle": "none",
+                  "minWidth": 450,
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "408zyxfjav",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "mobileTopRow": 0,
+                  "responsiveBehavior": "fill",
+                  "mobileLeftColumn": 0,
+                  "flexLayers": [
+                    {
+                      "children": [
+                        {
+                          "id": "1f583gwcza",
+                          "align": "start"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ],
               "borderWidth": 1,
@@ -410,20 +554,30 @@
               "minWidth": 450,
               "tabsObj": {
                 "tab1": {
-                  "label": "Current Demand",
+                  "label": "Current Weekly Demand",
                   "id": "tab1",
                   "widgetId": "8z5xzot7o2",
                   "isVisible": true,
                   "index": 0,
-                  "positioning": "vertical"
+                  "positioning": "vertical",
+                  "isDuplicateLabel": false
+                },
+                "tabg8al4zlb6e": {
+                  "id": "tabg8al4zlb6e",
+                  "index": 1,
+                  "label": "Current Daily Demand",
+                  "widgetId": "apdalfavzt",
+                  "isVisible": true,
+                  "isDuplicateLabel": false
                 },
                 "tab2": {
                   "label": "Current Forecast",
                   "id": "tab2",
                   "widgetId": "0gf7zd0f97",
                   "isVisible": true,
-                  "index": 1,
-                  "positioning": "vertical"
+                  "index": 2,
+                  "positioning": "vertical",
+                  "isDuplicateLabel": false
                 }
               },
               "isVisible": true,
@@ -448,7 +602,7 @@
           "widgetId": "0",
           "containerStyle": "none",
           "snapRows": 60,
-          "version": 79,
+          "version": 80,
           "mobileTopRow": 0,
           "responsiveBehavior": "fill",
           "flexLayers": [
