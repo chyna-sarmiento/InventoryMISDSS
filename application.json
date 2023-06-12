@@ -19,6 +19,10 @@
     {
       "id": "FAQs",
       "isDefault": false
+    },
+    {
+      "id": "For Forecast",
+      "isDefault": false
     }
   ],
   "viewMode": false,
