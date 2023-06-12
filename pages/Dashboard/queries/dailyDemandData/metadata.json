@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "amazons3-plugin",
   "unpublishedAction": {
-    "name": "sampleDemandData",
+    "name": "dailyDemandData",
     "datasource": {
       "name": "s3_ForecastBucket",
       "pluginId": "amazons3-plugin",
@@ -82,7 +82,7 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -94,7 +94,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-12T12:25:40Z"
   },
-  "id": "Dashboard_sampleDemandData",
+  "id": "Dashboard_dailyDemandData",
   "deleted": false,
   "gitSyncId": "6439874f26013158789b34e6_64870ec4539d5847b1115973"
 }

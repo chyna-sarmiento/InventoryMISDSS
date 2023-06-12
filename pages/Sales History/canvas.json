@@ -846,7 +846,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 5.2,
               "isSortable": true,
-              "onPageChange": "{{ShowOutgoingList.run()}}",
+              "onPageChange": "{{ShowOutgoingList.run().catch(() => {\n  showAlert('Error fetching ShowOutgoingList', 'error');\n});}}",
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,

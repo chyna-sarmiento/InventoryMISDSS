@@ -5,7 +5,12 @@ export default {
 		const forecastStartDate = moment(input_DemandForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')
 		const forecastEndDate = moment.tz(moment(input_DemandForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
 		
+		const csvBarData = dailyDemandData.data;
+		const parsedData = Papa.parse(csvBarData, { header: true });
+		const jsonBarData = parsedData.data;
+		
 		const barData = dataOutgoingDemandCurrent.data
+		//const barData = dataOutgoingDemandCurrent.data
 		.filter(p => p.outgoingDemandVolume >= 20)
 		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
 		.sort((a, b) => b.value - a.value);
