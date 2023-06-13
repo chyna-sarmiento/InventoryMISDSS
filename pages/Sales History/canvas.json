@@ -10,7 +10,7 @@
           "mobileBottomRow": 2103.046875,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1791.0000000000002,
+          "bottomRow": 582,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 454.25000000000006,
+                  "bottomRow": 460,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -92,7 +92,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 58.26008968609865,
+                      "leftColumn": 57.63658960974397,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -418,7 +418,7 @@
                               "mobileRightColumn": 39.0446791226645,
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 28.77064220183486,
+                              "leftColumn": 24.846291103747127,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -432,7 +432,7 @@
                               "key": "uonwks8jbw",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 46.38532110091743,
+                              "rightColumn": 44.42314555187356,
                               "isDefaultClickDisabled": true,
                               "widgetId": "0agi3ex6bx",
                               "minWidth": 120,
@@ -478,7 +478,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 46.38532110091743,
+                              "leftColumn": 44.42314555187356,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -760,7 +760,7 @@
                 }
               ],
               "key": "9k18nr3lke",
-              "height": 456.25000000000006,
+              "height": 464,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
@@ -798,7 +798,7 @@
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 31.118694362017806,
+              "mobileRightColumn": 24.848341232227487,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [
@@ -817,7 +817,7 @@
               "key": "gcjkgd280c",
               "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 11.17910447761194,
+              "rightColumn": 18.028169014084508,
               "isDefaultClickDisabled": true,
               "iconName": "add",
               "widgetId": "ww7pf15vyo",
@@ -1291,7 +1291,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 650.7500000000002,
+                  "bottomRow": 780,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1327,7 +1327,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 58.93921122862508,
+                      "leftColumn": 57.63658960974397,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1529,7 +1529,7 @@
                               "labelTextSize": "0.875rem",
                               "defaultDate": "{{moment()}}",
                               "isDeprecated": false,
-                              "rightColumn": 19.584161798366985,
+                              "rightColumn": 19.984387197501952,
                               "widgetId": "ojdop5feu5",
                               "minWidth": 450,
                               "label": "Outgoing Date/Time*",
@@ -1552,7 +1552,7 @@
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
                               "resetOnSubmit": true,
-                              "leftColumn": 19.584161798366985,
+                              "leftColumn": 19.984387197501952,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "accentColor"
@@ -1594,7 +1594,7 @@
                               "key": "9gjkj66cgc",
                               "labelTextSize": "0.875rem",
                               "isDeprecated": false,
-                              "rightColumn": 39.16832359673397,
+                              "rightColumn": 39.968774395003905,
                               "widgetId": "69kbbky15s",
                               "minWidth": 450,
                               "label": "Quantity*",
@@ -1620,7 +1620,7 @@
                               "serverSideFiltering": false,
                               "defaultOptionValue": "",
                               "animateLoading": true,
-                              "leftColumn": 39.16832359673397,
+                              "leftColumn": 39.968774395003905,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "accentColor"
@@ -1670,7 +1670,7 @@
                               "key": "69ma5ie1id",
                               "labelTextSize": "0.875rem",
                               "isDeprecated": false,
-                              "rightColumn": 58.752485395100955,
+                              "rightColumn": 59.95316159250586,
                               "widgetId": "vj793kb8bi",
                               "minWidth": 450,
                               "parentId": "bacnjjdeyu",
@@ -1710,7 +1710,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 58.752485395100955,
+                              "leftColumn": 59.95316159250586,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -1722,7 +1722,7 @@
                               "isDisabled": false,
                               "key": "wp2qw9w6it",
                               "isDeprecated": false,
-                              "rightColumn": 64,
+                              "rightColumn": 66.61462399167317,
                               "iconName": "plus",
                               "widgetId": "hoxjpiqvwt",
                               "minWidth": 50,
@@ -2380,7 +2380,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 32.51491237060572,
+                              "leftColumn": 24.031225604996095,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2394,7 +2394,7 @@
                               "key": "jsi22dmixk",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 48.25745618530286,
+                              "rightColumn": 44.01561280249805,
                               "isDefaultClickDisabled": true,
                               "widgetId": "xetw9efg1l",
                               "buttonStyle": "PRIMARY",
@@ -2440,7 +2440,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 48.25745618530286,
+                              "leftColumn": 44.01561280249805,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2615,7 +2615,7 @@
                 }
               ],
               "key": "3xlm59vidg",
-              "height": 652.7500000000002,
+              "height": 789.0468750000002,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
@@ -2710,8 +2710,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "tbl_ListSales.pageSize",
-                "tbl_ListSales.pageNo"
+                "tbl_ListSales.pageNo",
+                "tbl_ListSales.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "amazons3-plugin",
   "unpublishedAction": {
-    "name": "dailyDemandData",
+    "name": "sampleDemandForecast",
     "datasource": {
       "name": "s3_ForecastBucket",
       "pluginId": "amazons3-plugin",
@@ -70,7 +70,7 @@
           }
         },
         "path": {
-          "data": "SampleForecastData.csv"
+          "data": "sampleForecastOutput_2023-06-12T13-39-37Z_part3.csv"
         },
         "read": {
           "dataType": {
@@ -82,7 +82,7 @@
         }
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -92,9 +92,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-12T12:25:40Z"
+    "createdAt": "2023-06-12T13:39:03Z"
   },
-  "id": "Dashboard_dailyDemandData",
+  "id": "Dashboard_sampleDemandForecast",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_64870ec4539d5847b1115973"
+  "gitSyncId": "6439874f26013158789b34e6_64871ff77c5cf129fe47dc9c"
 }

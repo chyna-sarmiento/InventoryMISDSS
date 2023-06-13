@@ -5,17 +5,17 @@ export default {
 		const forecastStartDate = moment(input_DemandForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')
 		const forecastEndDate = moment.tz(moment(input_DemandForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
 		
-		const csvBarData = dailyDemandData.data;
+		const csvBarData = sampleDemandData.data;
 		const parsedData = Papa.parse(csvBarData, { header: true });
 		const jsonBarData = parsedData.data;
 		
-		const barData = dataOutgoingDemandCurrent.data
+		// const barData = dataOutgoingDemandCurrent.data
 		//const barData = dataOutgoingDemandCurrent.data
-		.filter(p => p.outgoingDemandVolume >= 20)
-		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
-		.sort((a, b) => b.value - a.value);
+		// .filter(p => p.outgoingDemandVolume >= 20)
+		// .map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
+		// .sort((a, b) => b.value - a.value);
 
-		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
+		const maxBarValue = Math.max(...jsonBarData.map(data => data.y)) + 1;
 
 		const outputDataSource = {
 			type: "mscombi2d",
@@ -37,11 +37,11 @@ export default {
 					labelPadding: "10"
 				},
 				categories: [{
-					category: barData.map(data => ({ label: data.label }))
+					category: jsonBarData.map(data => ({ label: data.label }))
 				}],
 				dataset: [{
 					seriesname: "Current",
-					data: barData,
+					data: jsonBarData,
 					color: "#64748b"
 				}]
 			}

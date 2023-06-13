@@ -7,10 +7,10 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 843.5,
+          "mobileBottomRow": 821.4999999999999,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 786.75,
+          "bottomRow": 706.75,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -22,7 +22,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "mobileBottomRow": 10.2,
+              "mobileBottomRow": 8,
               "widgetName": "header_Dashboard",
               "borderColor": "#E0DEDE",
               "isCanvas": true,
@@ -51,7 +51,7 @@
               ],
               "children": [
                 {
-                  "mobileBottomRow": 102,
+                  "mobileBottomRow": 80,
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -68,7 +68,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 8.2,
+                      "mobileBottomRow": 6,
                       "widgetName": "Header",
                       "borderColor": "",
                       "isCanvas": true,
@@ -100,7 +100,7 @@
                       ],
                       "children": [
                         {
-                          "mobileBottomRow": 82,
+                          "mobileBottomRow": 60,
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
@@ -116,7 +116,7 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "mobileBottomRow": 6.2,
+                              "mobileBottomRow": 4,
                               "widgetName": "title_ApplicationName",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -278,7 +278,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 76.35,
+              "mobileBottomRow": 74.14999999999999,
               "widgetName": "tab_Charts",
               "borderColor": "",
               "isCanvas": true,
@@ -956,7 +956,7 @@
                   "mobileBottomRow": 819,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 719.5,
+                  "bottomRow": 699.5,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1591,7 +1591,7 @@
                           "widgetName": "Canvas10",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 132.75000000000003,
+                          "bottomRow": 132.75,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -1949,7 +1949,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 11,
+              "mobileTopRow": 8.8,
               "responsiveBehavior": "fill",
               "borderRadius": "0.375rem",
               "mobileLeftColumn": 0,
@@ -1999,8 +1999,8 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Dashboard_dailyDemandData",
-              "name": "dailyDemandData",
+              "id": "Dashboard_sampleDemandData",
+              "name": "sampleDemandData",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -2014,19 +2014,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_dataOutgoingDemandCurrent",
-              "name": "dataOutgoingDemandCurrent",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(input_DemandCurrentDate.selectedDate).year()",
-                "moment(input_DemandCurrentDate.selectedDate).isoWeek()"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
