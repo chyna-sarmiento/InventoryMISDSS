@@ -1287,7 +1287,7 @@
               ],
               "children": [
                 {
-                  "mobileBottomRow": 787.046875,
+                  "mobileBottomRow": 787.0468750000002,
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -2421,7 +2421,7 @@
                               "boxShadow": "none",
                               "mobileBottomRow": 65.10468750000001,
                               "widgetName": "btn_ConfirmOutgoingStock",
-                              "onClick": "{{apiOutgoingFunctions.createAddOutgoingEntriesStore();\nEncodeOutgoingStock.run().then(() => {\n  showAlert('Successfully added the outgoing product/s.', 'success');\n  closeModal('mdl_AddOutgoingStock');\n  apiOutgoingFunctions.refreshOnAdd();\n  clearStore();\n  resetWidget(\"input_SearchProduct\", true);\n  resetWidget(\"input_outgoingQuantity\", true);\n  apiOutgoingFunctions.refreshOnAdd();\n  resetWidget(\"tbl_ListSales\", true);\n}).catch(() => {\n  showAlert('Error occurred in adding the outgoing product/s.', 'error');\n});}}",
+                              "onClick": "{{apiOutgoingFunctions.createAddOutgoingEntriesStore();\nEncodeOutgoingStock.run().then(() => {\n  showAlert('Successfully added the outgoing product/s.', 'success');\n  closeModal('mdl_AddOutgoingStock');\n  apiOutgoingFunctions.refreshOnAdd();\n  clearStore();\n  resetWidget(\"input_SearchProduct\", true);\n  resetWidget(\"input_outgoingQuantity\", true);\n  apiOutgoingFunctions.refreshOnAdd();\n  GetNumberOfOutgoingEntries.run();\n}).catch(() => {\n  showAlert('Error occurred in adding the outgoing product/s.', 'error');\n});}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -2559,7 +2559,7 @@
                       "parentId": "fmiy5hwq86",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 9.6,
+                      "mobileTopRow": 9.600000000000001,
                       "responsiveBehavior": "fill",
                       "originalTopRow": 5.2,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -2615,7 +2615,7 @@
                 }
               ],
               "key": "3xlm59vidg",
-              "height": 789.046875,
+              "height": 789.0468750000002,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
