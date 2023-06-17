@@ -388,13 +388,13 @@
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "defaultDate"
-                                },
-                                {
                                   "key": "minDate"
                                 },
                                 {
                                   "key": "maxDate"
+                                },
+                                {
+                                  "key": "defaultDate"
                                 }
                               ],
                               "isDisabled": false,
@@ -713,7 +713,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{forecastExportData.filterForecastOnDate();}}",
+                              "onDateSelected": "{{forecastExportData.filterForecastOnDate(input_DemandForecastDate.selectedDate);}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1580,7 +1580,7 @@
                               "labelPosition": "Top",
                               "key": "0x7wpgbamw",
                               "labelTextSize": "0.875rem",
-                              "defaultDate": "{{moment(input_StockCurrentDate.selectedDate).add(1, 'day')}}",
+                              "defaultDate": "{{moment(GetLatestDate.data).add(1, 'day')}}",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "widgetId": "7bh299o1th",
@@ -1594,7 +1594,7 @@
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
                               "firstDayOfWeek": "0",
-                              "maxDate": "{{moment(input_StockCurrentDate.selectedDate).add(15, 'day')}}",
+                              "maxDate": "{{moment(GetLatestDate.data).add(15, 'day')}}",
                               "minDynamicHeight": 4
                             }
                           ],
