@@ -4,12 +4,19 @@ export default {
 		const forecastData = forecastExportData.demandForecastDataset();
 
 		const maxBarValue = Math.max(...currentData.map(data => data.y)) + 1;
-
+		
+		let chartType = "";
+		if(currentData.map(data => ({ label: data.label })).length > 20) {
+			chartType = "scrollmsstackedcolumn2d";
+		} else {
+			chartType = "msstackedcolumn2d";
+		};
+		
 		const outputDataSource = {
-			type: "msstackedcolumn2d",
+			type: chartType,
 			dataSource: {
 				chart: {
-					caption: "Demand",
+					caption: "Customer Demand",
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yaxismaxvalue: maxBarValue,
@@ -31,6 +38,7 @@ export default {
 						dataset: [
 							{
 								seriesname: "Current",
+								color: "64748b",
 								data: currentData,
 							}
 						]
@@ -43,23 +51,24 @@ export default {
 		};
 
 		return JSON.stringify(outputDataSource);
-		// return forecastData;
 	},
 	InventoryStock() {
-		const currentDate = moment(input_StockCurrentDate.selectedDate);
-		const forecastDate = moment(input_StockForecastDate.selectedDate);
-
-		const barData = ShowProductList.data
+		const currentData = ShowProductList.data
 		.filter(p => p.stockCount < 20)
 		.map(p => ({ label: p.displayName, value: p.stockCount }))
 		.sort((a, b) => a.value - b.value);
-
-		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
-		const userWarningThreshold = input_WarningThreshold.isValid ? (input_WarningThreshold.inputText || 10) : 10;
-		const userRestockThreshold = input_RestockThreshold.isValid ? (input_RestockThreshold.inputText || 5) : 5;
-
+		const forecastData = forecastExportData.stockForecastDataset();
+		
+		const maxBarValue = Math.max(...currentData.map(data => data.y)) + 1;
+		let chartType = "";
+		if(currentData.map(data => ({ label: data.label })).length > 20) {
+			chartType = "scrollmsstackedcolumn2d";
+		} else {
+			chartType = "msstackedcolumn2d";
+		};
+		
 		const outputDataSource = {
-			type: "mscombi2d",
+			type: chartType,
 			dataSource: {
 				chart: {
 					caption: "Inventory Stock",
@@ -76,35 +85,22 @@ export default {
 					labelWrap: "1"
 				},
 				categories: [{
-					category: barData.map(data => ({ label: data.label }))
+					category: currentData.map(data => ({ label: data.label }))
 				}],
-				dataset: [{
-					seriesname: "Current",
-					data: barData,
-					color: "#64748b"
-				}],
-				trendlines: [{
-					line: [{
-						startvalue: userWarningThreshold,
-						endvalue: "",
-						color: "#fde047",
-						displayvalue: "Warning",
-						valueonright: "1",
-						thickness: "2",
-						showontop: "1",
-						alpha: "80"
+				dataset: [
+					{
+						dataset: [
+							{
+								seriesname: "Current",
+								color: "64748b",
+								data: currentData,
+							}
+						]
 					},
-								 {
-									 startvalue: userRestockThreshold,
-									 endvalue: "",
-									 color: "#ef4444",
-									 displayvalue: "Restock ASAP",
-									 valueonright: "1",
-									 thickness: "2",
-									 showontop: "1",
-									 alpha: "80"
-								 }]
-				}]
+					{
+						dataset: forecastData
+					}
+				]
 			}
 		};
 

@@ -8,7 +8,7 @@ export default {
 		return currentBarData;
 	},
 	filterForecastOnDate() {
-		const csvData = upload_ForecastExport.files[0].data;
+		const csvData = forecastExport_dailyForecast.data.fileData;
 		const jsonData = Papa.parse(csvData, { header: true }).data;
 
 		const currentBarData = dataOutgoingDemandCurrent.data
@@ -47,6 +47,27 @@ export default {
 		for (let i = 0; i < forecastData[0].values.length; i++) {
 			const seriesname = ['P10', 'P50', 'P90'];
 			const colourSeries = ['F2726F', 'FFC533', '62B58F'];
+			const data = [];
+
+			for (const item of forecastData) {
+				const value = item.values[i].value;
+				data.push({ value });
+			}
+
+			dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
+		}
+
+		return dataset;
+	},
+	stockForecastDataset() {
+		const currentData = this.filterCurrentDemandOnDate();
+		const forecastData = this.filterForecastOnDate();
+
+		const dataset = [];
+
+		for (let i = 0; i < forecastData[0].values.length; i++) {
+			const seriesname = ['P10', 'P50', 'P90'];
+			const colourSeries = ['62B58F', 'FFC533', 'F2726F'];
 			const data = [];
 
 			for (const item of forecastData) {
