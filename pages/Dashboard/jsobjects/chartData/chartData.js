@@ -1,14 +1,12 @@
 export default {
 	CustomerDemand() {
-		const currentBarData = dataOutgoingDemandCurrent.data
-		.filter(p => p.outgoingDemandVolume >= 20)
-		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
-		.sort((a, b) => b.value - a.value);
+		const currentData = forecastExportData.filterCurrentDemandOnDate();
+		const forecastData = forecastExportData.demandForecastDataset();
 
-		const maxBarValue = Math.max(...currentBarData.map(data => data.y)) + 1;
+		const maxBarValue = Math.max(...currentData.map(data => data.y)) + 1;
 
 		const outputDataSource = {
-			type: "mscombi2d",
+			type: "msstackedcolumn2d",
 			dataSource: {
 				chart: {
 					caption: "Demand",
@@ -26,22 +24,26 @@ export default {
 					labelPadding: "10"
 				},
 				categories: [{
-					category: currentBarData.map(data => ({ label: data.label }))
+					category: currentData.map(data => ({ label: data.label }))
 				}],
-				dataset: [{
-					seriesname: "Current",
-					data: currentBarData,
-					color: "#64748b"
-					// },
-					// {
-					// seriesname: "Forecast",
-					// data: jsonForecastData,
-					// color: "#666666"
-				}]
+				dataset: [
+					{
+						dataset: [
+							{
+								seriesname: "Current",
+								data: currentData,
+							}
+						]
+					},
+					{
+						dataset: forecastData
+					}
+				]
 			}
 		};
 
 		return JSON.stringify(outputDataSource);
+		// return forecastData;
 	},
 	InventoryStock() {
 		const currentDate = moment(input_StockCurrentDate.selectedDate);

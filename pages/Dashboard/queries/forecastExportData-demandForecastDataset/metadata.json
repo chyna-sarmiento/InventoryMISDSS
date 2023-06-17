@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "readCsvAsText",
-    "fullyQualifiedName": "forecastExportData.readCsvAsText",
+    "name": "demandForecastDataset",
+    "fullyQualifiedName": "forecastExportData.demandForecastDataset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -35,9 +35,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-17T14:01:51Z"
   },
-  "id": "Dashboard_forecastExportData.readCsvAsText",
+  "id": "Dashboard_forecastExportData.demandForecastDataset",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648d48638180af57a0c1ee66"
+  "gitSyncId": "6439874f26013158789b34e6_648dbccf8180af57a0c1f222"
 }
