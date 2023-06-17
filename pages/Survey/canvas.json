@@ -9,7 +9,7 @@
           "mobileBottomRow": 640,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1100,
+          "bottomRow": 1020,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -75,7 +75,7 @@
           "widgetId": "0",
           "containerStyle": "none",
           "snapRows": 60,
-          "version": 79,
+          "version": 80,
           "mobileTopRow": 0,
           "responsiveBehavior": "fill",
           "flexLayers": [

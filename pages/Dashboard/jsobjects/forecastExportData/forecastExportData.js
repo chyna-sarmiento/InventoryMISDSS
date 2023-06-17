@@ -7,7 +7,7 @@ export default {
 
 		return currentBarData;
 	},
-	filterForecastOnDate() {
+	filterForecastOnDate(selectedDate) {
 		const csvData = forecastExport_dailyForecast.data.fileData;
 		const jsonData = Papa.parse(csvData, { header: true }).data;
 
@@ -19,7 +19,7 @@ export default {
 
 		const filteredDate = jsonData.filter((data) => {
 			const date = moment(data.DateTimeOutgoing, 'YYYY-MM-DDTHH:mm:ssZ');
-			return date.isSame(input_DemandForecastDate.selectedDate, 'day');
+			return date.isSame(selectedDate, 'day');
 		});
 		
 		const filteredData = filteredDate
@@ -40,7 +40,7 @@ export default {
 	},
 	demandForecastDataset() {
 		const currentData = this.filterCurrentDemandOnDate();
-		const forecastData = this.filterForecastOnDate();
+		const forecastData = this.filterForecastOnDate(input_DemandForecastDate.selectedDate);
 
 		const dataset = [];
 
@@ -61,7 +61,7 @@ export default {
 	},
 	stockForecastDataset() {
 		const currentData = this.filterCurrentDemandOnDate();
-		const forecastData = this.filterForecastOnDate();
+		const forecastData = this.filterForecastOnDate(input_StockForecastDate.selectedDate);
 
 		const dataset = [];
 
