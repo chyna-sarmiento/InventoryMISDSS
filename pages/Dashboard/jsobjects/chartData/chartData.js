@@ -1,28 +1,17 @@
 export default {
 	CustomerDemand() {
-		const currentStartDate = moment(input_DemandCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY');
-		const currentEndDate = moment.tz(moment(input_DemandCurrentDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
-		const forecastStartDate = moment(input_DemandForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')
-		const forecastEndDate = moment.tz(moment(input_DemandForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
-		
-		const csvBarData = sampleDemandData.data;
-		const parsedData = Papa.parse(csvBarData, { header: true });
-		const jsonBarData = parsedData.data;
-		
-		// const barData = dataOutgoingDemandCurrent.data
-		//const barData = dataOutgoingDemandCurrent.data
-		// .filter(p => p.outgoingDemandVolume >= 20)
-		// .map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
-		// .sort((a, b) => b.value - a.value);
+		const currentBarData = dataOutgoingDemandCurrent.data
+		.filter(p => p.outgoingDemandVolume >= 20)
+		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
+		.sort((a, b) => b.value - a.value);
 
-		const maxBarValue = Math.max(...jsonBarData.map(data => data.y)) + 1;
+		const maxBarValue = Math.max(...currentBarData.map(data => data.y)) + 1;
 
 		const outputDataSource = {
 			type: "mscombi2d",
 			dataSource: {
 				chart: {
 					caption: "Demand",
-					subcaption: "Current Week: " + currentStartDate + " to " + currentEndDate + "\nForecast Week: " + forecastStartDate + " to " + forecastEndDate,
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yaxismaxvalue: maxBarValue,
@@ -37,12 +26,17 @@ export default {
 					labelPadding: "10"
 				},
 				categories: [{
-					category: jsonBarData.map(data => ({ label: data.label }))
+					category: currentBarData.map(data => ({ label: data.label }))
 				}],
 				dataset: [{
 					seriesname: "Current",
-					data: jsonBarData,
+					data: currentBarData,
 					color: "#64748b"
+					// },
+					// {
+					// seriesname: "Forecast",
+					// data: jsonForecastData,
+					// color: "#666666"
 				}]
 			}
 		};
@@ -50,26 +44,23 @@ export default {
 		return JSON.stringify(outputDataSource);
 	},
 	InventoryStock() {
-		const currentStartDate = moment(input_StockCurrentDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY');
-		const currentEndDate = moment.tz(moment(input_StockCurrentDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
-		const forecastStartDate = moment(input_StockForecastDate.selectedDate).startOf('week').tz(moment.tz.guess()).format('DD MMMM YYYY')
-		const forecastEndDate = moment.tz(moment(input_StockForecastDate.selectedDate).add(6, 'days'), moment.tz.guess()).format('DD MMMM YYYY');
-		
+		const currentDate = moment(input_StockCurrentDate.selectedDate);
+		const forecastDate = moment(input_StockForecastDate.selectedDate);
+
 		const barData = ShowProductList.data
 		.filter(p => p.stockCount < 20)
 		.map(p => ({ label: p.displayName, value: p.stockCount }))
-		 .sort((a, b) => a.value - b.value);
+		.sort((a, b) => a.value - b.value);
 
 		const maxBarValue = Math.max(...barData.map(data => data.y)) + 1;
 		const userWarningThreshold = input_WarningThreshold.isValid ? (input_WarningThreshold.inputText || 10) : 10;
 		const userRestockThreshold = input_RestockThreshold.isValid ? (input_RestockThreshold.inputText || 5) : 5;
-		
+
 		const outputDataSource = {
 			type: "mscombi2d",
 			dataSource: {
 				chart: {
 					caption: "Inventory Stock",
-					subcaption: "Current Week: " + currentStartDate + " to " + currentEndDate + "\nForecast Week: " + forecastStartDate + " to " + forecastEndDate,
 					xaxisname: "Low Items",
 					yaxisname: "Number of Items",
 					yaxismaxvalue: maxBarValue,
