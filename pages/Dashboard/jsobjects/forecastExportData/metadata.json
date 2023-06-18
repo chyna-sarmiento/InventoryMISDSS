@@ -6,7 +6,12 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "jsonData",
+        "value": "Papa.parse(forecastExport_dailyForecast.data.fileData, {\n  header: true\n}).data"
+      }
+    ],
     "userPermissions": []
   },
   "id": "Dashboard_forecastExportData",

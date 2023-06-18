@@ -39,7 +39,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-11T11:12:11Z"
   },
   "id": "Dashboard_dashboardFunctions.onTabSelected",
   "deleted": false,

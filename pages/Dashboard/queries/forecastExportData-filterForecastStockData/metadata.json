@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "filterCurrentDemandOnDate",
-    "fullyQualifiedName": "forecastExportData.filterCurrentDemandOnDate",
+    "name": "filterForecastStockData",
+    "fullyQualifiedName": "forecastExportData.filterForecastStockData",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_forecastExportData.filterCurrentDemandOnDate",
+  "id": "Dashboard_forecastExportData.filterForecastStockData",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648d7bddaf5ab12d782c1d07"
+  "gitSyncId": "6439874f26013158789b34e6_648e7b758180af57a0c1f621"
 }

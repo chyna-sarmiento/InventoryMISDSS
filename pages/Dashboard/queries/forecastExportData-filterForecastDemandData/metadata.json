@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "filterForecastOnDate",
-    "fullyQualifiedName": "forecastExportData.filterForecastOnDate",
+    "name": "filterForecastDemandData",
+    "fullyQualifiedName": "forecastExportData.filterForecastDemandData",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -20,11 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "selectedDate"
-        }
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -40,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-17T09:19:14Z"
+    "createdAt": "2023-06-18T03:28:05Z"
   },
-  "id": "Dashboard_forecastExportData.filterForecastOnDate",
+  "id": "Dashboard_forecastExportData.filterForecastDemandData",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648d7a928180af57a0c1eff3"
+  "gitSyncId": "6439874f26013158789b34e6_648e79c55d22b125c2a9a689"
 }

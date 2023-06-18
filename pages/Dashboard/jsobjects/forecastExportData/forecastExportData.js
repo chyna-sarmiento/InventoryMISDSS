@@ -1,25 +1,15 @@
 export default {
-	filterCurrentDemandOnDate() {
-		const currentBarData = dataOutgoingDemandCurrent.data
-		.filter(p => p.outgoingDemandVolume >= 20)
-		.map(p => ({ label: p.productName, value: p.outgoingDemandVolume }))
-		.sort((a, b) => b.value - a.value);
-
-		return currentBarData;
-	},
-	filterForecastOnDate(selectedDate) {
-		const csvData = forecastExport_dailyForecast.data.fileData;
-		const jsonData = Papa.parse(csvData, { header: true }).data;
-
-		const currentBarData = dataOutgoingDemandCurrent.data
+	jsonData: Papa.parse(forecastExport_dailyForecast.data.fileData, { header: true }).data,
+	filterForecastDemandData() {
+		const currentBarData = dataDemandCurrent.data
 		.filter(p => p.outgoingDemandVolume >= 20)
 		.sort((a, b) => b.outgoingDemandVolume - a.outgoingDemandVolume);
-
+		
 		const filteredIds = currentBarData.map((data) => data.outgoingProductId);
 
-		const filteredDate = jsonData.filter((data) => {
+		const filteredDate = this.jsonData.filter((data) => {
 			const date = moment(data.DateTimeOutgoing, 'YYYY-MM-DDTHH:mm:ssZ');
-			return date.isSame(selectedDate, 'day');
+			return date.isSame(input_DemandForecastDate.selectedDate, 'day');
 		});
 		
 		const filteredData = filteredDate
@@ -37,10 +27,38 @@ export default {
 		});
 
 		return filteredData;
+		// return test;
+	},
+	filterForecastStockData() {
+		const currentBarData = ShowListLowStocks.data
+		.filter(p => p.stockCount < 20)
+		.sort((a, b) => a.value - b.value);
+		
+		const filteredIds = currentBarData.map((data) => data.id);
+
+		const filteredDate = this.jsonData.filter((data) => {
+			const date = moment(data.DateTimeOutgoing, 'YYYY-MM-DDTHH:mm:ssZ');
+			return date.isSame(input_StockForecastDate.selectedDate, 'day');
+		});
+		
+		const filteredData = filteredDate
+		.filter((data) => filteredIds.includes(parseInt(data.OutgoingProductId)))
+		.map((data) => {
+			const matchingBarData = currentBarData.find((barData) => barData.id === parseInt(data.OutgoingProductId));
+			return {
+				label: matchingBarData.displayName,
+				values: [
+					{ label: 'p10', value: data.p10 },
+					{ label: 'p50', value: data.p50 },
+					{ label: 'p90', value: data.p90 }
+				]
+			};
+		});
+
+		return filteredData;
 	},
 	demandForecastDataset() {
-		const currentData = this.filterCurrentDemandOnDate();
-		const forecastData = this.filterForecastOnDate(input_DemandForecastDate.selectedDate);
+		const forecastData = this.filterForecastDemandData();
 
 		const dataset = [];
 
@@ -60,8 +78,7 @@ export default {
 		return dataset;
 	},
 	stockForecastDataset() {
-		const currentData = this.filterCurrentDemandOnDate();
-		const forecastData = this.filterForecastOnDate(input_StockForecastDate.selectedDate);
+		const forecastData = this.filterForecastStockData();
 
 		const dataset = [];
 

@@ -10,7 +10,7 @@
           "mobileBottomRow": 833.5000000000001,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 786.75,
+          "bottomRow": 1006.7499999999998,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -286,7 +286,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 9.2,
-              "bottomRow": 70.675,
+              "bottomRow": 92.67499999999998,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -311,7 +311,7 @@
                   "mobileBottomRow": 603.5000000000001,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 574.75,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -398,7 +398,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{dataOutgoingDemandCurrent.run().then(() => {}).catch(() => {\n  showAlert('Error fetching Outgoing Demand data', '');\n});}}",
+                              "onDateSelected": "{{dataDemandCurrent.run().then(() => {\n  forecastExportData.filterForecastDemandData();\n  forecastExportData.demandForecastDataset();\n}).catch(() => {\n  showAlert('Error fetching dataDemandCurrent.', '');\n});}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -713,7 +713,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{forecastExportData.filterForecastOnDate(input_DemandForecastDate.selectedDate);}}",
+                              "onDateSelected": "{{forecastExportData.filterForecastDemandData();\nforecastExportData.demandForecastDataset();}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -840,7 +840,7 @@
                       "setAdaptiveYMin": true,
                       "widgetName": "report_CustomerDemand",
                       "allowScroll": false,
-                      "widthInPercentage": 0.9726315789473684,
+                      "widthInPercentage": 0.9699421965317919,
                       "displayName": "Chart",
                       "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
                       "searchTags": [
@@ -849,7 +849,7 @@
                         "visualisations"
                       ],
                       "topRow": 14.475000000000001,
-                      "bottomRow": 55.475,
+                      "bottomRow": 77.475,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -963,7 +963,7 @@
                   "mobileBottomRow": 702.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 574.7499999999999,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1078,7 +1078,7 @@
                               "labelPosition": "Top",
                               "key": "ow36tztaac",
                               "labelTextSize": "0.875rem",
-                              "onTextChanged": "{{ShowProductList.run()}}",
+                              "onTextChanged": "{{ShowListLowStocks.run()}}",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "widgetId": "zwzhili88g",
@@ -1221,7 +1221,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{dataOutgoingDemandCurrent.run().catch(() => {\n  showAlert('Error fetching Outgoing Demand data', 'error');\n});}}",
+                              "onDateSelected": "{{dataStockCurrent.run().then(() => {\n  forecastExportData.filterForecastStockData();\n  forecastExportData.stockForecastDataset();\n}).catch(() => {\n  showAlert('Error fetching dataStockCurrent', 'error');\n});}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1535,8 +1535,9 @@
                                   "key": "maxDate"
                                 }
                               ],
+                              "labelTooltip": "Only the first 14 days can be forecasted.",
                               "isDisabled": false,
-                              "onDateSelected": "{{forecastExportData.stockForecastDataset();}}",
+                              "onDateSelected": "{{forecastExportData.filterForecastStockData();\nforecastExportData.stockForecastDataset();}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1662,7 +1663,7 @@
                       "setAdaptiveYMin": true,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
-                      "widthInPercentage": 0.9726315789473684,
+                      "widthInPercentage": 0.9699421965317919,
                       "displayName": "Chart",
                       "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
                       "searchTags": [
@@ -1671,7 +1672,7 @@
                         "visualisations"
                       ],
                       "topRow": 14.475000000000001,
-                      "bottomRow": 55.47499999999999,
+                      "bottomRow": 77.475,
                       "parentRowSpace": 10,
                       "type": "CHART_WIDGET",
                       "hideCard": false,
@@ -1862,16 +1863,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dashboard_forecastExport_dailyForecast",
-              "name": "forecastExport_dailyForecast",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Dashboard_GetEarliestDate",
               "name": "GetEarliestDate",
               "confirmBeforeExecute": false,
@@ -1886,12 +1877,20 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_forecastExport_dailyForecast",
+              "name": "forecastExport_dailyForecast",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Dashboard_dataOutgoingDemandCurrent",
-              "name": "dataOutgoingDemandCurrent",
+              "id": "Dashboard_dataDemandCurrent",
+              "name": "dataDemandCurrent",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
@@ -1902,8 +1901,8 @@
           ],
           [
             {
-              "id": "Dashboard_ShowProductList",
-              "name": "ShowProductList",
+              "id": "Dashboard_ShowListLowStocks",
+              "name": "ShowListLowStocks",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [

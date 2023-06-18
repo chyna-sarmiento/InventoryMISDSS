@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-17T16:47:10Z"
   },
   "id": "Dashboard_forecastExportData.stockForecastDataset",
   "deleted": false,
