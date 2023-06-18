@@ -7,10 +7,10 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 1113.5,
+          "mobileBottomRow": 1143.5,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1006.7499999999998,
+          "bottomRow": 926.7499999999998,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -278,7 +278,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 103.35,
+              "mobileBottomRow": 106.35000000000001,
               "widgetName": "tab_Charts",
               "borderColor": "",
               "isCanvas": true,
@@ -308,7 +308,7 @@
               "children": [
                 {
                   "tabId": "tab1",
-                  "mobileBottomRow": 883.5,
+                  "mobileBottomRow": 913.5000000000001,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "bottomRow": 794.7499999999998,
@@ -563,7 +563,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 54.801223241590215,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "itswnz61gw",
                       "containerStyle": "card",
@@ -604,7 +604,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 32,
+                      "leftColumn": 54.801223241590215,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -815,7 +815,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 109.60244648318043,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "q6cdksqrza",
                       "containerStyle": "card",
@@ -836,7 +836,7 @@
                     {
                       "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 86.35,
+                      "mobileBottomRow": 89.35,
                       "setAdaptiveYMin": false,
                       "widgetName": "report_CustomerDemand",
                       "allowScroll": false,
@@ -960,7 +960,7 @@
                 },
                 {
                   "tabId": "tab2",
-                  "mobileBottomRow": 702.25,
+                  "mobileBottomRow": 1002.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "bottomRow": 794.7499999999998,
@@ -1130,7 +1130,7 @@
                       "key": "t6q50ebji7",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 21.333333333333332,
+                      "rightColumn": 54.801223241590215,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "bor4c34prt",
                       "containerStyle": "card",
@@ -1171,7 +1171,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21.333333333333332,
+                      "leftColumn": 54.801223241590215,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1386,7 +1386,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.66666666666667,
+                      "rightColumn": 109.60244648318043,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "y6x538jihr",
                       "containerStyle": "card",
@@ -1427,7 +1427,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.66666666666667,
+                      "leftColumn": 109.60244648318043,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1639,7 +1639,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 164.40366972477065,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "dhjnhg0f0o",
                       "containerStyle": "card",
@@ -1658,8 +1658,9 @@
                       "minDynamicHeight": 10
                     },
                     {
+                      "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 68.225,
+                      "mobileBottomRow": 98.225,
                       "setAdaptiveYMin": false,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
