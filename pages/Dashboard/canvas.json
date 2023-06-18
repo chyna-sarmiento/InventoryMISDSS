@@ -837,7 +837,7 @@
                       "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 58.35,
-                      "setAdaptiveYMin": true,
+                      "setAdaptiveYMin": false,
                       "widgetName": "report_CustomerDemand",
                       "allowScroll": false,
                       "widthInPercentage": 0.9699421965317919,
@@ -1660,7 +1660,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 68.225,
-                      "setAdaptiveYMin": true,
+                      "setAdaptiveYMin": false,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
                       "widthInPercentage": 0.9699421965317919,

@@ -7,8 +7,9 @@ export default {
 
 		const forecastData = forecastExportData.demandForecastDataset();
 
-		const maxBarValue = Math.max(...currentData.map(data => data.y)) + 1;
-
+		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
+		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
+		
 		let chartType = "";
 		if(currentData.map(data => ({ label: data.label })).length > 20) {
 			chartType = "scrollmsstackedcolumn2d";
@@ -23,7 +24,8 @@ export default {
 					caption: "Customer Demand",
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
-					yaxismaxvalue: maxBarValue,
+					yAxisMaxValue: minBarValue,
+					yAxisMimValue: maxBarValue,
 					theme: "fusion",
 					baseFont: "Montserrat",
 					captionFontSize: "24",
@@ -67,7 +69,9 @@ export default {
 		.sort((a, b) => a.value - b.value);
 		const forecastData = forecastExportData.stockForecastDataset();
 
-		const maxBarValue = Math.max(...currentData.map(data => data.y)) + 1;
+		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
+		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
+		
 		let chartType = "";
 		if(currentData.map(data => ({ label: data.label })).length > 20) {
 			chartType = "scrollmsstackedcolumn2d";
@@ -82,7 +86,8 @@ export default {
 					caption: "Inventory Stock",
 					xaxisname: "Low Items",
 					yaxisname: "Number of Items",
-					yaxismaxvalue: maxBarValue,
+					yAxisMinValue: minBarValue,
+					yAxisMaxValue: maxBarValue,
 					theme: "fusion",
 					baseFont: "Montserrat",
 					captionFontSize: "24",

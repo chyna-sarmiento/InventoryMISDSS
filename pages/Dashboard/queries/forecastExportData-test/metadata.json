@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "onDemandCurrentDateSelected",
-    "fullyQualifiedName": "dashboardFunctions.onDemandCurrentDateSelected",
+    "name": "test",
+    "fullyQualifiedName": "forecastExportData.test",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Dashboard",
-    "collectionId": "Dashboard_dashboardFunctions",
+    "collectionId": "Dashboard_forecastExportData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,10 +35,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-06-11T10:33:57Z"
+    "userPermissions": []
   },
-  "id": "Dashboard_dashboardFunctions.onDemandCurrentDateSelected",
+  "id": "Dashboard_forecastExportData.test",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6485a315a89c1b088d7a29b6"
+  "gitSyncId": "6439874f26013158789b34e6_648e936b8180af57a0c1f686"
 }
