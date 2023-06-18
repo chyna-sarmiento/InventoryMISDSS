@@ -7,7 +7,7 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 833.5000000000001,
+          "mobileBottomRow": 1113.5,
           "widgetName": "MainContainer",
           "topRow": 0,
           "bottomRow": 1006.7499999999998,
@@ -278,7 +278,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 75.35000000000001,
+              "mobileBottomRow": 103.35,
               "widgetName": "tab_Charts",
               "borderColor": "",
               "isCanvas": true,
@@ -308,7 +308,7 @@
               "children": [
                 {
                   "tabId": "tab1",
-                  "mobileBottomRow": 603.5000000000001,
+                  "mobileBottomRow": 883.5,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "bottomRow": 794.7499999999998,
@@ -328,7 +328,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 12.875,
-                      "widgetName": "cont_DemandCurrentDates",
+                      "widgetName": "canvas_inputCurrent",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "Container",
@@ -836,7 +836,7 @@
                     {
                       "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 58.35,
+                      "mobileBottomRow": 86.35,
                       "setAdaptiveYMin": false,
                       "widgetName": "report_CustomerDemand",
                       "allowScroll": false,
@@ -1009,7 +1009,7 @@
                       "children": [
                         {
                           "mobileBottomRow": 80.75,
-                          "widgetName": "Canvas12",
+                          "widgetName": "canvas_stockChecker",
                           "displayName": "Canvas",
                           "topRow": 0,
                           "bottomRow": 80.75,
@@ -1180,7 +1180,7 @@
                       "children": [
                         {
                           "mobileBottomRow": 128.75,
-                          "widgetName": "Canvas9CopyCopyCopy",
+                          "widgetName": "canvas_inputCurrentDate",
                           "displayName": "Canvas",
                           "topRow": 0,
                           "bottomRow": 132.75,
@@ -1436,7 +1436,7 @@
                       "children": [
                         {
                           "mobileBottomRow": 128.75,
-                          "widgetName": "Canvas9CopyCopy1",
+                          "widgetName": "canvas_inputForecastDate",
                           "displayName": "Canvas",
                           "topRow": 0,
                           "bottomRow": 132.75000000000003,

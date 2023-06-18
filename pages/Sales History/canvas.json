@@ -56,7 +56,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 460,
+                  "bottomRow": 450,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -760,7 +760,7 @@
                 }
               ],
               "key": "9k18nr3lke",
-              "height": 464,
+              "height": 456.25000000000006,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
@@ -1291,7 +1291,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 780,
+                  "bottomRow": 650,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2615,7 +2615,7 @@
                 }
               ],
               "key": "3xlm59vidg",
-              "height": 789.0468750000002,
+              "height": 652.7500000000002,
               "isDeprecated": false,
               "rightColumn": 32,
               "detachFromLayout": true,
@@ -2711,7 +2711,8 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "tbl_ListSales.pageSize",
-                "tbl_ListSales.pageNo"
+                "tbl_ListSales.pageNo",
+                "tbl_ListSales.searchText"
               ],
               "timeoutInMillisecond": 10000
             }

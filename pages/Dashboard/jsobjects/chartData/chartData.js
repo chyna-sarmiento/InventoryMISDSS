@@ -9,9 +9,11 @@ export default {
 
 		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
 		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
-		
+
 		let chartType = "";
-		if(currentData.map(data => ({ label: data.label })).length > 20) {
+		const userAgent = navigator.userAgent.toLowerCase();
+
+		if (currentData.map(data => ({ label: data.label })).length > 20 || !userAgent.includes("desktop")) {
 			chartType = "scrollmsstackedcolumn2d";
 		} else {
 			chartType = "msstackedcolumn2d";
@@ -71,9 +73,11 @@ export default {
 
 		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
 		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
-		
+
 		let chartType = "";
-		if(currentData.map(data => ({ label: data.label })).length > 20) {
+		const userAgent = navigator.userAgent.toLowerCase();
+
+		if (currentData.map(data => ({ label: data.label })).length > 20 || !userAgent.includes("desktop")) {
 			chartType = "scrollmsstackedcolumn2d";
 		} else {
 			chartType = "msstackedcolumn2d";

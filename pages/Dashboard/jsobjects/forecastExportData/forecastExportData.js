@@ -98,15 +98,8 @@ export default {
 		return dataset;
 	},
 	test() {
-		const currentData = dataDemandCurrent.data
-		.filter(p => p.outgoingDemandVolume >= 20)
-		.map(p => ({label: p.productName, value: p.outgoingDemandVolume}))
-		.sort((a, b) => b.outgoingDemandVolume - a.outgoingDemandVolume);
+		const userAgent = navigator.userAgent.toLowerCase();
 
-		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
-		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
-		
-		// return currentData;
-		// return "min: " + minBarValue + " max: " + maxBarValue;
+		return !userAgent.includes("desktop");
 	}
 }
