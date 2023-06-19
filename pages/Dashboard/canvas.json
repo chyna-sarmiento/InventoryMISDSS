@@ -1518,7 +1518,7 @@
                               ],
                               "labelTooltip": "Only the first 14 days can be forecasted.",
                               "isDisabled": false,
-                              "onDateSelected": "{{filteredStockForecast.run()}}",
+                              "onDateSelected": "{{filteredStockForecast.run().then(() => {\n  chartData.InventoryStock();\n});}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
