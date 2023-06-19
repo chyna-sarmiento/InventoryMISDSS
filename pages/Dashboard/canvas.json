@@ -380,7 +380,7 @@
                       "labelPosition": "Top",
                       "key": "ow36tztaac",
                       "labelTextSize": "0.875rem",
-                      "onTextChanged": "{{dataDemandCurrent.run()}}",
+                      "onTextChanged": "{{dataDemandCurrent.run().then(() => {\n  filteredDemandForecast.run();\n  gsForecastData.gsDemandForecastData();\n  gsForecastData.gsDemandDataset();\n  chartData.CustomerDemand();\n});}}",
                       "isDeprecated": false,
                       "rightColumn": 21.333333333333336,
                       "widgetId": "ood6h56rcg",
@@ -1059,10 +1059,10 @@
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.d0ce957b6c4640f8a7418ce846ee200e.svg",
                       "topRow": 0,
-                      "tooltip": "Your entry must be minimum of 1 and a maximum of 50.",
+                      "tooltip": "Your entry must be minimum of 1 and a maximum of 25.",
                       "labelWidth": 5,
                       "type": "INPUT_WIDGET_V2",
-                      "maxNum": "50",
+                      "maxNum": "25",
                       "animateLoading": true,
                       "resetOnSubmit": true,
                       "leftColumn": 0,
@@ -1110,7 +1110,7 @@
                       "labelPosition": "Top",
                       "key": "ow36tztaac",
                       "labelTextSize": "0.875rem",
-                      "onTextChanged": "{{ShowListLowStocks.run()}}",
+                      "onTextChanged": "{{ShowListLowStocks.run().then(() => {\n  filteredStockForecast.run();\n  gsForecastData.gsStockDataset();\n  chartData.InventoryStock();\n});}}",
                       "isDeprecated": false,
                       "rightColumn": 21.333333333333336,
                       "widgetId": "zwzhili88g",
@@ -1859,9 +1859,7 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Dashboard_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",
