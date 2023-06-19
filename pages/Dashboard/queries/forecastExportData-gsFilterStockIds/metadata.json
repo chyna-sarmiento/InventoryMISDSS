@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "test",
-    "fullyQualifiedName": "forecastExportData.test",
+    "name": "gsFilterStockIds",
+    "fullyQualifiedName": "forecastExportData.gsFilterStockIds",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_forecastExportData.test",
+  "id": "Dashboard_forecastExportData.gsFilterStockIds",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648e936b8180af57a0c1f686"
+  "gitSyncId": "6439874f26013158789b34e6_648ffdfd264ae81e4247854e"
 }

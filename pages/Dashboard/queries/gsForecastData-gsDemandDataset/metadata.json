@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "filterForecastStockData",
-    "fullyQualifiedName": "forecastExportData.filterForecastStockData",
+    "name": "gsDemandDataset",
+    "fullyQualifiedName": "gsForecastData.gsDemandDataset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Dashboard",
-    "collectionId": "Dashboard_forecastExportData",
+    "collectionId": "Dashboard_gsForecastData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_forecastExportData.filterForecastStockData",
+  "id": "Dashboard_gsForecastData.gsDemandDataset",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648e7b758180af57a0c1f621"
+  "gitSyncId": "6439874f26013158789b34e6_649054206298f54ae199f85f"
 }

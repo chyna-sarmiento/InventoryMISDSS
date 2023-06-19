@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "filterForecastDemandData",
-    "fullyQualifiedName": "forecastExportData.filterForecastDemandData",
+    "name": "gsStockDataset",
+    "fullyQualifiedName": "forecastExportData.gsStockDataset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-18T03:28:05Z"
+    "createdAt": "2023-06-19T08:03:44Z"
   },
-  "id": "Dashboard_forecastExportData.filterForecastDemandData",
+  "id": "Dashboard_forecastExportData.gsStockDataset",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648e79c55d22b125c2a9a689"
+  "gitSyncId": "6439874f26013158789b34e6_64900be086f2e517025693c8"
 }

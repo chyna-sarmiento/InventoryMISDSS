@@ -10,7 +10,7 @@
           "mobileBottomRow": 1143.5,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 926.7499999999998,
+          "bottomRow": 1006.7499999999998,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -326,6 +326,80 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
+                      "iconSVG": "/static/media/icon.d0ce957b6c4640f8a7418ce846ee200e.svg",
+                      "topRow": 0,
+                      "tooltip": "Number is inclusive.",
+                      "labelWidth": 5,
+                      "type": "INPUT_WIDGET_V2",
+                      "maxNum": "20",
+                      "animateLoading": true,
+                      "resetOnSubmit": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "NUMBER",
+                      "isDisabled": false,
+                      "isRequired": true,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": true,
+                      "version": 2,
+                      "minNum": "10",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "alignment": "start",
+                      "mobileBottomRow": 6.075,
+                      "widgetName": "input_demandChecker",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 6.075000000000003,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "mobileRightColumn": 64,
+                      "parentColumnSpace": 4.510416666666666,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "key": "ow36tztaac",
+                      "labelTextSize": "0.875rem",
+                      "onTextChanged": "{{dataDemandCurrent.run()}}",
+                      "isDeprecated": false,
+                      "rightColumn": 21.333333333333336,
+                      "widgetId": "ood6h56rcg",
+                      "errorMessage": "Your entry must be minimum of 10 and a maximum of 20.",
+                      "minWidth": 450,
+                      "label": "Check Demand above:",
+                      "parentId": "fmgtivh5p6",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "mobileTopRow": 0,
+                      "responsiveBehavior": "fill",
+                      "mobileLeftColumn": 0,
+                      "maxDynamicHeight": 9000,
+                      "shouldAllowAutofill": false,
+                      "iconAlign": "left",
+                      "defaultText": "20",
+                      "minDynamicHeight": 4
+                    },
+                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 12.875,
                       "widgetName": "canvas_inputCurrent",
@@ -348,7 +422,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
+                      "leftColumn": 21.333333333333336,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -398,7 +472,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{dataDemandCurrent.run().then(() => {\n  forecastExportData.filterForecastDemandData();\n  forecastExportData.demandForecastDataset();\n}).catch(() => {\n  showAlert('Error fetching dataDemandCurrent.', '');\n});}}",
+                              "onDateSelected": "{{dataDemandCurrent.run().then(() => {\n  filteredDemandForecast.run();\n  chartData.CustomerDemand();\n}).catch(() => {\n  showAlert('Error fetching dataDemandCurrent.', '');\n});}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -563,7 +637,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 54.801223241590215,
+                      "rightColumn": 42.66666666666667,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "itswnz61gw",
                       "containerStyle": "card",
@@ -604,7 +678,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 54.801223241590215,
+                      "leftColumn": 42.66666666666667,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -713,7 +787,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{forecastExportData.filterForecastDemandData();\nforecastExportData.demandForecastDataset();}}",
+                              "onDateSelected": "{{filteredDemandForecast.run().then(() => {\n  chartData.CustomerDemand();\n});}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -771,7 +845,7 @@
                               "mobileLeftColumn": 0,
                               "maxDynamicHeight": 9000,
                               "firstDayOfWeek": "0",
-                              "maxDate": "{{moment(GetLatestDate.data).add(15, 'day')}}",
+                              "maxDate": "{{moment(GetLatestDate.data).add(14, 'day')}}",
                               "minDynamicHeight": 4
                             }
                           ],
@@ -815,7 +889,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 109.60244648318043,
+                      "rightColumn": 64,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "q6cdksqrza",
                       "containerStyle": "card",
@@ -939,6 +1013,10 @@
                     {
                       "children": [
                         {
+                          "id": "ood6h56rcg",
+                          "align": "start"
+                        },
+                        {
                           "id": "itswnz61gw",
                           "align": "start"
                         },
@@ -978,175 +1056,78 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 8.075,
-                      "widgetName": "ctn_userMetrics",
-                      "borderColor": "#E0DEDE",
-                      "isCanvas": true,
-                      "displayName": "Container",
-                      "iconSVG": "/static/media/icon.c47c069fe28eb6d2d27f0fffdc053074.svg",
-                      "searchTags": [
-                        "div",
-                        "parent",
-                        "group"
-                      ],
+                      "boxShadow": "none",
+                      "iconSVG": "/static/media/icon.d0ce957b6c4640f8a7418ce846ee200e.svg",
                       "topRow": 0,
-                      "bottomRow": 8.075,
-                      "parentRowSpace": 10,
-                      "type": "CONTAINER_WIDGET",
-                      "hideCard": false,
-                      "shouldScrollContents": true,
-                      "mobileRightColumn": 64,
+                      "tooltip": "Your entry must be minimum of 1 and a maximum of 50.",
+                      "labelWidth": 5,
+                      "type": "INPUT_WIDGET_V2",
+                      "maxNum": "50",
                       "animateLoading": true,
-                      "parentColumnSpace": 14.375,
-                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
-                          "key": "boxShadow"
-                        }
-                      ],
-                      "children": [
+                          "key": "accentColor"
+                        },
                         {
-                          "mobileBottomRow": 80.75,
-                          "widgetName": "canvas_stockChecker",
-                          "displayName": "Canvas",
-                          "topRow": 0,
-                          "bottomRow": 80.75,
-                          "parentRowSpace": 1,
-                          "type": "CANVAS_WIDGET",
-                          "canExtend": false,
-                          "hideCard": true,
-                          "minHeight": 100,
-                          "mobileRightColumn": 64,
-                          "parentColumnSpace": 1,
-                          "leftColumn": 0,
-                          "dynamicBindingPathList": [],
-                          "children": [
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.d0ce957b6c4640f8a7418ce846ee200e.svg",
-                              "topRow": 0,
-                              "tooltip": "Your entry must be minimum of 1 and a maximum of 50.",
-                              "labelWidth": 5,
-                              "type": "INPUT_WIDGET_V2",
-                              "maxNum": "50",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelStyle": "",
-                              "inputType": "NUMBER",
-                              "isDisabled": false,
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "isVisible": true,
-                              "version": 2,
-                              "minNum": "1",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "alignment": "start",
-                              "mobileBottomRow": 6.075,
-                              "widgetName": "input_stockChecker",
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 6.075,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "mobileRightColumn": 64,
-                              "parentColumnSpace": 4.510416666666666,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onTextChanged"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "key": "ow36tztaac",
-                              "labelTextSize": "0.875rem",
-                              "onTextChanged": "{{ShowListLowStocks.run()}}",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "widgetId": "zwzhili88g",
-                              "errorMessage": "Your entry must be minimum of 1 and a maximum of 50.",
-                              "minWidth": 450,
-                              "label": "Check Stocks below:",
-                              "parentId": "rjft17a9mn",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "mobileTopRow": 0,
-                              "responsiveBehavior": "fill",
-                              "mobileLeftColumn": 0,
-                              "maxDynamicHeight": 9000,
-                              "shouldAllowAutofill": false,
-                              "iconAlign": "left",
-                              "defaultText": "10",
-                              "minDynamicHeight": 4
-                            }
-                          ],
-                          "key": "chh9nvdtvt",
-                          "isDeprecated": false,
-                          "rightColumn": 64,
-                          "detachFromLayout": true,
-                          "widgetId": "rjft17a9mn",
-                          "containerStyle": "none",
-                          "minWidth": 450,
-                          "isVisible": true,
-                          "version": 1,
-                          "parentId": "bor4c34prt",
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
-                          "mobileTopRow": 0,
-                          "responsiveBehavior": "fill",
-                          "mobileLeftColumn": 0,
-                          "flexLayers": [
-                            {
-                              "children": [
-                                {
-                                  "id": "zwzhili88g",
-                                  "align": "start"
-                                }
-                              ]
-                            }
-                          ]
+                          "key": "borderRadius"
                         }
                       ],
-                      "borderWidth": "1",
-                      "flexVerticalAlignment": "start",
-                      "key": "t6q50ebji7",
-                      "backgroundColor": "#FFFFFF",
-                      "isDeprecated": false,
-                      "rightColumn": 54.801223241590215,
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "bor4c34prt",
-                      "containerStyle": "card",
-                      "minWidth": 450,
+                      "labelStyle": "",
+                      "inputType": "NUMBER",
+                      "isDisabled": false,
+                      "isRequired": true,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
                       "isVisible": true,
-                      "version": 1,
-                      "parentId": "rzeg30ta7h",
-                      "renderMode": "CANVAS",
+                      "version": 2,
+                      "minNum": "1",
                       "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "alignment": "start",
+                      "mobileBottomRow": 6.075,
+                      "widgetName": "input_stockChecker",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 6.075,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "mobileRightColumn": 64,
+                      "parentColumnSpace": 4.510416666666666,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "key": "ow36tztaac",
+                      "labelTextSize": "0.875rem",
+                      "onTextChanged": "{{ShowListLowStocks.run()}}",
+                      "isDeprecated": false,
+                      "rightColumn": 21.333333333333336,
+                      "widgetId": "zwzhili88g",
+                      "errorMessage": "Your entry must be minimum of 1 and a maximum of 50.",
+                      "minWidth": 450,
+                      "label": "Check Stocks below:",
+                      "parentId": "rzeg30ta7h",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
                       "mobileTopRow": 0,
                       "responsiveBehavior": "fill",
-                      "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
                       "maxDynamicHeight": 9000,
-                      "alignment": "start",
-                      "minDynamicHeight": 10
+                      "shouldAllowAutofill": false,
+                      "iconAlign": "left",
+                      "defaultText": "10",
+                      "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -1171,7 +1152,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 54.801223241590215,
+                      "leftColumn": 21.333333333333336,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1221,7 +1202,7 @@
                                 }
                               ],
                               "isDisabled": false,
-                              "onDateSelected": "{{dataStockCurrent.run().then(() => {\n  forecastExportData.filterForecastStockData();\n  forecastExportData.stockForecastDataset();\n}).catch(() => {\n  showAlert('Error fetching dataStockCurrent', 'error');\n});}}",
+                              "onDateSelected": "{{ShowListLowStocks.run().then(() => {\n  filteredStockForecast.run();\n  chartData.InventoryStock();\n}).catch(() => {\n  showAlert('Error fetching dataStockCurrent', 'error');\n});}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1386,7 +1367,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 109.60244648318043,
+                      "rightColumn": 42.66666666666667,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "y6x538jihr",
                       "containerStyle": "card",
@@ -1427,7 +1408,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 109.60244648318043,
+                      "leftColumn": 42.66666666666667,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1537,7 +1518,7 @@
                               ],
                               "labelTooltip": "Only the first 14 days can be forecasted.",
                               "isDisabled": false,
-                              "onDateSelected": "{{forecastExportData.filterForecastStockData();\nforecastExportData.stockForecastDataset();}}",
+                              "onDateSelected": "{{filteredStockForecast.run()}}",
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1639,7 +1620,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 164.40366972477065,
+                      "rightColumn": 64,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "dhjnhg0f0o",
                       "containerStyle": "card",
@@ -1763,7 +1744,7 @@
                     {
                       "children": [
                         {
-                          "id": "bor4c34prt",
+                          "id": "zwzhili88g",
                           "align": "start"
                         },
                         {
@@ -1878,26 +1859,6 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard_forecastExport_dailyForecast",
-              "name": "forecastExport_dailyForecast",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_dataDemandCurrent",
-              "name": "dataDemandCurrent",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(input_DemandCurrentDate.selectedDate)"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -1908,6 +1869,17 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "input_stockChecker.text"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_dataDemandCurrent",
+              "name": "dataDemandCurrent",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(input_DemandCurrentDate.selectedDate)",
+                "input_demandChecker.text"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "forecastExportData",
+    "name": "gsForecastData",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Dashboard_forecastExportData",
+  "id": "Dashboard_gsForecastData",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648d47a3892e7c5265464e8c"
+  "gitSyncId": "6439874f26013158789b34e6_6490528f7c2d3504a412c2cf"
 }

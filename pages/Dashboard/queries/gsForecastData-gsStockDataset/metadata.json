@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "stockForecastDataset",
-    "fullyQualifiedName": "forecastExportData.stockForecastDataset",
+    "name": "gsStockDataset",
+    "fullyQualifiedName": "gsForecastData.gsStockDataset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Dashboard",
-    "collectionId": "Dashboard_forecastExportData",
+    "collectionId": "Dashboard_gsForecastData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,10 +35,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-06-17T16:47:10Z"
+    "userPermissions": []
   },
-  "id": "Dashboard_forecastExportData.stockForecastDataset",
+  "id": "Dashboard_gsForecastData.gsStockDataset",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_648de38e892e7c52654651cc"
+  "gitSyncId": "6439874f26013158789b34e6_6490529b7c2d3504a412c2d3"
 }

@@ -1,11 +1,7 @@
 export default {
 	CustomerDemand() {
-		const currentData = dataDemandCurrent.data
-		.filter(p => p.outgoingDemandVolume >= 20)
-		.map(p => ({label: p.productName, value: p.outgoingDemandVolume}))
-		.sort((a, b) => b.outgoingDemandVolume - a.outgoingDemandVolume);
-
-		const forecastData = forecastExportData.demandForecastDataset();
+		const currentData = dataDemandCurrent.data.map(p=> ({label: p.productName, value: p.outgoingDemandVolume}));
+		const forecastData = forecastExportData.gsDemandDataset();
 
 		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
 		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
@@ -65,11 +61,8 @@ export default {
 		return JSON.stringify(outputDataSource);
 	},
 	InventoryStock() {
-		const currentData = ShowListLowStocks.data
-		.filter(p => p.stockCount < 20)
-		.map(p => ({ label: p.displayName, value: p.stockCount }))
-		.sort((a, b) => a.value - b.value);
-		const forecastData = forecastExportData.stockForecastDataset();
+		const currentData = ShowListLowStocks.data.map(p=> ({label: p.displayName, value: p.stockCount}));
+		const forecastData = forecastExportData.gsStockDataset();
 
 		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
 		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
