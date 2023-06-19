@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "apiRunOrder",
+    "pageId": "Sales History",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Sales History_apiRunOrder",
+  "deleted": false,
+  "gitSyncId": "6439874f26013158789b34e6_64906faf6298f54ae199fa75"
+}

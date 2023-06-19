@@ -1,14 +1,23 @@
 export default {
-	onTabSelected(tabName) {
+	async onTabSelected(tabName) {
 		// forecastExport_dailyForecast.run();
 		// forecastExportData.filterCurrentDemand();
 		// forecastExportData.filterForecastOnDate();
-		
+
 		if(tabName == "Inventory Stock") {
-			dataStockCurrent.run();
-			ShowListLowStocks.run();
+			try {
+				// Execute the third query after the second one
+				await dataStockCurrent.run();
+
+				await filteredStockForecast.run();
+
+				// Continue with other actions or logic
+				console.log("All queries executed successfully");
+			} catch (error) {
+				console.error("Error executing queries:", error);
+			}
 		} else {
-			dataDemandCurrent.run();
+			apiRunOrder.executeQueriesInOrder();
 		}
 	}
 }

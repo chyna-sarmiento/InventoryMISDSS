@@ -10,7 +10,7 @@
           "mobileBottomRow": 2103.046875,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 602.75,
+          "bottomRow": 1811.7500000000007,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -2788,6 +2788,29 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Sales History_apiRunOrder.executeQueriesInOrder",
+              "name": "apiRunOrder.executeQueriesInOrder",
+              "collectionId": "Sales History_apiRunOrder",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  try {\n    await GetLatestDate.run();\n    await GetEarliestDate.run();\n    await ShowOutgoingList.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Sales History_ShowProductList",
+              "name": "ShowProductList",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "input_SearchProduct.filterText"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -2801,16 +2824,6 @@
                 "tbl_ListSales.pageNo",
                 "moment(input_dateOutgoing.selectedDate).format('YYYY/MM')",
                 "tbl_ListSales.searchText"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sales History_ShowProductList",
-              "name": "ShowProductList",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "input_SearchProduct.filterText"
               ],
               "timeoutInMillisecond": 10000
             }
