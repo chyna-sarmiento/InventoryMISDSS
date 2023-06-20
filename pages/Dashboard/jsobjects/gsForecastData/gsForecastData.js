@@ -33,7 +33,7 @@ export default {
 				// dataset.push({ seriesname: seriesname[i] + "Demand", initiallyHidden: "1", color: colourSeries[i], data });
 			// }
 			// else { 
-				dataset.push({ seriesname: seriesname[i] + "Demand", color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + " Demand", color: colourSeries[i], data });
 			// }
 		}
 
@@ -65,10 +65,10 @@ export default {
 			}
 
 			if(i != 1) {
-				dataset.push({ seriesname: seriesname[i] + "Demand", initiallyHidden: "1", color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + " Demand", initiallyHidden: "1", color: colourSeries[i], data });
 			}
 			else { 
-				dataset.push({ seriesname: seriesname[i] + "Demand", color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + " Demand", color: colourSeries[i], data });
 			}
 		}
 
