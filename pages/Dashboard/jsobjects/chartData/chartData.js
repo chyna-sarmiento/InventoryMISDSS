@@ -1,37 +1,38 @@
 export default {
 	chartYRange(currentData, forecastData) {
-		const visibleDatasets = forecastData.filter(dataset => dataset.visible !== "0");
-		let allData = currentData.map(data => data.value);
+		const combineDatasets = [
+			...currentData.map(data => data.value),
+			...forecastData.flatMap(dataset => dataset.data.map(data => data.value))
+		];
 
-		visibleDatasets.forEach(dataset => {
-			allData = allData.concat(dataset.data.map(data => data.value));
-		});
-
-		const minValue = Math.min(...allData) - 1;
-		const maxValue = Math.max(...allData) + 1;
+		const minValue = Math.floor((Math.min(...combineDatasets) - 1) / 5) * 5;
+		const maxValue = Math.ceil((Math.max(...combineDatasets) + 1) / 5) * 5;
 
 		return { minValue, maxValue };
 	},
 	CustomerDemand() {
-		const currentData = dataDemandCurrent.data.map(p => ({
+		const currentData = dataDemandCurrent.data
+		.map(p => ({
 			label: p.productName,
 			value: p.outgoingDemandVolume
 		}));
+		// .sort((a, b) => b.value - a.value);
 		const forecastData = gsForecastData.gsDemandDataset();
 
 		let chartType = "";
 		const userAgent = navigator.userAgent.toLowerCase();
 
 		if (currentData.map(data => ({ label: data.label })).length > 20 || !userAgent.includes("desktop")) {
-			chartType = "scrollmsstackedcolumn2d";
+			chartType = "scrollcolumn2d";
 		} else {
-			chartType = "msstackedcolumn2d";
+			chartType = "mscolumn2d";
 		};
-		
+
 		let { minValue, maxValue } = this.chartYRange(currentData, forecastData);
-		
+		// return "min: " + minValue + " || max: " + maxValue;
+
 		const outputDataSource = {
-			type: chartType,
+			type: "mscolumn2d",
 			dataSource: {
 				chart: {
 					caption: "Customer Demand",
@@ -40,17 +41,18 @@ export default {
 					yAxisMinValue: minValue,
 					yAxisMaxValue: maxValue,
 					interactiveLegend: "1",
+					plotOverlap: "1",
 					theme: "fusion",
+					// Cosmetics on Fonts
 					baseFont: "Montserrat",
 					captionFontSize: "24",
 					captionFontColor: "#333333",
 					captionPadding: "35",
 					xAxisNameFontSize: "14",
+					//Cosmetics on Labels
 					slantLabels: "1",
 					labelDisplay: "rotate",
-					labelWrap: "1",
-					maxLabelHeight: "40",
-					labelPadding: "10",
+					//Cosmetics on Canvas
 					canvasPadding: "0",
 					canvasBottomMargin: "0"
 				},
@@ -59,17 +61,15 @@ export default {
 				}],
 				dataset: [
 					{
-						dataset: [
-							{
-								seriesname: "Current",
-								color: "64748b",
-								data: currentData,
-							}
-						]
+						seriesname: "Current",
+						color: "64748b",
+						data: currentData,
 					},
-					{
-						dataset: forecastData
-					}
+					...forecastData.map(dataset => ({
+						seriesname: dataset.seriesname,
+						color: dataset.color,
+						data: dataset.data,
+					}))
 				]
 			}
 		};
@@ -80,17 +80,16 @@ export default {
 		const currentData = ShowListLowStocks.data.map(p=> ({label: p.displayName, value: p.stockCount}));
 		const forecastData = gsForecastData.gsStockDataset();
 
-		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
-		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
-
 		let chartType = "";
 		const userAgent = navigator.userAgent.toLowerCase();
 
 		if (currentData.map(data => ({ label: data.label })).length > 20 || !userAgent.includes("desktop")) {
-			chartType = "scrollmsstackedcolumn2d";
+			chartType = "scrollcolumn2d";
 		} else {
-			chartType = "msstackedcolumn2d";
+			chartType = "mscolumn2d";
 		};
+		
+		let { minValue, maxValue } = this.chartYRange(currentData, forecastData);
 
 		const outputDataSource = {
 			type: chartType,
@@ -99,8 +98,8 @@ export default {
 					caption: "Inventory Stock",
 					xaxisname: "Low Items",
 					yaxisname: "Number of Items",
-					yAxisMinValue: minBarValue,
-					yAxisMaxValue: maxBarValue,
+					yAxisMinValue: minValue,
+					yAxisMaxValue: maxValue,
 					theme: "fusion",
 					baseFont: "Montserrat",
 					captionFontSize: "24",
@@ -120,17 +119,15 @@ export default {
 				}],
 				dataset: [
 					{
-						dataset: [
-							{
-								seriesname: "Current",
-								color: "64748b",
-								data: currentData,
-							}
-						]
+						seriesname: "Current",
+						color: "64748b",
+						data: currentData,
 					},
-					{
-						dataset: forecastData
-					}
+					...forecastData.map(dataset => ({
+						seriesname: dataset.seriesname,
+						color: dataset.color,
+						data: dataset.data,
+					}))
 				]
 			}
 		};
