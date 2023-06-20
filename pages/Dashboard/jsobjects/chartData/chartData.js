@@ -35,7 +35,7 @@ export default {
 			type: "mscolumn2d",
 			dataSource: {
 				chart: {
-					caption: "Customer Demand",
+					caption: "Item Demand vs Predicted Demand",
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
 					yAxisMinValue: minValue,
@@ -96,7 +96,7 @@ export default {
 			type: chartType,
 			dataSource: {
 				chart: {
-					caption: "Inventory Stock",
+					caption: "Inventory Stock vs Predicted Demand",
 					xaxisname: "Low Items",
 					yaxisname: "Number of Items",
 					yAxisMinValue: minValue,

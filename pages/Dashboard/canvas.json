@@ -10,7 +10,7 @@
           "mobileBottomRow": 1143.5,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1006.7499999999998,
+          "bottomRow": 926.7499999999998,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -996,7 +996,7 @@
                   "isDisabled": false,
                   "key": "amuqen73sj",
                   "isDeprecated": false,
-                  "tabName": "Customer Demand",
+                  "tabName": "Item Demand",
                   "rightColumn": 64,
                   "detachFromLayout": true,
                   "widgetId": "fmgtivh5p6",
@@ -1776,13 +1776,13 @@
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "whp3mkdcvz",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "Customer Demand",
+              "defaultTab": "Item Demand",
               "onTabSelected": "{{dashboardFunctions.onTabSelected(tab_Charts.selectedTab);}}",
               "shouldShowTabs": true,
               "minWidth": 450,
               "tabsObj": {
                 "tab1": {
-                  "label": "Customer Demand",
+                  "label": "Item Demand",
                   "id": "tab1",
                   "widgetId": "fmgtivh5p6",
                   "isVisible": true,
@@ -1891,8 +1891,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "moment(input_DemandCurrentDate.selectedDate)",
-                "input_demandChecker.text"
+                "input_demandChecker.text",
+                "moment(input_DemandCurrentDate.selectedDate)"
               ],
               "timeoutInMillisecond": 10000
             }

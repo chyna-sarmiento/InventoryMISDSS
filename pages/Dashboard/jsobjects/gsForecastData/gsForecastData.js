@@ -20,7 +20,7 @@ export default {
 		const dataset = [];
 
 		for (let i = 0; i < forecastData[0].values.length; i++) {
-			const seriesname = ['P10', 'P50', 'P90'];
+			const seriesname = ['Low', 'Realstic', 'High'];
 			const colourSeries = ['F2726F', 'FFC533', '62B58F'];
 			const data = [];
 
@@ -29,12 +29,12 @@ export default {
 				data.push({ value });
 			}
 			
-			if(i != 0) {
-				dataset.push({ seriesname: seriesname[i], initiallyHidden: "1", color: colourSeries[i], data });
-			}
-			else { 
-				dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
-			}
+			// if(i != 0) {
+				// dataset.push({ seriesname: seriesname[i] + "Demand", initiallyHidden: "1", color: colourSeries[i], data });
+			// }
+			// else { 
+				dataset.push({ seriesname: seriesname[i] + "Demand", color: colourSeries[i], data });
+			// }
 		}
 
 		return dataset;
@@ -55,7 +55,7 @@ export default {
 		const dataset = [];
 
 		for (let i = 0; i < forecastData[0].values.length; i++) {
-			const seriesname = ['P10', 'P50', 'P90'];
+			const seriesname = ['Low', 'Realstic', 'High'];
 			const colourSeries = ['62B58F', 'FFC533', 'F2726F'];
 			const data = [];
 
@@ -64,11 +64,11 @@ export default {
 				data.push({ value });
 			}
 
-			if(i != 0) {
-				dataset.push({ seriesname: seriesname[i], initiallyHidden: "1", color: colourSeries[i], data });
+			if(i != 1) {
+				dataset.push({ seriesname: seriesname[i] + "Demand", initiallyHidden: "1", color: colourSeries[i], data });
 			}
 			else { 
-				dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + "Demand", color: colourSeries[i], data });
 			}
 		}
 
