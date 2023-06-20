@@ -9,7 +9,7 @@
           "mobileBottomRow": 3178,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 3090.0000000000005,
+          "bottomRow": 582,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -431,10 +431,12 @@
                   "label": "Last Updated",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastUpdated\"]))}}",
+                  "computedValue": "{{tbl_ProductList.processedTableData.map((currentRow, currentIndex) => ( moment.tz(moment.utc(currentRow[\"lastUpdated\"]), moment.tz.guess()).format('DD MMMM YYYY, HH:mm')))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "outputFormat": "YYYY-MM-DD HH:mm",
+                  "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ"
                 }
               },
               "onRowSelected": "{{showModal('mdl_EditProductDetails');}}",
@@ -545,7 +547,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 49.98720682302772,
+              "leftColumn": 50.046709129511676,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -612,7 +614,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1057.2500000000007,
+                  "bottomRow": 1050,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1793,7 +1795,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1005.2500000000005,
+                  "bottomRow": 1000,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2890,7 +2892,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 329.5,
+                  "bottomRow": 330,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,

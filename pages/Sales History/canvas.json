@@ -806,7 +806,7 @@
                   "key": "maxDate"
                 }
               ],
-              "labelTooltip": "This will not just retrieve the history on the date selected. It will retrieve the history on the Month and Year of the date selected.",
+              "labelTooltip": "View the history for the whole month of the selected date.",
               "isDisabled": false,
               "onDateSelected": "{{ShowOutgoingList.run()}}",
               "isRequired": true,
