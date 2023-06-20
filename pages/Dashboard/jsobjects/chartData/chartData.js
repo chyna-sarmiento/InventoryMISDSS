@@ -67,6 +67,7 @@ export default {
 					},
 					...forecastData.map(dataset => ({
 						seriesname: dataset.seriesname,
+						initiallyHidden: dataset.seriesname === "P50" || dataset.seriesname === "P90" ? "1" : "0",
 						color: dataset.color,
 						data: dataset.data,
 					}))
@@ -100,17 +101,19 @@ export default {
 					yaxisname: "Number of Items",
 					yAxisMinValue: minValue,
 					yAxisMaxValue: maxValue,
+					interactiveLegend: "1",
+					plotOverlap: "1",
 					theme: "fusion",
+					// Cosmetics on Fonts
 					baseFont: "Montserrat",
 					captionFontSize: "24",
 					captionFontColor: "#333333",
 					captionPadding: "35",
 					xAxisNameFontSize: "14",
+					//Cosmetics on Labels
 					slantLabels: "1",
 					labelDisplay: "rotate",
-					labelWrap: "1",
-					maxLabelHeight: "40",
-					labelPadding: "10",
+					//Cosmetics on Canvas
 					canvasPadding: "0",
 					canvasBottomMargin: "0"
 				},
@@ -125,6 +128,7 @@ export default {
 					},
 					...forecastData.map(dataset => ({
 						seriesname: dataset.seriesname,
+						initiallyHidden: dataset.seriesname === "P50" || dataset.seriesname === "P90" ? "1" : "0",
 						color: dataset.color,
 						data: dataset.data,
 					}))
