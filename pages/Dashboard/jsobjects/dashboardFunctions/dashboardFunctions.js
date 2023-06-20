@@ -1,9 +1,5 @@
 export default {
 	async onTabSelected(tabName) {
-		// forecastExport_dailyForecast.run();
-		// forecastExportData.filterCurrentDemand();
-		// forecastExportData.filterForecastOnDate();
-
 		if(tabName == "Inventory Stock") {
 			try {
 				// Execute the third query after the second one

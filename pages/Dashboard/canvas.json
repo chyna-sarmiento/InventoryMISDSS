@@ -985,7 +985,7 @@
                       "mobileTopRow": 27.35,
                       "responsiveBehavior": "fill",
                       "yAxisName": "Revenue($)",
-                      "chartName": "Sales Report",
+                      "chartName": "Customer Demand",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "mobileLeftColumn": 0,
                       "xAxisName": "Product Line",
@@ -1642,7 +1642,7 @@
                       "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "mobileBottomRow": 98.225,
-                      "setAdaptiveYMin": false,
+                      "setAdaptiveYMin": true,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
                       "widthInPercentage": 0.9699421965317919,
@@ -1859,7 +1859,9 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Dashboard_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",

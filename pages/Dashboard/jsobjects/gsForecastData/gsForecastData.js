@@ -28,8 +28,13 @@ export default {
 				const value = item.values[i].value;
 				data.push({ value });
 			}
-
-			dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
+			
+			if(i != 0) {
+				dataset.push({ seriesname: seriesname[i], initiallyHidden: "1", color: colourSeries[i], data });
+			}
+			else { 
+				dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
+			}
 		}
 
 		return dataset;
@@ -59,7 +64,12 @@ export default {
 				data.push({ value });
 			}
 
-			dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
+			if(i != 0) {
+				dataset.push({ seriesname: seriesname[i], initiallyHidden: "1", color: colourSeries[i], data });
+			}
+			else { 
+				dataset.push({ seriesname: seriesname[i], color: colourSeries[i], data });
+			}
 		}
 
 		return dataset;

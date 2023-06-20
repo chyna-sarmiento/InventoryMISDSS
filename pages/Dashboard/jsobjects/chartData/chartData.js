@@ -1,10 +1,23 @@
 export default {
-	CustomerDemand() {
-		const currentData = dataDemandCurrent.data.map(p=> ({label: p.productName, value: p.outgoingDemandVolume}));
-		const forecastData = forecastExportData.gsDemandDataset();
+	chartYRange(currentData, forecastData) {
+		const visibleDatasets = forecastData.filter(dataset => dataset.visible !== "0");
+		let allData = currentData.map(data => data.value);
 
-		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
-		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
+		visibleDatasets.forEach(dataset => {
+			allData = allData.concat(dataset.data.map(data => data.value));
+		});
+
+		const minValue = Math.min(...allData) - 1;
+		const maxValue = Math.max(...allData) + 1;
+
+		return { minValue, maxValue };
+	},
+	CustomerDemand() {
+		const currentData = dataDemandCurrent.data.map(p => ({
+			label: p.productName,
+			value: p.outgoingDemandVolume
+		}));
+		const forecastData = gsForecastData.gsDemandDataset();
 
 		let chartType = "";
 		const userAgent = navigator.userAgent.toLowerCase();
@@ -14,7 +27,9 @@ export default {
 		} else {
 			chartType = "msstackedcolumn2d";
 		};
-
+		
+		let { minValue, maxValue } = this.chartYRange(currentData, forecastData);
+		
 		const outputDataSource = {
 			type: chartType,
 			dataSource: {
@@ -22,8 +37,9 @@ export default {
 					caption: "Customer Demand",
 					xaxisname: "Popular Items",
 					yaxisname: "Volume of Demand",
-					yAxisMaxValue: minBarValue,
-					yAxisMimValue: maxBarValue,
+					yAxisMinValue: minValue,
+					yAxisMaxValue: maxValue,
+					interactiveLegend: "1",
 					theme: "fusion",
 					baseFont: "Montserrat",
 					captionFontSize: "24",
@@ -62,7 +78,7 @@ export default {
 	},
 	InventoryStock() {
 		const currentData = ShowListLowStocks.data.map(p=> ({label: p.displayName, value: p.stockCount}));
-		const forecastData = forecastExportData.gsStockDataset();
+		const forecastData = gsForecastData.gsStockDataset();
 
 		const maxBarValue = Math.max(...currentData.map(data => data.value)) + 1;
 		const minBarValue = Math.min(...currentData.map(data => data.value)) - 1;
