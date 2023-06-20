@@ -996,6 +996,7 @@
               "version": 1,
               "totalRecordsCount": "{{getOutgoingMonthCount.data}}",
               "isLoading": false,
+              "onSearchTextChanged": "{{ShowOutgoingList.run()}}",
               "childStylesheet": {
                 "button": {
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1072,6 +1073,9 @@
                 },
                 {
                   "key": "onRowSelected"
+                },
+                {
+                  "key": "onSearchTextChanged"
                 }
               ],
               "borderWidth": "1",

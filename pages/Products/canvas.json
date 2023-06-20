@@ -9,7 +9,7 @@
           "mobileBottomRow": 3178,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 582,
+          "bottomRow": 3090.0000000000005,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -88,6 +88,7 @@
               "version": 1,
               "totalRecordsCount": "{{GetNumberOfProducts.data}}",
               "isLoading": false,
+              "onSearchTextChanged": "{{ShowProductListDetails.run()}}",
               "childStylesheet": {
                 "button": {
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -162,6 +163,9 @@
                 },
                 {
                   "key": "onPageChange"
+                },
+                {
+                  "key": "onSearchTextChanged"
                 }
               ],
               "borderWidth": "1",
@@ -614,7 +618,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1050,
+                  "bottomRow": 1057.2500000000007,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1795,7 +1799,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1000,
+                  "bottomRow": 1005.2500000000005,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2892,7 +2896,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 330,
+                  "bottomRow": 329.5,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -3538,9 +3542,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "tbl_ProductList.searchText",
                 "tbl_ProductList.pageNo",
-                "tbl_ProductList.pageSize",
-                "tbl_ProductList.searchText"
+                "tbl_ProductList.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
