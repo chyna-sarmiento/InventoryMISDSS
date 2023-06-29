@@ -7,7 +7,7 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2103.046875,
+          "mobileBottomRow": 2177.0468750000005,
           "widgetName": "MainContainer",
           "topRow": 0,
           "bottomRow": 1811.7500000000007,
@@ -23,7 +23,7 @@
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
-              "mobileBottomRow": 202.3046875,
+              "mobileBottomRow": 209.70468750000003,
               "widgetName": "mdl_EditOutgoingDetails",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -772,7 +772,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 156.1046875,
+              "mobileTopRow": 163.50468750000005,
               "responsiveBehavior": "hug",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 32,
@@ -782,7 +782,7 @@
             },
             {
               "boxShadow": "none",
-              "dateFormat": "LL",
+              "dateFormat": "MMMM YYYY",
               "iconSVG": "/static/media/icon.c8ac755fdc7a44c32deab2390f007005.svg",
               "topRow": 0,
               "labelWidth": 5,
@@ -808,7 +808,7 @@
               ],
               "labelTooltip": "View the history for the whole month of the selected date.",
               "isDisabled": false,
-              "onDateSelected": "{{ShowOutgoingList.run()}}",
+              "onDateSelected": "{{ShowOutgoingList.run().then(() => {\n  getOutgoingMonthCount.run();\n});}}",
               "isRequired": true,
               "dynamicHeight": "FIXED",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -820,7 +820,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "closeOnSelection": true,
               "alignment": "end",
-              "mobileBottomRow": 7.6,
+              "mobileBottomRow": 11.399999999999999,
               "widgetName": "input_dateOutgoing",
               "minDate": "{{GetEarliestDate.data}}",
               "dynamicPropertyPathList": [
@@ -832,6 +832,9 @@
                 },
                 {
                   "key": "maxDate"
+                },
+                {
+                  "key": "dateFormat"
                 }
               ],
               "displayName": "DatePicker",
@@ -861,7 +864,7 @@
               "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "mobileTopRow": 1,
+              "mobileTopRow": 4.8,
               "responsiveBehavior": "fill",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
@@ -1026,7 +1029,7 @@
                 0
               ],
               "alignment": "start",
-              "mobileBottomRow": 75.8,
+              "mobileBottomRow": 83.2,
               "widgetName": "tbl_ListSales",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -1340,7 +1343,7 @@
               "parentId": "0",
               "serverSidePaginationEnabled": true,
               "renderMode": "CANVAS",
-              "mobileTopRow": 4.8,
+              "mobileTopRow": 12.2,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
@@ -1351,7 +1354,7 @@
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
-              "mobileBottomRow": 155.3046875,
+              "mobileBottomRow": 162.70468750000003,
               "widgetName": "mdl_AddOutgoingStock",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -1446,7 +1449,7 @@
                       "mobileTopRow": 0,
                       "responsiveBehavior": "hug",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "mobileLeftColumn": 57.4984126984127,
+                      "mobileLeftColumn": 55.943351691581434,
                       "buttonVariant": "TERTIARY",
                       "alignment": "end"
                     },
@@ -1799,7 +1802,7 @@
                               "parentRowSpace": 10,
                               "type": "ICON_BUTTON_WIDGET",
                               "hideCard": false,
-                              "mobileRightColumn": 6.813040585495675,
+                              "mobileRightColumn": 8.54045037531276,
                               "animateLoading": true,
                               "parentColumnSpace": 10.71875,
                               "dynamicTriggerPathList": [
@@ -2470,7 +2473,7 @@
                               "bottomRow": 50.67500000000001,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
-                              "mobileRightColumn": 43.560878243512974,
+                              "mobileRightColumn": 38.37864887406172,
                               "animateLoading": true,
                               "dynamicTriggerPathList": [
                                 {
@@ -2507,7 +2510,7 @@
                               "originalTopRow": 50.87500000000002,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "mobileLeftColumn": 23.121756487025948,
+                              "mobileLeftColumn": 12.757297748123435,
                               "originalBottomRow": 54.875,
                               "buttonVariant": "SECONDARY",
                               "placement": "CENTER",
@@ -2567,7 +2570,7 @@
                               "originalTopRow": 50.87500000000002,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "mobileLeftColumn": 43.560878243512974,
+                              "mobileLeftColumn": 38.37864887406172,
                               "originalBottomRow": 54.875,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER",
@@ -2724,7 +2727,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 76.6,
+              "mobileTopRow": 84,
               "responsiveBehavior": "hug",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 32,
@@ -2800,9 +2803,7 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Sales History_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",
@@ -2811,6 +2812,31 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async function () {\n  try {\n    await GetLatestDate.run();\n    await GetEarliestDate.run();\n    await getOutgoingMonthCount.run();\n    await ShowOutgoingList.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Sales History_getOutgoingMonthCount",
+              "name": "getOutgoingMonthCount",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(input_dateOutgoing.selectedDate).format('MM')",
+                "moment(input_dateOutgoing.selectedDate).format('YYYY')"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Sales History_ShowProductList",
+              "name": "ShowProductList",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "input_SearchProduct.filterText"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -2826,27 +2852,6 @@
                 "tbl_ListSales.pageNo",
                 "moment(input_dateOutgoing.selectedDate).format('YYYY/MM')",
                 "tbl_ListSales.searchText"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sales History_ShowProductList",
-              "name": "ShowProductList",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "input_SearchProduct.filterText"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sales History_getOutgoingMonthCount",
-              "name": "getOutgoingMonthCount",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(input_dateOutgoing.selectedDate).format('MM')",
-                "moment(input_dateOutgoing.selectedDate).format('YYYY')"
               ],
               "timeoutInMillisecond": 10000
             }
