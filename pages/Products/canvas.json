@@ -3542,9 +3542,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "tbl_ProductList.searchText",
                 "tbl_ProductList.pageNo",
-                "tbl_ProductList.pageSize"
+                "tbl_ProductList.pageSize",
+                "tbl_ProductList.searchText"
               ],
               "timeoutInMillisecond": 10000
             }
