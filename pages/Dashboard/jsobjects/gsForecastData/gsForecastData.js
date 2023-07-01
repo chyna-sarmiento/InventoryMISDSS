@@ -20,7 +20,7 @@ export default {
 		const dataset = [];
 
 		for (let i = 0; i < forecastData[0].values.length; i++) {
-			const seriesname = ['Low', 'Realstic', 'High'];
+			const seriesname = ['Non', 'Slow', 'Fast'];
 			const colourSeries = ['F2726F', 'FFC533', '62B58F'];
 			const data = [];
 
@@ -33,7 +33,7 @@ export default {
 				// dataset.push({ seriesname: seriesname[i] + "Demand", initiallyHidden: "1", color: colourSeries[i], data });
 			// }
 			// else { 
-				dataset.push({ seriesname: seriesname[i] + " Demand", color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + "-moving", color: colourSeries[i], data });
 			// }
 		}
 
@@ -55,7 +55,7 @@ export default {
 		const dataset = [];
 
 		for (let i = 0; i < forecastData[0].values.length; i++) {
-			const seriesname = ['Low', 'Realstic', 'High'];
+			const seriesname = ['Non', 'Slow', 'Fast'];
 			const colourSeries = ['62B58F', 'FFC533', 'F2726F'];
 			const data = [];
 
@@ -65,10 +65,10 @@ export default {
 			}
 
 			if(i != 1) {
-				dataset.push({ seriesname: seriesname[i] + " Demand", initiallyHidden: "1", color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + "-moving", initiallyHidden: "1", color: colourSeries[i], data });
 			}
 			else { 
-				dataset.push({ seriesname: seriesname[i] + " Demand", color: colourSeries[i], data });
+				dataset.push({ seriesname: seriesname[i] + "-moving", color: colourSeries[i], data });
 			}
 		}
 

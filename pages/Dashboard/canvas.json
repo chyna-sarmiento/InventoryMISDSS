@@ -382,7 +382,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{dataDemandCurrent.run().then(() => {\n  filteredDemandForecast.run();\n  gsForecastData.gsDemandForecastData();\n  gsForecastData.gsDemandDataset();\n  chartData.CustomerDemand();\n});}}",
                       "isDeprecated": false,
-                      "rightColumn": 21.333333333333336,
+                      "rightColumn": 21.129186602870814,
                       "widgetId": "ood6h56rcg",
                       "errorMessage": "Your entry must be minimum of 10 and a maximum of 20.",
                       "minWidth": 450,
@@ -422,7 +422,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21.333333333333336,
+                      "leftColumn": 21.129186602870814,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -637,7 +637,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.66666666666667,
+                      "rightColumn": 42.56459330143541,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "itswnz61gw",
                       "containerStyle": "card",
@@ -678,7 +678,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.66666666666667,
+                      "leftColumn": 42.56459330143541,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1112,7 +1112,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{ShowListLowStocks.run().then(() => {\n  filteredStockForecast.run();\n  gsForecastData.gsStockDataset();\n  chartData.InventoryStock();\n});}}",
                       "isDeprecated": false,
-                      "rightColumn": 21.333333333333336,
+                      "rightColumn": 20.87123947051745,
                       "widgetId": "zwzhili88g",
                       "errorMessage": "Your entry must be minimum of 1 and a maximum of 50.",
                       "minWidth": 450,
@@ -1152,7 +1152,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21.333333333333336,
+                      "leftColumn": 20.87123947051745,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1367,7 +1367,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.66666666666667,
+                      "rightColumn": 42.435619735258726,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "y6x538jihr",
                       "containerStyle": "card",
@@ -1408,7 +1408,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.66666666666667,
+                      "leftColumn": 42.435619735258726,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1859,7 +1859,9 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Dashboard_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",
