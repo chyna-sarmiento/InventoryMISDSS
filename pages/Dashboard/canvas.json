@@ -10,7 +10,7 @@
           "mobileBottomRow": 2270.75,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1192.75,
+          "bottomRow": 1134.75,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -34,7 +34,7 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 8,
+              "bottomRow": 10.2,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -55,7 +55,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 80,
+                  "bottomRow": 102,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -80,7 +80,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 6,
+                      "bottomRow": 8.2,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -104,7 +104,7 @@
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 60,
+                          "bottomRow": 82,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -126,7 +126,7 @@
                                 "label"
                               ],
                               "topRow": 0,
-                              "bottomRow": 4,
+                              "bottomRow": 6.2,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -285,8 +285,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 9.2,
-              "bottomRow": 111.275,
+              "topRow": 11.399999999999999,
+              "bottomRow": 113.475,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -307,7 +307,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 794.7499999999998,
+                  "bottomRow": 980.7499999999999,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1037,7 +1037,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 794.7499999999998,
+                  "bottomRow": 980.7499999999999,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1769,7 +1769,7 @@
                   "widgetName": "Canvas9",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 980.75,
+                  "bottomRow": 980.7499999999999,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -2746,7 +2746,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 27.11392405063291,
+                                      "rightColumn": 26.958810068649885,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "warning-sign",
                                       "widgetId": "2m46kxdeth",
@@ -2788,7 +2788,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 27.11392405063291,
+                                      "leftColumn": 26.958810068649882,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2854,7 +2854,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 36.77560414269275,
+                                      "rightColumn": 36.56521739130435,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "error",
                                       "widgetId": "5aeqkfncwn",
@@ -2896,7 +2896,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 36.77560414269275,
+                                      "leftColumn": 36.56521739130435,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2962,7 +2962,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 22.582278481012658,
+                                      "rightColumn": 22.45308924485126,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "thumbs-up",
                                       "widgetId": "npzzsxs4pm",
@@ -3004,7 +3004,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 22.582278481012658,
+                                      "leftColumn": 22.45308924485126,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -3245,7 +3245,7 @@
                                   "key": "customFusionChartConfig"
                                 }
                               ],
-                              "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n\t\t\t\"captionFontSize\": \"1.875rem\",\n\t\t\t\"captionFontColor\": \"231F20\",\n\t\t\t\"captionPadding\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"showLegend\": \"0\",\n      \"defaultCenterLabel\": {{Math.round((380/(380+20))*100)+\"%\"}},\n\t\t\t\"centerLabelFontSize\": \"29\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"1\",\n\t\t\t\"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Active\",\n\t\t\t\t\"color\": \"62b58f\",\n        \"value\": 380\n      },\n      {\n        \"label\": \"Inactive\",\n\t\t\t\t\"color\": \"929292\",\n        \"value\": 20\n      }\n    ]\n  }\n}",
+                              "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n\t\t\t\"captionFontSize\": \"1.875rem\",\n\t\t\t\"captionFontColor\": \"231F20\",\n\t\t\t\"captionPadding\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"showLegend\": \"0\",\n      \"defaultCenterLabel\": {{Math.round((254/400)*100)+\"%\"}},\n\t\t\t\"centerLabelFontSize\": \"29\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"1\",\n\t\t\t\"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Active\",\n\t\t\t\t\"color\": \"62b58f\",\n        \"value\": 254\n      },\n      {\n        \"label\": \"Inactive\",\n\t\t\t\t\"color\": \"929292\",\n        \"value\": {{400-254}}\n      }\n    ]\n  }\n}",
                               "key": "sp2v6uc8pb",
                               "isDeprecated": false,
                               "rightColumn": 64,
@@ -3780,7 +3780,7 @@
                                       "text": "Recent Sales",
                                       "key": "zn3myyzfd0",
                                       "isDeprecated": false,
-                                      "rightColumn": 35.001150747986195,
+                                      "rightColumn": 35.16704805491991,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "widgetId": "2qlc6zg62o",
@@ -3822,7 +3822,7 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 12.578125,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 35.001150747986195,
+                                      "leftColumn": 35.16704805491991,
                                       "dynamicBindingPathList": [],
                                       "text": "Add Outgoing Stock",
                                       "isDisabled": false,
@@ -4142,7 +4142,7 @@
                   "label": "1-Inventory Stock",
                   "id": "tab2",
                   "widgetId": "rzeg30ta7h",
-                  "isVisible": true,
+                  "isVisible": false,
                   "index": 2,
                   "positioning": "vertical",
                   "isDuplicateLabel": false
@@ -4204,7 +4204,9 @@
                 "async function () {\n  try {\n    await getProductForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Dashboard_getProductForecast",
               "name": "getProductForecast",
