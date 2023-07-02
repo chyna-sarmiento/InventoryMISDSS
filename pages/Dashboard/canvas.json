@@ -10,7 +10,7 @@
           "mobileBottomRow": 2270.75,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1524.7500000000002,
+          "bottomRow": 1192.75,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -286,7 +286,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 9.2,
-              "bottomRow": 144.47500000000002,
+              "bottomRow": 111.275,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -307,7 +307,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 1312.7500000000005,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -378,7 +378,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{dataDemandCurrent.run().then(() => {\n  filteredDemandForecast.run();\n  gsForecastData.gsDemandForecastData();\n  gsForecastData.gsDemandDataset();\n  chartData.CustomerDemand();\n});}}",
                       "isDeprecated": false,
-                      "rightColumn": 20.92307692307692,
+                      "rightColumn": 21.333333333333336,
                       "widgetId": "ood6h56rcg",
                       "errorMessage": "Your entry must be minimum of 10 and a maximum of 20.",
                       "minWidth": 450,
@@ -418,7 +418,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 20.92307692307692,
+                      "leftColumn": 21.333333333333336,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -633,7 +633,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.46153846153846,
+                      "rightColumn": 42.66666666666667,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "itswnz61gw",
                       "containerStyle": "card",
@@ -674,7 +674,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.46153846153846,
+                      "leftColumn": 42.66666666666667,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1037,7 +1037,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 1312.7500000000005,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1108,7 +1108,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{ShowListLowStocks.run().then(() => {\n  filteredStockForecast.run();\n  gsForecastData.gsStockDataset();\n  chartData.InventoryStock();\n});}}",
                       "isDeprecated": false,
-                      "rightColumn": 20.92307692307692,
+                      "rightColumn": 21.333333333333336,
                       "widgetId": "zwzhili88g",
                       "errorMessage": "Your entry must be minimum of 1 and a maximum of 50.",
                       "minWidth": 450,
@@ -1148,7 +1148,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 20.92307692307692,
+                      "leftColumn": 21.333333333333336,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1363,7 +1363,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.46153846153846,
+                      "rightColumn": 42.66666666666667,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "y6x538jihr",
                       "containerStyle": "card",
@@ -1404,7 +1404,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.46153846153846,
+                      "leftColumn": 42.66666666666667,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -1769,7 +1769,7 @@
                   "widgetName": "Canvas9",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1312.7500000000005,
+                  "bottomRow": 980.75,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -2038,7 +2038,7 @@
                               "key": "tfob4lfwib",
                               "backgroundColor": "#64748b",
                               "isDeprecated": false,
-                              "rightColumn": 22.014742014742016,
+                              "rightColumn": 21.333333333333332,
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "6enflocbpt",
                               "containerStyle": "card",
@@ -2079,7 +2079,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 12.578125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 22.014742014742016,
+                              "leftColumn": 21.333333333333332,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "boxShadow"
@@ -2261,7 +2261,7 @@
                               "key": "tfob4lfwib",
                               "backgroundColor": "#FFFFFF",
                               "isDeprecated": false,
-                              "rightColumn": 44.02948402948403,
+                              "rightColumn": 42.66666666666667,
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "go40o10e9a",
                               "containerStyle": "card",
@@ -2302,7 +2302,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 12.578125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 44.02948402948403,
+                              "leftColumn": 42.66666666666667,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "boxShadow"
@@ -2490,7 +2490,7 @@
                               "key": "tfob4lfwib",
                               "backgroundColor": "#64748b",
                               "isDeprecated": false,
-                              "rightColumn": 66.04422604422605,
+                              "rightColumn": 64,
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "fwoxul7imy",
                               "containerStyle": "card",
@@ -2746,7 +2746,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 30.2853470437018,
+                                      "rightColumn": 27.11392405063291,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "warning-sign",
                                       "widgetId": "2m46kxdeth",
@@ -2788,7 +2788,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 30.285347043701805,
+                                      "leftColumn": 27.11392405063291,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2831,7 +2831,7 @@
                                       "boxShadow": "none",
                                       "mobileBottomRow": 18.400000000000002,
                                       "widgetName": "btn_LowStock",
-                                      "buttonColor": "#ca8a04",
+                                      "buttonColor": "#ffbe19",
                                       "displayName": "Button",
                                       "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
                                       "searchTags": [
@@ -2854,7 +2854,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 41.077120822622106,
+                                      "rightColumn": 36.77560414269275,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "error",
                                       "widgetId": "5aeqkfncwn",
@@ -2896,7 +2896,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 41.077120822622106,
+                                      "leftColumn": 36.77560414269275,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2920,7 +2920,7 @@
                                       "minWidth": 450,
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "#ca8a04",
+                                      "textColor": "#ffbe19",
                                       "version": 1,
                                       "parentId": "b2qqtenyvq",
                                       "renderMode": "CANVAS",
@@ -2962,7 +2962,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 25.223650385604113,
+                                      "rightColumn": 22.582278481012658,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "thumbs-up",
                                       "widgetId": "npzzsxs4pm",
@@ -3004,7 +3004,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 25.223650385604113,
+                                      "leftColumn": 22.582278481012658,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -3063,13 +3063,13 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 12.578125,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 15.23778920308483,
+                                      "leftColumn": 17.078947368421055,
                                       "dynamicBindingPathList": [],
                                       "text": "Add Incoming Stocks",
                                       "isDisabled": false,
                                       "key": "fc1r5whbrn",
                                       "isDeprecated": false,
-                                      "rightColumn": 48.76221079691517,
+                                      "rightColumn": 46.921052631578945,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "add",
                                       "widgetId": "h7239qakfo",
@@ -3162,7 +3162,7 @@
                                   ]
                                 }
                               ],
-                              "borderWidth": "1",
+                              "borderWidth": "",
                               "flexVerticalAlignment": "start",
                               "key": "aka5xozho5",
                               "backgroundColor": "#FFFFFF",
@@ -3245,7 +3245,7 @@
                                   "key": "customFusionChartConfig"
                                 }
                               ],
-                              "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n\t\t\t\"captionFontSize\": \"1.875rem\",\n\t\t\t\"captionFontColor\": \"231F20\",\n\t\t\t\"captionPadding\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"showLegend\": \"0\",\n      \"numberPrefix\": \"$\",\n      \"defaultCenterLabel\": {{Math.round((28504/(1463+28504))*100)+\"%\"}},\n\t\t\t\"centerLabelFontSize\": \"20\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"1\",\n\t\t\t\"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Food\",\n        \"value\": 28504\n      },\n      {\n        \"label\": \"Apparels\",\n        \"value\": 14633\n      }\n    ]\n  }\n}",
+                              "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n\t\t\t\"captionFontSize\": \"1.875rem\",\n\t\t\t\"captionFontColor\": \"231F20\",\n\t\t\t\"captionPadding\": \"1\",\n\t\t\t\"showLabels\": \"0\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"showLegend\": \"0\",\n      \"defaultCenterLabel\": {{Math.round((380/(380+20))*100)+\"%\"}},\n\t\t\t\"centerLabelFontSize\": \"29\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"1\",\n\t\t\t\"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Active\",\n\t\t\t\t\"color\": \"62b58f\",\n        \"value\": 380\n      },\n      {\n        \"label\": \"Inactive\",\n\t\t\t\t\"color\": \"929292\",\n        \"value\": 20\n      }\n    ]\n  }\n}",
                               "key": "sp2v6uc8pb",
                               "isDeprecated": false,
                               "rightColumn": 64,
@@ -3337,7 +3337,7 @@
                         "group"
                       ],
                       "topRow": 47.6,
-                      "bottomRow": 129.275,
+                      "bottomRow": 96.075,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -3358,7 +3358,7 @@
                           "widgetName": "Canvas11",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 816.7500000000001,
+                          "bottomRow": 484.75,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -3383,7 +3383,7 @@
                                 "group"
                               ],
                               "topRow": 0,
-                              "bottomRow": 79.67500000000001,
+                              "bottomRow": 46.475,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -3404,7 +3404,7 @@
                                   "widgetName": "Canvas19",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 796.7500000000001,
+                                  "bottomRow": 464.75,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -3601,9 +3601,12 @@
                                         },
                                         {
                                           "key": "chartData.eiyejlt8ow.data"
+                                        },
+                                        {
+                                          "key": "customFusionChartConfig"
                                         }
                                       ],
-                                      "customFusionChartConfig": "",
+                                      "customFusionChartConfig": "{\n  \"type\": \"msline\",\n  \"dataSource\": {\n    \"chart\": {\n      \"yAxisName\": \"Volume of Demand\",\n\t\t\t\"rotateLabels\": \"0\",\n\t\t\t\"slantLabels\": \"0\",\n\t\t\t\"legendNumRows\": \"1\",\n\t\t\t\"alignLegendWithCanvas\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"10\",\n\t\t\t\"chartBottomMargin\": \"1\"\n    },\n    \"categories\": [\n      {\n        \"category\": {{getProductForecast.data.map(f => ({\n\t\t\t\tlabel: moment(f.DateTimeOutgoing).format(\"MMMM<br>DD\")\n\t\t\t}))}}\n}],\n    \"dataset\": [\n      {\n        \"seriesname\": \"Non-moving\",\n\t\t\t\t\"color\": \"ef4444\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p10}))}}\n      },\n      {\n        \"seriesname\": \"Slow-moving\",\n\t\t\t\t\"color\": \"ffbe19\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p50}))}}\n      },\n      {\n        \"seriesname\": \"Fast-moving\",\n\t\t\t\t\"color\": \"62b58f\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p90}))}}\n      }\n    ]\n  }\n}",
                                       "key": "sp2v6uc8pb",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -3623,85 +3626,6 @@
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "mobileLeftColumn": 0,
                                       "xAxisName": "",
-                                      "chartType": "LINE_CHART",
-                                      "alignment": "start"
-                                    },
-                                    {
-                                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                                      "mobileBottomRow": 75,
-                                      "widgetName": "chart_TestDemand",
-                                      "allowScroll": false,
-                                      "displayName": "Chart",
-                                      "iconSVG": "https://appcdn.appsmith.com/static/media/icon.04227b3516da60d6462fe38c74f88261.svg",
-                                      "searchTags": [
-                                        "graph",
-                                        "visuals",
-                                        "visualisations"
-                                      ],
-                                      "topRow": 45.675000000000004,
-                                      "bottomRow": 77.67500000000001,
-                                      "parentRowSpace": 10,
-                                      "type": "CHART_WIDGET",
-                                      "hideCard": false,
-                                      "mobileRightColumn": 64,
-                                      "chartData": {
-                                        "w5nz4tfrp2": {
-                                          "seriesName": "Sales",
-                                          "data": [
-                                            {
-                                              "x": "Product1",
-                                              "y": 20000
-                                            },
-                                            {
-                                              "x": "Product2",
-                                              "y": 22000
-                                            },
-                                            {
-                                              "x": "Product3",
-                                              "y": 32000
-                                            }
-                                          ]
-                                        }
-                                      },
-                                      "animateLoading": true,
-                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                                      "parentColumnSpace": 6.015625,
-                                      "dynamicTriggerPathList": [],
-                                      "leftColumn": 0,
-                                      "dynamicBindingPathList": [
-                                        {
-                                          "key": "borderRadius"
-                                        },
-                                        {
-                                          "key": "boxShadow"
-                                        },
-                                        {
-                                          "key": "accentColor"
-                                        },
-                                        {
-                                          "key": "fontFamily"
-                                        }
-                                      ],
-                                      "customFusionChartConfig": "{\n  \"type\": \"msline\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Number of visitors last week\",\n      \"subCaption\": \"Bakersfield Central vs Los Angeles Topanga\",\n      \"xAxisName\": \"Day\",\n      \"theme\": \"fusion\"\n    },\n    \"categories\": [\n      {\n        \"category\": [\n          { \"label\": \"Mon\" },\n          { \"label\": \"Tue\" },\n          { \"label\": \"Wed\" },\n          {\n            \"vline\": \"true\",\n            \"lineposition\": \"0\",\n            \"color\": \"#6baa01\",\n            \"labelHAlign\": \"center\",\n            \"labelPosition\": \"0\",\n            \"label\": \"National holiday\",\n            \"dashed\": \"1\"\n          },\n          { \"label\": \"Thu\" },\n          { \"label\": \"Fri\" },\n          { \"label\": \"Sat\" },\n          { \"label\": \"Sun\" }\n        ]\n      }\n    ],\n    \"dataset\": [\n      {\n        \"seriesname\": \"Bakersfield Central\",\n        \"data\": [\n          { \"value\": \"15123\" },\n          { \"value\": \"14233\" },\n          { \"value\": \"25507\" },\n          { \"value\": \"9110\" },\n          { \"value\": \"15529\" },\n          { \"value\": \"20803\" },\n          { \"value\": \"19202\" }\n        ]\n      },\n      {\n        \"seriesname\": \"Los Angeles Topanga\",\n        \"data\": [\n          { \"value\": \"13400\" },\n          { \"value\": \"12800\" },\n          { \"value\": \"22800\" },\n          { \"value\": \"12400\" },\n          { \"value\": \"15800\" },\n          { \"value\": \"19800\" },\n          { \"value\": \"21800\" }\n        ]\n      }\n    ],\n    \"trendlines\": [\n      {\n        \"line\": [\n          {\n            \"startvalue\": \"17022\",\n            \"color\": \"#6baa01\",\n            \"valueOnRight\": \"1\",\n            \"displayvalue\": \"Average\"\n          }\n        ]\n      }\n    ]\n  }\n}",
-                                      "key": "pwbxeibcrb",
-                                      "isDeprecated": false,
-                                      "rightColumn": 64,
-                                      "widgetId": "opi8voee6y",
-                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "minWidth": 450,
-                                      "isVisible": true,
-                                      "version": 1,
-                                      "parentId": "ajj8hjje2r",
-                                      "labelOrientation": "auto",
-                                      "renderMode": "CANVAS",
-                                      "isLoading": false,
-                                      "mobileTopRow": 43,
-                                      "responsiveBehavior": "fill",
-                                      "yAxisName": "Revenue($)",
-                                      "chartName": "Sales Report",
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "mobileLeftColumn": 0,
-                                      "xAxisName": "Product Line",
                                       "chartType": "CUSTOM_FUSION_CHART",
                                       "alignment": "start"
                                     }
@@ -3742,14 +3666,6 @@
                                       "children": [
                                         {
                                           "id": "ltaiv2remx",
-                                          "align": "start"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "children": [
-                                        {
-                                          "id": "opi8voee6y",
                                           "align": "start"
                                         }
                                       ]
@@ -3864,7 +3780,7 @@
                                       "text": "Recent Sales",
                                       "key": "zn3myyzfd0",
                                       "isDeprecated": false,
-                                      "rightColumn": 31.609254498714655,
+                                      "rightColumn": 35.001150747986195,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "widgetId": "2qlc6zg62o",
@@ -3906,7 +3822,7 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 12.578125,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 31.609254498714655,
+                                      "leftColumn": 35.001150747986195,
                                       "dynamicBindingPathList": [],
                                       "text": "Add Outgoing Stock",
                                       "isDisabled": false,
@@ -4279,65 +4195,22 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dashboard_GetEarliestDate",
-              "name": "GetEarliestDate",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard_GetLatestDate",
-              "name": "GetLatestDate",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_getProductForecast",
-              "name": "getProductForecast",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Dashboard_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",
               "collectionId": "Dashboard_apiRunOrder",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  try {\n    await getProductForecast.run();\n    await insightDemandForecast.getProductP10();\n    await insightDemandForecast.getProductP50();\n    await insightDemandForecast.getProductP90();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard_ShowListLowStocks",
-              "name": "ShowListLowStocks",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "input_stockChecker.text"
+                "async function () {\n  try {\n    await getProductForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Dashboard_dataDemandCurrent",
-              "name": "dataDemandCurrent",
+              "id": "Dashboard_getProductForecast",
+              "name": "getProductForecast",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "input_demandChecker.text",
-                "moment(input_DemandCurrentDate.selectedDate)"
-              ],
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
