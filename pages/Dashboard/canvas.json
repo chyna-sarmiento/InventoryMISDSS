@@ -10,7 +10,7 @@
           "mobileBottomRow": 2270.75,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1112.75,
+          "bottomRow": 1192.75,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -307,7 +307,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 980.75,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -1037,7 +1037,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 980.75,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -2746,7 +2746,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 24.480549199084667,
+                                      "rightColumn": 26.958810068649885,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "warning-sign",
                                       "widgetId": "2m46kxdeth",
@@ -2788,7 +2788,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 24.480549199084663,
+                                      "leftColumn": 26.958810068649882,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2854,7 +2854,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 32.68649885583524,
+                                      "rightColumn": 36.56521739130435,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "error",
                                       "widgetId": "5aeqkfncwn",
@@ -2896,7 +2896,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 32.68649885583524,
+                                      "leftColumn": 36.56521739130435,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -2962,7 +2962,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 20.60411899313501,
+                                      "rightColumn": 22.45308924485126,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "thumbs-up",
                                       "widgetId": "npzzsxs4pm",
@@ -3004,7 +3004,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 20.60411899313501,
+                                      "leftColumn": 22.45308924485126,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -3063,13 +3063,13 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 12.578125,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 18.5629290617849,
+                                      "leftColumn": 17.078947368421055,
                                       "dynamicBindingPathList": [],
                                       "text": "Add Incoming Stocks",
                                       "isDisabled": false,
                                       "key": "fc1r5whbrn",
                                       "isDeprecated": false,
-                                      "rightColumn": 45.4370709382151,
+                                      "rightColumn": 46.921052631578945,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "add",
                                       "widgetId": "h7239qakfo",
@@ -3780,7 +3780,7 @@
                                       "text": "Recent Sales",
                                       "key": "zn3myyzfd0",
                                       "isDeprecated": false,
-                                      "rightColumn": 38.1487414187643,
+                                      "rightColumn": 35.16704805491992,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "widgetId": "2qlc6zg62o",
@@ -3822,7 +3822,7 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 12.578125,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 38.1487414187643,
+                                      "leftColumn": 35.16704805491992,
                                       "dynamicBindingPathList": [],
                                       "text": "Add Outgoing Stock",
                                       "isDisabled": false,
@@ -4204,9 +4204,7 @@
                 "async function () {\n  try {\n    await getProductForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Dashboard_getProductForecast",
               "name": "getProductForecast",
