@@ -7,7 +7,7 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2270.75,
+          "mobileBottomRow": 1143.5,
           "widgetName": "MainContainer",
           "topRow": 0,
           "bottomRow": 1192.75,
@@ -278,7 +278,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 219.075,
+              "mobileBottomRow": 106.35000000000001,
               "widgetName": "tab_Charts",
               "borderColor": "",
               "isCanvas": true,
@@ -300,11 +300,15 @@
                 }
               ],
               "leftColumn": 0,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
-                  "mobileBottomRow": 982.25,
+                  "mobileBottomRow": 913.5000000000001,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "bottomRow": 794.7499999999998,
@@ -397,7 +401,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 19.75,
+                      "mobileBottomRow": 12.875,
                       "widgetName": "canvas_inputCurrent",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -643,7 +647,7 @@
                       "parentId": "fmgtivh5p6",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 6.875,
+                      "mobileTopRow": 0,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -653,7 +657,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 33.425,
+                      "mobileBottomRow": 26.55,
                       "widgetName": "cont_DemandForecastDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -895,7 +899,7 @@
                       "parentId": "fmgtivh5p6",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 20.55,
+                      "mobileTopRow": 13.675,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -906,7 +910,7 @@
                     {
                       "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 96.225,
+                      "mobileBottomRow": 89.35,
                       "setAdaptiveYMin": false,
                       "widgetName": "report_CustomerDemand",
                       "allowScroll": false,
@@ -978,7 +982,7 @@
                       "labelOrientation": "auto",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 34.224999999999994,
+                      "mobileTopRow": 27.35,
                       "responsiveBehavior": "fill",
                       "yAxisName": "Revenue($)",
                       "chartName": "Customer Demand",
@@ -1034,7 +1038,7 @@
                 },
                 {
                   "tabId": "tab2",
-                  "mobileBottomRow": 982.25,
+                  "mobileBottomRow": 1002.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "bottomRow": 794.7499999999998,
@@ -1127,7 +1131,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 19.75,
+                      "mobileBottomRow": 21.75,
                       "widgetName": "cont_StockCurrentDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -1373,7 +1377,7 @@
                       "parentId": "rzeg30ta7h",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 6.875,
+                      "mobileTopRow": 8.875,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -1383,7 +1387,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 33.425,
+                      "mobileBottomRow": 35.425,
                       "widgetName": "cont_StockForecastDates",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
@@ -1626,7 +1630,7 @@
                       "parentId": "rzeg30ta7h",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 20.55,
+                      "mobileTopRow": 22.55,
                       "responsiveBehavior": "fill",
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 0,
@@ -1637,7 +1641,7 @@
                     {
                       "mobileWidthInPercentage": 0.9246376811594202,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 96.225,
+                      "mobileBottomRow": 98.225,
                       "setAdaptiveYMin": true,
                       "widgetName": "report_StockForecast",
                       "allowScroll": false,
@@ -1709,7 +1713,7 @@
                       "labelOrientation": "auto",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 34.224999999999994,
+                      "mobileTopRow": 36.224999999999994,
                       "responsiveBehavior": "fill",
                       "yAxisName": "Revenue($)",
                       "chartName": "Sales Report",
@@ -1723,7 +1727,7 @@
                   "isDisabled": false,
                   "key": "amuqen73sj",
                   "isDeprecated": false,
-                  "tabName": "1-Inventory Stock",
+                  "tabName": "Inventory Stock",
                   "rightColumn": 64,
                   "detachFromLayout": true,
                   "widgetId": "rzeg30ta7h",
@@ -1762,6 +1766,28 @@
                       ]
                     }
                   ]
+                }
+              ],
+              "borderWidth": 1,
+              "key": "xifikgqsyo",
+              "backgroundColor": "#FFFFFF",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "whp3mkdcvz",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "defaultTab": "Item Demand",
+              "onTabSelected": "{{dashboardFunctions.onTabSelected(tab_Charts.selectedTab);}}",
+              "shouldShowTabs": true,
+              "minWidth": 450,
+              "tabsObj": {
+                "tab1": {
+                  "label": "Item Demand",
+                  "id": "tab1",
+                  "widgetId": "fmgtivh5p6",
+                  "isVisible": true,
+                  "index": 0,
+                  "positioning": "vertical"
                 },
                 {
                   "tabId": "taba45cv86zvx",
@@ -4195,22 +4221,55 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Dashboard_GetEarliestDate",
+              "name": "GetEarliestDate",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_GetLatestDate",
+              "name": "GetLatestDate",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Dashboard_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",
               "collectionId": "Dashboard_apiRunOrder",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  try {\n    await getProductForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
+                "async function () {\n  try {\n    await GetLatestDate.run();\n    await GetEarliestDate.run();\n    await dataDemandCurrent.run();\n    await filteredDemandForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Dashboard_getProductForecast",
-              "name": "getProductForecast",
+              "id": "Dashboard_ShowListLowStocks",
+              "name": "ShowListLowStocks",
               "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "input_stockChecker.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_dataDemandCurrent",
+              "name": "dataDemandCurrent",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "input_demandChecker.text",
+                "moment(input_DemandCurrentDate.selectedDate)"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
