@@ -48,11 +48,7 @@
   "publishedAppLayout": {
     "type": "DESKTOP"
   },
-  "unpublishedCustomJSLibs": [
-    {
-      "uidString": "Papa_https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
-    }
-  ],
+  "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
