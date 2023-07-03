@@ -1475,7 +1475,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 55.943351691581434,
+                      "leftColumn": 58.26008968609865,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1718,7 +1718,7 @@
                               "mobileRightColumn": 39.0446791226645,
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 14.089358245329002,
+                              "leftColumn": 28.77064220183486,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -1732,7 +1732,7 @@
                               "key": "uonwks8jbw",
                               "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 39.044679122664505,
+                              "rightColumn": 46.38532110091743,
                               "isDefaultClickDisabled": true,
                               "widgetId": "rl9cv20b42",
                               "minWidth": 120,
@@ -1777,7 +1777,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 39.044679122664505,
+                              "leftColumn": 46.38532110091743,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"

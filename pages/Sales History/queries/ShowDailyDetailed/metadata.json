@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getOutgoingMonthCount",
+    "name": "ShowDailyDetailed",
     "datasource": {
       "name": "ec2URL",
       "pluginId": "restapi-plugin",
@@ -17,10 +17,23 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/Outgoing/List/{{moment(input_dateOutgoing.selectedDate).format('YYYY')}}/{{moment(input_dateOutgoing.selectedDate).format('MM')}}/Count",
+      "path": "/api/Outgoing/ListDaily/{{moment(input_dateOutgoing.selectedDate).format('YYYY/MM/DD')}}",
       "headers": [],
       "encodeParamsToggle": true,
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "page",
+          "value": "{{tbl_ListSales.pageNo}}"
+        },
+        {
+          "key": "pageSize",
+          "value": "{{tbl_ListSales.pageSize}}"
+        },
+        {
+          "key": "searchValue",
+          "value": "{{tbl_ListSales.searchText}}"
+        }
+      ],
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -37,22 +50,33 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
+      },
+      {
+        "key": "queryParameters[2].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "moment(input_dateOutgoing.selectedDate).format('MM')",
-      "moment(input_dateOutgoing.selectedDate).format('YYYY')"
+      "moment(input_dateOutgoing.selectedDate).format('YYYY/MM/DD')",
+      "tbl_ListSales.pageNo",
+      "tbl_ListSales.pageSize",
+      "tbl_ListSales.searchText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-19T15:34:03Z"
+    "createdAt": "2023-07-03T18:00:12Z"
   },
-  "id": "Sales History_getOutgoingMonthCount",
+  "id": "Sales History_ShowDailyDetailed",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6490756b86f2e51702569afb"
+  "gitSyncId": "64a02cd76f8d8c15e6a0d0e4_64a30cac91c6cc0028245eb4"
 }

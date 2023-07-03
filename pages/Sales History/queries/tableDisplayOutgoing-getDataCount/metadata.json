@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "tableDataNavigation",
-    "fullyQualifiedName": "tableDisplayOutgoing.tableDataNavigation",
+    "name": "getDataCount",
+    "fullyQualifiedName": "tableDisplayOutgoing.getDataCount",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sales History_tableDisplayOutgoing.tableDataNavigation",
+  "id": "Sales History_tableDisplayOutgoing.getDataCount",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_6486ed65539d5847b1115784"
+  "gitSyncId": "64a02cd76f8d8c15e6a0d0e4_64a311f546577a17939f9465"
 }

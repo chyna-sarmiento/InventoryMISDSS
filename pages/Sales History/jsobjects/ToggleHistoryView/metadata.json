@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ToggleHistoryView",
+    "pageId": "Sales History",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Sales History_ToggleHistoryView",
+  "deleted": false,
+  "gitSyncId": "64a02cd76f8d8c15e6a0d0e4_64a307e97e5e3767e8258c46"
+}

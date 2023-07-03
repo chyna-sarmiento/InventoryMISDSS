@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "executeQueriesInOrder",
-    "fullyQualifiedName": "apiRunOrder.executeQueriesInOrder",
+    "name": "onToggleDateSelect",
+    "fullyQualifiedName": "tableDisplayOutgoing.onToggleDateSelect",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Sales History",
-    "collectionId": "Sales History_apiRunOrder",
+    "collectionId": "Sales History_tableDisplayOutgoing",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,13 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-07-01T13:40:40Z"
+    "userPermissions": []
   },
-  "id": "Sales History_apiRunOrder.executeQueriesInOrder",
+  "id": "Sales History_tableDisplayOutgoing.onToggleDateSelect",
   "deleted": false,
-  "gitSyncId": "6439874f26013158789b34e6_64906fe17c2d3504a412c46c"
+  "gitSyncId": "64a02cd76f8d8c15e6a0d0e4_64a30a9403f26208a3f1ccd1"
 }
