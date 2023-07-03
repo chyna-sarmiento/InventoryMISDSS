@@ -10,7 +10,7 @@
           "mobileBottomRow": 2177.0468750000005,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1811.7500000000007,
+          "bottomRow": 615.9375,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -34,8 +34,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 127.75000000000003,
-              "bottomRow": 173.17500000000004,
+              "topRow": 129.06875000000002,
+              "bottomRow": 174.49375000000003,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -782,13 +782,74 @@
             },
             {
               "boxShadow": "none",
+              "mobileBottomRow": 10,
+              "widgetName": "toggle_DetailSummary",
+              "widthInPercentage": 0.25263157894736843,
+              "displayName": "Radio Group",
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.d0171e5090e38b83793ce771c861be9e.svg",
+              "searchTags": [
+                "choice"
+              ],
+              "topRow": 0,
+              "bottomRow": 7.39375,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 14,
+              "defaultOptionValue": "1",
+              "animateLoading": true,
+              "parentColumnSpace": 14.71875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 13.432835820895523,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Top",
+              "options": [
+                {
+                  "label": "Detailed",
+                  "value": "1"
+                },
+                {
+                  "label": "Summary",
+                  "value": "0"
+                }
+              ],
+              "isDisabled": false,
+              "key": "2zfh3trliz",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 29.738568304971956,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "hj5fvb9r3h",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Toggle View",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 3,
+              "mobileLeftColumn": 0,
+              "maxDynamicHeight": 9000,
+              "isInline": true,
+              "alignment": "start",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
               "dateFormat": "MMMM YYYY",
               "iconSVG": "/static/media/icon.c8ac755fdc7a44c32deab2390f007005.svg",
               "topRow": 0,
               "labelWidth": 5,
               "type": "DATE_PICKER_WIDGET2",
               "animateLoading": true,
-              "leftColumn": 13.43283582089552,
+              "leftColumn": 29.738568304971956,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -936,7 +997,7 @@
               "widthInPercentage": 0.9915343915343915,
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 7.275,
+              "topRow": 8.59375,
               "isSortable": true,
               "onPageChange": "{{ShowOutgoingList.run().catch(() => {\n  showAlert('Error fetching ShowOutgoingList', 'error');\n});}}",
               "type": "TABLE_WIDGET_V2",
@@ -1051,7 +1112,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 60.275,
+              "bottomRow": 61.59375,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1365,8 +1426,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 61.475,
-              "bottomRow": 126.55000000000001,
+              "topRow": 62.79375,
+              "bottomRow": 127.86875000000002,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -2752,6 +2813,10 @@
               "children": [
                 {
                   "id": "ww7pf15vyo",
+                  "align": "start"
+                },
+                {
+                  "id": "hj5fvb9r3h",
                   "align": "start"
                 },
                 {

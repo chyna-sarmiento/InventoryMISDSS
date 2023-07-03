@@ -68,7 +68,7 @@
               {
                 "condition": "EQ",
                 "key": "OutgoingProductId",
-                "value": "5"
+                "value": "{{select_ProductForecast.selectedOptionValue}}"
               }
             ]
           }
@@ -76,11 +76,17 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.where.data.children[0].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "select_ProductForecast.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
