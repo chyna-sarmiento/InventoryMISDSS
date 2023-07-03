@@ -2803,7 +2803,9 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Sales History_apiRunOrder.executeQueriesInOrder",
               "name": "apiRunOrder.executeQueriesInOrder",
@@ -2818,18 +2820,18 @@
           ],
           [
             {
-              "id": "Sales History_getOutgoingMonthCount",
-              "name": "getOutgoingMonthCount",
+              "id": "Sales History_ShowOutgoingList",
+              "name": "ShowOutgoingList",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "moment(input_dateOutgoing.selectedDate).format('MM')",
-                "moment(input_dateOutgoing.selectedDate).format('YYYY')"
+                "moment(input_dateOutgoing.selectedDate).format('YYYY/MM')",
+                "tbl_ListSales.pageNo",
+                "tbl_ListSales.pageSize",
+                "tbl_ListSales.searchText"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Sales History_ShowProductList",
               "name": "ShowProductList",
@@ -2839,19 +2841,15 @@
                 "input_SearchProduct.filterText"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
-              "id": "Sales History_ShowOutgoingList",
-              "name": "ShowOutgoingList",
+              "id": "Sales History_getOutgoingMonthCount",
+              "name": "getOutgoingMonthCount",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "tbl_ListSales.pageSize",
-                "tbl_ListSales.pageNo",
-                "moment(input_dateOutgoing.selectedDate).format('YYYY/MM')",
-                "tbl_ListSales.searchText"
+                "moment(input_dateOutgoing.selectedDate).format('MM')",
+                "moment(input_dateOutgoing.selectedDate).format('YYYY')"
               ],
               "timeoutInMillisecond": 10000
             }

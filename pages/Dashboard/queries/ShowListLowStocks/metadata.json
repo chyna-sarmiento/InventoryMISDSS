@@ -39,7 +39,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "queryParameters[0].value"
@@ -51,11 +51,11 @@
     "jsonPathKeys": [
       "input_stockChecker.text"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-04T08:32:04Z"
+    "createdAt": "2023-07-01T13:40:40Z"
   },
   "id": "Dashboard_ShowListLowStocks",
   "deleted": false,
