@@ -10,7 +10,7 @@
           "mobileBottomRow": 3456.046875000001,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1112.75,
+          "bottomRow": 2197.0000000000005,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas110",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 650,
+                  "bottomRow": 650.7500000000002,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1439,7 +1439,7 @@
                   "widgetName": "Canvas3Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 330,
+                  "bottomRow": 329.5,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2295,7 +2295,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 980.7499999999999,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -3025,7 +3025,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 980.7499999999999,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -5282,7 +5282,7 @@
                                           "key": "customFusionChartConfig"
                                         }
                                       ],
-                                      "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n      \"subCaption\": \"of the Day\",\n      \"captionFontSize\": \"1.875rem\",\n      \"captionFontColor\": \"231F20\",\n      \"captionPadding\": \"1\",\n      \"showLabels\": \"0\",\n      \"showValues\": \"0\",\n      \"showLegend\": \"0\",\n      \"defaultCenterLabel\": \"{{Math.round((254/GetNumberOfProducts.data)*100)+'%'}}\",\n      \"centerLabelFontSize\": \"29\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n      \"baseFont\": \"Montserrat\",\n      \"chartTopMargin\": \"1\",\n      \"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Active\",\n        \"color\": \"62b58f\",\n        \"value\": 254\n      },\n      {\n        \"label\": \"Inactive\",\n        \"color\": \"929292\",\n        \"value\": \"{{GetNumberOfProducts.data-254}}\"\n      }\n    ]\n  }\n}",
+                                      "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n      \"subCaption\": \"of the Day\",\n      \"captionFontSize\": \"1.875rem\",\n      \"captionFontColor\": \"231F20\",\n      \"captionPadding\": \"1\",\n      \"showLabels\": \"0\",\n      \"showValues\": \"0\",\n      \"showLegend\": \"0\",\n      \"defaultCenterLabel\": \"{{Math.round((GetActiveItemsCount.data/GetNumberOfProducts.data)*100)+'%'}}\",\n      \"centerLabelFontSize\": \"29\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n      \"baseFont\": \"Montserrat\",\n      \"chartTopMargin\": \"1\",\n      \"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Active\",\n        \"color\": \"62b58f\",\n        \"value\": {{GetActiveItemsCount.data}}\n      },\n      {\n        \"label\": \"Inactive\",\n        \"color\": \"929292\",\n        \"value\": \"{{GetNumberOfProducts.data-254}}\"\n      }\n    ]\n  }\n}",
                                       "key": "sp2v6uc8pb",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -5717,7 +5717,7 @@
                                           "key": "customFusionChartConfig"
                                         }
                                       ],
-                                      "customFusionChartConfig": "{\n  \"type\": \"msline\",\n  \"dataSource\": {\n    \"chart\": {\n      \"yAxisName\": \"Volume of Demand\",\n\t\t\t\"yAxisNamePadding\": \"3\",\n\t\t\t\"rotateLabels\": \"0\",\n\t\t\t\"slantLabels\": \"0\",\n\t\t\t\"legendNumRows\": \"1\",\n\t\t\t\"alignLegendWithCanvas\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"10\",\n\t\t\t\"chartBottomMargin\": \"1\",\n\t\t\t\"chartLeftMargin\": \"1\"\n    },\n    \"categories\": [\n      {\n        \"category\": {{getProductForecast.data.map(f => ({\n\t\t\t\tlabel: moment(f.DateTimeOutgoing).format(\"MMMM<br>DD\")\n\t\t\t}))}}\n}],\n    \"dataset\": [\n      {\n        \"seriesname\": \"Non-moving\",\n\t\t\t\t\"color\": \"ef4444\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p10}))}}\n      },\n      {\n        \"seriesname\": \"Slow-moving\",\n\t\t\t\t\"color\": \"ffbe19\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p50}))}}\n      },\n      {\n        \"seriesname\": \"Fast-moving\",\n\t\t\t\t\"color\": \"62b58f\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p90}))}}\n      }\n    ]\n  }\n}",
+                                      "customFusionChartConfig": "{\n  \"type\": \"msline\",\n  \"dataSource\": {\n    \"chart\": {\n      \"yAxisName\": \"Volume of Demand\",\n\t\t\t\"yAxisNamePadding\": \"3\",\n\t\t\t\"rotateLabels\": \"0\",\n\t\t\t\"slantLabels\": \"0\",\n\t\t\t\"legendNumRows\": \"1\",\n\t\t\t\"alignLegendWithCanvas\": \"0\",\n      \"theme\": \"fusion\",\n\t\t\t\"baseFont\": \"Montserrat\",\n\t\t\t\"chartTopMargin\": \"10\",\n\t\t\t\"chartBottomMargin\": \"1\",\n\t\t\t\"chartLeftMargin\": \"0\"\n    },\n    \"categories\": [\n      {\n        \"category\": {{getProductForecast.data.map(f => ({\n\t\t\t\tlabel: moment(f.DateTimeOutgoing).format(\"MMMM<br>DD\")\n\t\t\t}))}}\n}],\n    \"dataset\": [\n      {\n        \"seriesname\": \"Non-moving\",\n\t\t\t\t\"color\": \"ef4444\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p10}))}}\n      },\n      {\n        \"seriesname\": \"Slow-moving\",\n\t\t\t\t\"color\": \"ffbe19\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p50}))}}\n      },\n      {\n        \"seriesname\": \"Fast-moving\",\n\t\t\t\t\"color\": \"62b58f\",\n        \"data\": {{getProductForecast.data.map(f => ({value: f.p90}))}}\n      }\n    ]\n  }\n}",
                                       "key": "sp2v6uc8pb",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -5894,7 +5894,7 @@
                                       "text": "Recent Sales",
                                       "key": "zn3myyzfd0",
                                       "isDeprecated": false,
-                                      "rightColumn": 35.16704805491991,
+                                      "rightColumn": 35.16704805491992,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "widgetId": "iyx0wp0f1r",
@@ -5941,7 +5941,7 @@
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 35.16704805491991,
+                                      "leftColumn": 35.16704805491992,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "buttonColor"
@@ -6644,6 +6644,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_GetActiveItemsCount",
+              "name": "GetActiveItemsCount",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(GetLatestDate.data).format('YYYY/MM/DD')"
+              ],
               "timeoutInMillisecond": 10000
             }
           ],
