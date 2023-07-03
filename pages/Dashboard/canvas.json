@@ -4204,9 +4204,7 @@
                 "async function () {\n  try {\n    await getProductForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Dashboard_getProductForecast",
               "name": "getProductForecast",
