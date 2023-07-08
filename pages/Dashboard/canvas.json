@@ -7,10 +7,10 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 5212.546875000003,
+          "mobileBottomRow": 3358.7968750000005,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1112.75,
+          "bottomRow": 1112.7500000000002,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -23,7 +23,7 @@
             {
               "mobileWidthInPercentage": 0,
               "boxShadow": "none",
-              "mobileBottomRow": 422.8546875000001,
+              "mobileBottomRow": 237.47968750000007,
               "widgetName": "mdl_AddOutgoingStock",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -34,8 +34,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 146.625,
-              "bottomRow": 211.70000000000002,
+              "topRow": 146.62500000000006,
+              "bottomRow": 211.70000000000007,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas110",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 780,
+                  "bottomRow": 650,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1384,7 +1384,7 @@
                 }
               ],
               "key": "3xlm59vidg",
-              "height": 789.0468750000002,
+              "height": 652.7500000000002,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -1396,7 +1396,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 344.1500000000001,
+              "mobileTopRow": 158.77500000000003,
               "responsiveBehavior": "hug",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
@@ -1406,7 +1406,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 343.3500000000001,
+              "mobileBottomRow": 157.97500000000002,
               "widgetName": "mdl_AddIncoming",
               "widthInPercentage": 0,
               "isCanvas": true,
@@ -1417,8 +1417,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 112.475,
-              "bottomRow": 145.425,
+              "topRow": 112.47500000000002,
+              "bottomRow": 145.42500000000004,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1439,7 +1439,7 @@
                   "widgetName": "Canvas3Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 310,
+                  "bottomRow": 330,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1988,7 +1988,7 @@
                 }
               ],
               "key": "8ygzf8gjtx",
-              "height": 315.5,
+              "height": 331.5,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -2000,7 +2000,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 312.00000000000006,
+              "mobileTopRow": 126.625,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
@@ -2272,7 +2272,7 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "mobileBottomRow": 311.20000000000005,
+              "mobileBottomRow": 125.82499999999999,
               "widgetName": "tab_Charts",
               "borderColor": "",
               "isCanvas": true,
@@ -2280,7 +2280,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 9.2,
-              "bottomRow": 111.27499999999999,
+              "bottomRow": 111.27500000000002,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -2311,7 +2311,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 980.7499999999999,
+                  "bottomRow": 980.7500000000002,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -2382,7 +2382,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{dataDemandCurrent.run().then(() => {\n  filteredDemandForecast.run();\n  gsForecastData.gsDemandForecastData();\n  gsForecastData.gsDemandDataset();\n  chartData.CustomerDemand();\n});}}",
                       "isDeprecated": false,
-                      "rightColumn": 21.333333333333336,
+                      "rightColumn": 20.87123947051745,
                       "widgetId": "ood6h56rcg",
                       "errorMessage": "Your entry must be minimum of 10 and a maximum of 20.",
                       "minWidth": 450,
@@ -2422,7 +2422,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21.333333333333336,
+                      "leftColumn": 20.87123947051745,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -2640,7 +2640,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.66666666666667,
+                      "rightColumn": 42.435619735258726,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "itswnz61gw",
                       "containerStyle": "card",
@@ -2681,7 +2681,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.66666666666667,
+                      "leftColumn": 42.435619735258726,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -3047,7 +3047,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 980.7499999999999,
+                  "bottomRow": 980.7500000000002,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -3118,7 +3118,7 @@
                       "labelTextSize": "0.875rem",
                       "onTextChanged": "{{ShowListLowStocks.run().then(() => {\n  filteredStockForecast.run();\n  gsForecastData.gsStockDataset();\n  chartData.InventoryStock();\n});}}",
                       "isDeprecated": false,
-                      "rightColumn": 21.333333333333336,
+                      "rightColumn": 20.87123947051745,
                       "widgetId": "zwzhili88g",
                       "errorMessage": "Your entry must be minimum of 1 and a maximum of 50.",
                       "minWidth": 450,
@@ -3158,7 +3158,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21.333333333333336,
+                      "leftColumn": 20.87123947051745,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -3376,7 +3376,7 @@
                       "key": "ed4z0xu1ou",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 42.66666666666667,
+                      "rightColumn": 42.435619735258726,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "y6x538jihr",
                       "containerStyle": "card",
@@ -3417,7 +3417,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 14.359375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 42.66666666666667,
+                      "leftColumn": 42.435619735258726,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -3785,7 +3785,7 @@
                   "widgetName": "Canvas9",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 980.7499999999999,
+                  "bottomRow": 980.7500000000002,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -3811,7 +3811,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 46.4,
+                      "bottomRow": 46.400000000000006,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -3835,7 +3835,7 @@
                           "widgetName": "Canvas10",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 464,
+                          "bottomRow": 464.00000000000006,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -3860,7 +3860,7 @@
                                 "group"
                               ],
                               "topRow": 0,
-                              "bottomRow": 11.200000000000001,
+                              "bottomRow": 11.200000000000003,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -3884,7 +3884,7 @@
                                   "widgetName": "Canvas13",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 112.00000000000001,
+                                  "bottomRow": 112.00000000000003,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -3971,7 +3971,7 @@
                                         "label"
                                       ],
                                       "topRow": 5.2,
-                                      "bottomRow": 9.2,
+                                      "bottomRow": 9.200000000000001,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -4063,7 +4063,7 @@
                               "key": "tfob4lfwib",
                               "backgroundColor": "#64748b",
                               "isDeprecated": false,
-                              "rightColumn": 21.333333333333332,
+                              "rightColumn": 22.041820418204182,
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "6enflocbpt",
                               "containerStyle": "card",
@@ -4095,7 +4095,7 @@
                                 "group"
                               ],
                               "topRow": 0,
-                              "bottomRow": 11.200000000000001,
+                              "bottomRow": 11.200000000000003,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -4104,7 +4104,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 12.578125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 21.333333333333332,
+                              "leftColumn": 22.041820418204182,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "boxShadow"
@@ -4119,7 +4119,7 @@
                                   "widgetName": "Canvas14",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 112.00000000000001,
+                                  "bottomRow": 112.00000000000003,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -4203,7 +4203,7 @@
                                         "label"
                                       ],
                                       "topRow": 5.2,
-                                      "bottomRow": 9.2,
+                                      "bottomRow": 9.200000000000001,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -4292,7 +4292,7 @@
                               "key": "tfob4lfwib",
                               "backgroundColor": "#FFFFFF",
                               "isDeprecated": false,
-                              "rightColumn": 42.66666666666667,
+                              "rightColumn": 44.083640836408364,
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "go40o10e9a",
                               "containerStyle": "card",
@@ -4324,7 +4324,7 @@
                                 "group"
                               ],
                               "topRow": 0,
-                              "bottomRow": 11.200000000000001,
+                              "bottomRow": 11.200000000000003,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -4333,7 +4333,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 12.578125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 42.66666666666667,
+                              "leftColumn": 44.083640836408364,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "boxShadow"
@@ -4348,7 +4348,7 @@
                                   "widgetName": "Canvas15",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 112.00000000000001,
+                                  "bottomRow": 112.00000000000003,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -4435,7 +4435,7 @@
                                         "label"
                                       ],
                                       "topRow": 5.2,
-                                      "bottomRow": 9.2,
+                                      "bottomRow": 9.200000000000001,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -4527,7 +4527,7 @@
                               "key": "tfob4lfwib",
                               "backgroundColor": "#64748b",
                               "isDeprecated": false,
-                              "rightColumn": 64,
+                              "rightColumn": 66.12546125461255,
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "fwoxul7imy",
                               "containerStyle": "card",
@@ -4558,8 +4558,8 @@
                                 "parent",
                                 "group"
                               ],
-                              "topRow": 12.4,
-                              "bottomRow": 44.4,
+                              "topRow": 12.400000000000002,
+                              "bottomRow": 44.400000000000006,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -4607,7 +4607,7 @@
                                         "group"
                                       ],
                                       "topRow": 0,
-                                      "bottomRow": 28.875000000000007,
+                                      "bottomRow": 28.875,
                                       "parentRowSpace": 10,
                                       "type": "CONTAINER_WIDGET",
                                       "hideCard": false,
@@ -4631,7 +4631,7 @@
                                           "widgetName": "Canvas17",
                                           "displayName": "Canvas",
                                           "topRow": 0,
-                                          "bottomRow": 288.75000000000006,
+                                          "bottomRow": 288.75,
                                           "parentRowSpace": 1,
                                           "type": "CANVAS_WIDGET",
                                           "canExtend": false,
@@ -4742,7 +4742,7 @@
                                                 "number",
                                                 "textarea"
                                               ],
-                                              "bottomRow": 6.075000000000003,
+                                              "bottomRow": 6.075,
                                               "parentRowSpace": 10,
                                               "autoFocus": false,
                                               "hideCard": false,
@@ -4788,7 +4788,7 @@
                                                 "click",
                                                 "submit"
                                               ],
-                                              "topRow": 7.275000000000003,
+                                              "topRow": 7.275,
                                               "bottomRow": 11.275000000000002,
                                               "tooltip": "See items that has a stock count of 0",
                                               "parentRowSpace": 10,
@@ -4815,7 +4815,7 @@
                                               "isDisabled": false,
                                               "key": "nj2blxqbrl",
                                               "isDeprecated": false,
-                                              "rightColumn": 27.52570093457944,
+                                              "rightColumn": 28.1897233201581,
                                               "isDefaultClickDisabled": true,
                                               "iconName": "warning-sign",
                                               "widgetId": "2m46kxdeth",
@@ -4846,7 +4846,7 @@
                                                 "paragraph",
                                                 "label"
                                               ],
-                                              "topRow": 7.275000000000003,
+                                              "topRow": 7.275,
                                               "bottomRow": 11.275000000000002,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
@@ -4857,7 +4857,7 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "parentColumnSpace": 6.765625,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 27.52570093457944,
+                                              "leftColumn": 28.1897233201581,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -4911,7 +4911,7 @@
                                                 "click",
                                                 "submit"
                                               ],
-                                              "topRow": 12.475000000000003,
+                                              "topRow": 12.475000000000001,
                                               "bottomRow": 16.475,
                                               "tooltip": "See items that are running out of stock",
                                               "parentRowSpace": 10,
@@ -4938,7 +4938,7 @@
                                               "isDisabled": false,
                                               "key": "nj2blxqbrl",
                                               "isDeprecated": false,
-                                              "rightColumn": 25.261682242990656,
+                                              "rightColumn": 26.089591567852437,
                                               "isDefaultClickDisabled": true,
                                               "iconName": "error",
                                               "widgetId": "5aeqkfncwn",
@@ -4969,7 +4969,7 @@
                                                 "paragraph",
                                                 "label"
                                               ],
-                                              "topRow": 12.475000000000003,
+                                              "topRow": 12.475000000000001,
                                               "bottomRow": 16.475,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
@@ -4980,7 +4980,7 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "parentColumnSpace": 6.765625,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 25.26168224299066,
+                                              "leftColumn": 26.089591567852437,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -5033,8 +5033,8 @@
                                                 "click",
                                                 "submit"
                                               ],
-                                              "topRow": 17.675000000000004,
-                                              "bottomRow": 21.675000000000004,
+                                              "topRow": 17.675,
+                                              "bottomRow": 21.675,
                                               "tooltip": "",
                                               "parentRowSpace": 10,
                                               "type": "BUTTON_WIDGET",
@@ -5056,7 +5056,7 @@
                                               "isDisabled": false,
                                               "key": "nj2blxqbrl",
                                               "isDeprecated": false,
-                                              "rightColumn": 22.925233644859812,
+                                              "rightColumn": 23.72859025032938,
                                               "isDefaultClickDisabled": true,
                                               "iconName": "thumbs-up",
                                               "widgetId": "npzzsxs4pm",
@@ -5087,8 +5087,8 @@
                                                 "paragraph",
                                                 "label"
                                               ],
-                                              "topRow": 17.675000000000004,
-                                              "bottomRow": 21.675000000000004,
+                                              "topRow": 17.675,
+                                              "bottomRow": 21.675,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
                                               "hideCard": false,
@@ -5098,7 +5098,7 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "parentColumnSpace": 6.765625,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 22.925233644859812,
+                                              "leftColumn": 23.72859025032938,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -5152,8 +5152,8 @@
                                                 "click",
                                                 "submit"
                                               ],
-                                              "topRow": 22.875000000000004,
-                                              "bottomRow": 26.875000000000004,
+                                              "topRow": 22.875,
+                                              "bottomRow": 26.875,
                                               "tooltip": "",
                                               "parentRowSpace": 10,
                                               "type": "BUTTON_WIDGET",
@@ -5166,7 +5166,7 @@
                                                   "key": "onClick"
                                                 }
                                               ],
-                                              "leftColumn": 16.765186915887853,
+                                              "leftColumn": 16.525691699604742,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "buttonColor"
@@ -5179,7 +5179,7 @@
                                               "isDisabled": false,
                                               "key": "ojzfmwapyo",
                                               "isDeprecated": false,
-                                              "rightColumn": 47.23481308411215,
+                                              "rightColumn": 47.47430830039526,
                                               "isDefaultClickDisabled": true,
                                               "iconName": "plus",
                                               "widgetId": "3lxo2pr9iv",
@@ -5517,8 +5517,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 47.6,
-                      "bottomRow": 96.07499999999999,
+                      "topRow": 47.60000000000001,
+                      "bottomRow": 96.07500000000002,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -5542,7 +5542,7 @@
                           "widgetName": "Canvas11",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 484.7499999999999,
+                          "bottomRow": 484.7500000000001,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -5567,7 +5567,7 @@
                                 "group"
                               ],
                               "topRow": 0,
-                              "bottomRow": 46.474999999999994,
+                              "bottomRow": 46.475,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -5591,7 +5591,7 @@
                                   "widgetName": "Canvas19",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 464.74999999999994,
+                                  "bottomRow": 464.75,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -5706,7 +5706,7 @@
                                       "searchTags": [
                                         "dropdown"
                                       ],
-                                      "bottomRow": 11.274999999999995,
+                                      "bottomRow": 11.275,
                                       "parentRowSpace": 10,
                                       "hideCard": false,
                                       "mobileRightColumn": 64,
@@ -5755,8 +5755,8 @@
                                         "visuals",
                                         "visualisations"
                                       ],
-                                      "topRow": 12.474999999999994,
-                                      "bottomRow": 44.474999999999994,
+                                      "topRow": 12.475000000000001,
+                                      "bottomRow": 44.475,
                                       "parentRowSpace": 10,
                                       "type": "CHART_WIDGET",
                                       "hideCard": false,
@@ -5977,7 +5977,7 @@
                                       "text": "Recent Sales",
                                       "key": "zn3myyzfd0",
                                       "isDeprecated": false,
-                                      "rightColumn": 35.16704805491991,
+                                      "rightColumn": 34.92149292149292,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "widgetId": "iyx0wp0f1r",
@@ -6024,7 +6024,7 @@
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 35.16704805491991,
+                                      "leftColumn": 34.92149292149292,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "buttonColor"
@@ -6648,7 +6648,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 468.0546875000001,
+              "mobileBottomRow": 282.67968750000006,
               "widgetName": "mdl_LowStockItems",
               "widthInPercentage": 0.35042283298097254,
               "isCanvas": true,
@@ -6659,7 +6659,7 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 212.90000000000003,
+              "topRow": 212.9000000000001,
               "bottomRow": 258.30000000000007,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
@@ -6676,11 +6676,11 @@
               ],
               "children": [
                 {
-                  "mobileBottomRow": 444,
+                  "mobileBottomRow": 443.9999999999999,
                   "widgetName": "Canvas112",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 440,
+                  "bottomRow": 450,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -6716,7 +6716,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 61.119387869922356,
+                      "leftColumn": 60.47504302925989,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -6781,7 +6781,7 @@
                       "text": "Low Stock Items",
                       "key": "koznhuc11c",
                       "isDeprecated": false,
-                      "rightColumn": 61.119387869922356,
+                      "rightColumn": 60.47504302925989,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "ekoubsqsd6",
@@ -7002,7 +7002,7 @@
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "mobileBottomRow": 42.4,
+                      "mobileBottomRow": 42.39999999999999,
                       "widgetName": "btn_CloseModalLow",
                       "onClick": "{{closeModal('mdl_LowStockItems');}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -7023,7 +7023,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 55.358163609767075,
+                      "leftColumn": 53.42512908777969,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -7047,7 +7047,7 @@
                       "parentId": "d9di5t9jj4",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 38.4,
+                      "mobileTopRow": 38.39999999999999,
                       "responsiveBehavior": "hug",
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -7106,7 +7106,7 @@
                 }
               ],
               "key": "3s4z3hhzig",
-              "height": 446,
+              "height": 456.00000000000006,
               "isDeprecated": false,
               "rightColumn": 23,
               "detachFromLayout": true,
@@ -7118,7 +7118,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 423.65468750000014,
+              "mobileTopRow": 238.27968750000008,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
@@ -7128,7 +7128,7 @@
             },
             {
               "boxShadow": "none",
-              "mobileBottomRow": 513.2546875000003,
+              "mobileBottomRow": 327.87968750000005,
               "widgetName": "mdl_OutOfStockItems",
               "widthInPercentage": 0.35042283298097254,
               "isCanvas": true,
@@ -7156,11 +7156,11 @@
               ],
               "children": [
                 {
-                  "mobileBottomRow": 444,
+                  "mobileBottomRow": 443.9999999999999,
                   "widgetName": "Canvas112Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 440,
+                  "bottomRow": 450,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -7196,7 +7196,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 61.119387869922356,
+                      "leftColumn": 60.47504302925989,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -7261,7 +7261,7 @@
                       "text": "Out of Stock Items",
                       "key": "koznhuc11c",
                       "isDeprecated": false,
-                      "rightColumn": 61.119387869922356,
+                      "rightColumn": 60.47504302925989,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "jo770qnou6",
@@ -7483,7 +7483,7 @@
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "mobileBottomRow": 42.4,
+                      "mobileBottomRow": 42.39999999999999,
                       "widgetName": "btn_CloseModalOutOfStock",
                       "onClick": "{{closeModal('mdl_OutOfStockItems');}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -7504,7 +7504,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 55.358163609767075,
+                      "leftColumn": 53.42512908777969,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -7528,7 +7528,7 @@
                       "parentId": "f8frx7vhm3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 38.4,
+                      "mobileTopRow": 38.39999999999999,
                       "responsiveBehavior": "hug",
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -7587,7 +7587,7 @@
                 }
               ],
               "key": "3s4z3hhzig",
-              "height": 446,
+              "height": 456.00000000000006,
               "isDeprecated": false,
               "rightColumn": 23,
               "detachFromLayout": true,
@@ -7599,7 +7599,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 468.8546875000001,
+              "mobileTopRow": 283.47968750000007,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,

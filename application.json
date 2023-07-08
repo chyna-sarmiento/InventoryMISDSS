@@ -1,6 +1,10 @@
 {
   "pages": [
     {
+      "id": "Login",
+      "isDefault": false
+    },
+    {
       "id": "Dashboard",
       "isDefault": true
     },
