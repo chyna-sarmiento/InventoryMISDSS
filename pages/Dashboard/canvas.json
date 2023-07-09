@@ -35,7 +35,7 @@
                 "notification"
               ],
               "topRow": 146.625,
-              "bottomRow": 211.70000000000005,
+              "bottomRow": 211.70000000000002,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas110",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 650,
+                  "bottomRow": 650.7500000000002,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2311,7 +2311,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
-                  "bottomRow": 980.7500000000002,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -3047,7 +3047,7 @@
                   "mobileBottomRow": 982.25,
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
-                  "bottomRow": 980.7500000000002,
+                  "bottomRow": 794.7499999999998,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -4874,7 +4874,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 31.043478260869566,
+                                      "rightColumn": 30.324324324324323,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "warning-sign",
                                       "widgetId": "2m46kxdeth",
@@ -4916,7 +4916,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 31.043478260869563,
+                                      "leftColumn": 30.324324324324323,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -4997,7 +4997,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 28.487483530961793,
+                                      "rightColumn": 27.82754182754183,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "error",
                                       "widgetId": "5aeqkfncwn",
@@ -5039,7 +5039,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 28.487483530961796,
+                                      "leftColumn": 27.82754182754183,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -5115,7 +5115,7 @@
                                       "isDisabled": false,
                                       "key": "nj2blxqbrl",
                                       "isDeprecated": false,
-                                      "rightColumn": 25.855072463768117,
+                                      "rightColumn": 25.256113256113256,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "thumbs-up",
                                       "widgetId": "npzzsxs4pm",
@@ -5157,7 +5157,7 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "parentColumnSpace": 6.765625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 25.855072463768117,
+                                      "leftColumn": 25.256113256113256,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -5174,7 +5174,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{GetNumberOfProducts.data-(Number.parseInt(txt_CountOutOfStock.text)+Number.parseInt(txt_CountLowStock.text))}}",
+                                      "text": "{{Number.parseInt(txt_CountProducts.text)-(Number.parseInt(txt_CountOutOfStock.text)+Number.parseInt(txt_CountLowStock.text))}}",
                                       "key": "23ykqlhc9o",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -5225,7 +5225,7 @@
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 14.816864295125164,
+                                      "leftColumn": 15.214929214929214,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "buttonColor"
@@ -5238,7 +5238,7 @@
                                       "isDisabled": false,
                                       "key": "ojzfmwapyo",
                                       "isDeprecated": false,
-                                      "rightColumn": 49.183135704874836,
+                                      "rightColumn": 48.785070785070786,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "plus",
                                       "widgetId": "3lxo2pr9iv",
@@ -5534,7 +5534,7 @@
                           "widgetName": "Canvas11",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 484.7500000000001,
+                          "bottomRow": 484.75,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -7715,7 +7715,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  try {\n    await getProductForecast.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
+                "async function () {\n  try {\n    await GetLatestDate.run();\n    await ShowOutgoingPreview.run();\n    await GetDailyProfit.run();\n    await ShowProductList.run();\n    await getProductForecast.run();\n    await GetNumberOfProducts.run();\n    await GetCountOutOfStock.run();\n    await GetCountLowStock.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }
