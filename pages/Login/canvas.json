@@ -6,7 +6,7 @@
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 590,
+          "mobileBottomRow": 760,
           "widgetName": "MainContainer",
           "topRow": 0,
           "bottomRow": 380,
@@ -21,7 +21,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "mobileBottomRow": 41.35000000000001,
+              "mobileBottomRow": 68,
               "widgetName": "ctn_Canvas",
               "borderColor": "#E0DEDE",
               "isCanvas": true,
@@ -34,13 +34,13 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 29.749999999999993,
+              "bottomRow": 30,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "mobileRightColumn": 64,
-              "animateLoading": true,
+              "animateLoading": false,
               "parentColumnSpace": 13.21875,
               "dynamicTriggerPathList": [],
               "leftColumn": 0,
@@ -54,11 +54,11 @@
               ],
               "children": [
                 {
-                  "mobileBottomRow": 413.5000000000001,
+                  "mobileBottomRow": 680,
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 297.49999999999994,
+                  "bottomRow": 300,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -71,7 +71,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "mobileBottomRow": 39.35000000000001,
+                      "mobileBottomRow": 66,
                       "widgetName": "Container1",
                       "borderColor": "",
                       "isCanvas": true,
@@ -83,7 +83,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 27.749999999999993,
+                      "bottomRow": 28,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -103,11 +103,11 @@
                       ],
                       "children": [
                         {
-                          "mobileBottomRow": 393.5000000000001,
+                          "mobileBottomRow": 660,
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 277.49999999999994,
+                          "bottomRow": 280,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -119,19 +119,20 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "mobileWidthInPercentage": 1.2338942307692307,
                               "boxShadow": "none",
                               "mobileBottomRow": 12,
                               "widgetName": "img_Backgroud",
-                              "widthInPercentage": 0.45941891100702575,
+                              "widthInPercentage": 0.6224385245901639,
                               "displayName": "Image",
                               "iconSVG": "https://appcdn.appsmith.com/static/media/icon.30c8cbd442cce232b01ba2d434c53a53.svg",
                               "topRow": 0,
-                              "bottomRow": 25,
+                              "bottomRow": 26,
                               "parentRowSpace": 10,
                               "type": "IMAGE_WIDGET",
                               "hideCard": false,
-                              "mobileRightColumn": 58.56209150326797,
-                              "animateLoading": true,
+                              "mobileRightColumn": 59,
+                              "animateLoading": false,
                               "parentColumnSpace": 12.65625,
                               "dynamicTriggerPathList": [],
                               "imageShape": "RECTANGLE",
@@ -145,7 +146,7 @@
                               "key": "a7uq2jj598",
                               "image": "https://www.impact-advisors.com/wp-content/uploads/2022/11/iStock-1389537357-1280x800.jpg",
                               "isDeprecated": false,
-                              "rightColumn": 31,
+                              "rightColumn": 41,
                               "objectFit": "cover",
                               "widgetId": "5tgu0qyq49",
                               "isVisible": true,
@@ -163,7 +164,7 @@
                             },
                             {
                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                              "mobileBottomRow": 37.35,
+                              "mobileBottomRow": 64,
                               "borderColor": "#E0DEDE",
                               "widgetName": "form_Login",
                               "isCanvas": true,
@@ -178,7 +179,7 @@
                                 "group"
                               ],
                               "topRow": 0,
-                              "bottomRow": 25.749999999999993,
+                              "bottomRow": 25.75,
                               "parentRowSpace": 10,
                               "type": "FORM_WIDGET",
                               "hideCard": false,
@@ -187,7 +188,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 13.21875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 31,
+                              "leftColumn": 41,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -195,11 +196,11 @@
                               ],
                               "children": [
                                 {
-                                  "mobileBottomRow": 245.5,
+                                  "mobileBottomRow": 511.99999999999994,
                                   "widgetName": "Canvas1",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 257.49999999999994,
+                                  "bottomRow": 257.5,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -212,7 +213,7 @@
                                   "dynamicBindingPathList": [],
                                   "children": [
                                     {
-                                      "mobileBottomRow": 4,
+                                      "mobileBottomRow": 29.6,
                                       "widgetName": "lbl_Login",
                                       "displayName": "Text",
                                       "iconSVG": "https://appcdn.appsmith.com/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
@@ -254,7 +255,7 @@
                                       "minWidth": 450,
                                       "isVisible": true,
                                       "fontStyle": "BOLD",
-                                      "textColor": "#231F20",
+                                      "textColor": "#27273e",
                                       "version": 1,
                                       "parentId": "1xjrtti2i9",
                                       "renderMode": "CANVAS",
@@ -294,7 +295,7 @@
                                       "isLoading": false,
                                       "borderRadius": "1.5rem",
                                       "alignment": "start",
-                                      "mobileBottomRow": 10.875,
+                                      "mobileBottomRow": 37,
                                       "widgetName": "input_Email",
                                       "displayName": "Input",
                                       "searchTags": [
@@ -321,7 +322,7 @@
                                       "parentId": "1xjrtti2i9",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
-                                      "mobileTopRow": 4.8,
+                                      "mobileTopRow": 30.400000000000002,
                                       "responsiveBehavior": "fill",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
@@ -356,7 +357,7 @@
                                       "isLoading": false,
                                       "borderRadius": "1.5rem",
                                       "alignment": "start",
-                                      "mobileBottomRow": 17.75,
+                                      "mobileBottomRow": 44.4,
                                       "widgetName": "input_Password",
                                       "displayName": "Input",
                                       "searchTags": [
@@ -365,7 +366,7 @@
                                         "number",
                                         "textarea"
                                       ],
-                                      "bottomRow": 18.549999999999997,
+                                      "bottomRow": 18.55,
                                       "parentRowSpace": 10,
                                       "autoFocus": false,
                                       "hideCard": false,
@@ -383,7 +384,7 @@
                                       "parentId": "1xjrtti2i9",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
-                                      "mobileTopRow": 11.675,
+                                      "mobileTopRow": 37.8,
                                       "responsiveBehavior": "fill",
                                       "mobileLeftColumn": 0,
                                       "maxDynamicHeight": 9000,
@@ -395,9 +396,9 @@
                                     {
                                       "resetFormOnClick": true,
                                       "boxShadow": "none",
-                                      "mobileBottomRow": 22.55,
+                                      "mobileBottomRow": 49.199999999999996,
                                       "widgetName": "btn_Login",
-                                      "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW');}}",
+                                      "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW').catch(() => {\n  showAlert('Email not found or your password is wrong.', 'info');\n});}}",
                                       "buttonColor": "#86efac",
                                       "displayName": "Button",
                                       "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
@@ -405,24 +406,24 @@
                                         "click",
                                         "submit"
                                       ],
-                                      "topRow": 19.749999999999996,
-                                      "bottomRow": 23.749999999999996,
+                                      "topRow": 19.75,
+                                      "bottomRow": 23.75,
                                       "type": "BUTTON_WIDGET",
                                       "hideCard": false,
-                                      "mobileRightColumn": 44.97297297297297,
+                                      "mobileRightColumn": 11.130434782608695,
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [
                                         {
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 22.580298965120736,
+                                      "leftColumn": 18.339077265147303,
                                       "dynamicBindingPathList": [],
                                       "text": "Sign In",
                                       "isDisabled": false,
                                       "key": "9tyfpglnih",
                                       "isDeprecated": false,
-                                      "rightColumn": 41.41970103487927,
+                                      "rightColumn": 45.66092273485269,
                                       "isDefaultClickDisabled": true,
                                       "widgetId": "efrdlo8riv",
                                       "minWidth": 120,
@@ -432,11 +433,11 @@
                                       "parentId": "1xjrtti2i9",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "mobileTopRow": 18.55,
+                                      "mobileTopRow": 45.199999999999996,
                                       "responsiveBehavior": "hug",
                                       "disabledWhenInvalid": true,
                                       "borderRadius": "1.5rem",
-                                      "mobileLeftColumn": 19.027027027027025,
+                                      "mobileLeftColumn": 52.869565217391305,
                                       "buttonVariant": "PRIMARY",
                                       "placement": "CENTER",
                                       "alignment": "center"

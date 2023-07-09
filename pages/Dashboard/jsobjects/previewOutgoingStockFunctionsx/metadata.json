@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "previewOutgoingStockFunctionsx",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "cart",
+        "value": "[]"
+      },
+      {
+        "name": "totalPrice",
+        "value": "''"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Dashboard_previewOutgoingStockFunctionsx",
+  "deleted": false,
+  "gitSyncId": "64a02cd76f8d8c15e6a0d0e4_64aa5d042510e056ca720dea"
+}
