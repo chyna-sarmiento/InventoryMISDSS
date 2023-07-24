@@ -1,0 +1,135 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "mobileBottomRow": 107.12499999999997,
+    "borderColor": "#ffffff",
+    "widgetName": "form_EditProductDetails",
+    "isCanvas": true,
+    "displayName": "Form",
+    "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
+    "searchTags": ["group"],
+    "topRow": 10.4,
+    "bottomRow": 103.72500000000007,
+    "parentRowSpace": 10,
+    "type": "FORM_WIDGET",
+    "hideCard": false,
+    "shouldScrollContents": true,
+    "mobileRightColumn": 64,
+    "animateLoading": true,
+    "parentColumnSpace": 17.9375,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"}
+    ],
+    "children": [{
+        "mobileBottomRow": 975.2499999999998,
+        "widgetName": "Canvas1Copy",
+        "displayName": "Canvas",
+        "topRow": 0,
+        "bottomRow": 933.2500000000006,
+        "parentRowSpace": 1,
+        "type": "CANVAS_WIDGET",
+        "canExtend": false,
+        "hideCard": true,
+        "minHeight": 340,
+        "mobileRightColumn": 430.5,
+        "useAutoLayout": true,
+        "parentColumnSpace": 1,
+        "leftColumn": 0,
+        "dynamicBindingPathList": [],
+        "positioning": "vertical",
+        "key": "s6e1vsyk93",
+        "isDeprecated": false,
+        "rightColumn": 430.5,
+        "detachFromLayout": true,
+        "widgetId": "sqdgq7xvdr",
+        "containerStyle": "none",
+        "minWidth": 450,
+        "isVisible": true,
+        "version": 1,
+        "parentId": "i1ch8btz6w",
+        "renderMode": "CANVAS",
+        "isLoading": false,
+        "mobileTopRow": 0,
+        "responsiveBehavior": "fill",
+        "mobileLeftColumn": 0,
+        "flexLayers": [
+            {"children": [
+                {
+                    "id": "ylwu0v4dim",
+                    "align": "start"
+                },
+                {
+                    "id": "qh87sdhao3",
+                    "align": "start"
+                }
+            ]},
+            {"children": [{
+                "id": "t05q52763p",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "ezgfan9llu",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "4otxky7qou",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "6ciae8kw5u",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "znq6868twj",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "oq8l3f9u73",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "gkafum9lor",
+                "align": "start"
+            }]},
+            {"children": [
+                {
+                    "id": "a6o5r5ukir",
+                    "align": "end"
+                },
+                {
+                    "id": "v0qhpsoowr",
+                    "align": "end"
+                }
+            ]},
+            {"children": [{
+                "id": "cl6xlahlwd",
+                "align": "center"
+            }]}
+        ]
+    }],
+    "borderWidth": "1",
+    "positioning": "fixed",
+    "key": "sdgm5x84ig",
+    "flexVerticalAlignment": "end",
+    "backgroundColor": "#FFFFFF",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "i1ch8btz6w",
+    "minWidth": 450,
+    "isVisible": true,
+    "parentId": "ntgd0hijy4",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 9.600000000000001,
+    "responsiveBehavior": "fill",
+    "originalTopRow": 5.2,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
+    "maxDynamicHeight": 9000,
+    "originalBottomRow": 98.52500000000146,
+    "alignment": "start",
+    "minDynamicHeight": 10
+}

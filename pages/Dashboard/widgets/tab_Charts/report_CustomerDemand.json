@@ -1,0 +1,73 @@
+{
+    "mobileWidthInPercentage": 0.9246376811594202,
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "mobileBottomRow": 96.225,
+    "setAdaptiveYMin": false,
+    "widgetName": "report_CustomerDemand",
+    "allowScroll": false,
+    "widthInPercentage": 0.9699421965317919,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 14.475000000000001,
+    "bottomRow": 77.475,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 64,
+    "chartData": {"sp884mchx6": {
+        "data": [
+            {
+                "x": "Product1",
+                "y": 20000
+            },
+            {
+                "x": "Product2",
+                "y": 22000
+            },
+            {
+                "x": "Product3",
+                "y": 32000
+            }
+        ],
+        "seriesName": "Sales"
+    }},
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "parentColumnSpace": 14.15625,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "customFusionChartConfig"}
+    ],
+    "customFusionChartConfig": "{{chartData.CustomerDemand()}}",
+    "key": "xo41l3rc6q",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "my4wzjd20r",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "fmgtivh5p6",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 34.224999999999994,
+    "responsiveBehavior": "fill",
+    "yAxisName": "Revenue($)",
+    "chartName": "Customer Demand",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
+    "xAxisName": "Product Line",
+    "chartType": "CUSTOM_FUSION_CHART",
+    "alignment": "start"
+}

@@ -1,0 +1,71 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "mobileBottomRow": 98.99999999999999,
+    "widgetName": "chart_ActiveItems",
+    "allowScroll": false,
+    "widthInPercentage": 0.46723044397463004,
+    "displayName": "Chart",
+    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.04227b3516da60d6462fe38c74f88261.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 0,
+    "bottomRow": 30,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 64,
+    "chartData": {"17kc1oho3v": {
+        "data": [
+            {
+                "x": "Product1",
+                "y": 20000
+            },
+            {
+                "x": "Product2",
+                "y": 22000
+            },
+            {
+                "x": "Product3",
+                "y": 32000
+            }
+        ],
+        "seriesName": ""
+    }},
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "parentColumnSpace": 6.90625,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 32,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "customFusionChartConfig"}
+    ],
+    "customFusionChartConfig": "{\n  \"type\": \"doughnut2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Active Items\",\n      \"subCaption\": \"of the Day\",\n      \"captionFontSize\": \"1.875rem\",\n      \"captionFontColor\": \"231F20\",\n      \"captionPadding\": \"1\",\n      \"showLabels\": \"0\",\n      \"showValues\": \"0\",\n      \"showLegend\": \"0\",\n      \"defaultCenterLabel\": \"{{Math.round((GetActiveItemsCount.data/GetNumberOfProducts.data)*100)+'%'}}\",\n      \"centerLabelFontSize\": \"29\",\n      \"decimals\": \"0\",\n      \"theme\": \"fusion\",\n      \"baseFont\": \"Montserrat\",\n      \"chartTopMargin\": \"1\",\n      \"chartBottomMargin\": \"1\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Active\",\n        \"color\": \"62b58f\",\n        \"value\": {{GetActiveItemsCount.data}}\n      },\n      {\n        \"label\": \"Inactive\",\n        \"color\": \"929292\",\n        \"value\": \"{{GetNumberOfProducts.data-254}}\"\n      }\n    ]\n  }\n}",
+    "key": "sp2v6uc8pb",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "ugolf0as82",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "8oeef90tq2",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 66.99999999999999,
+    "responsiveBehavior": "fill",
+    "yAxisName": "Revenue($)",
+    "chartName": "Active Items",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
+    "xAxisName": "Product Line",
+    "chartType": "CUSTOM_FUSION_CHART",
+    "alignment": "start"
+}

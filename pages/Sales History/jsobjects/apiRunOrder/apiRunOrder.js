@@ -7,10 +7,12 @@ export default {
 			// Execute the second query after the first one
 			await GetEarliestDate.run();
 			
-			await getMonthlyDetailedCount.run();
+			await GetDailyDetailedCount.run();
 			
 			// Execute the third query after the second one
-			await ShowMonthlyDetailed.run();
+			await ShowDailyDetailed.run();
+			
+			await GetDailyProfit.run();
 
 			// Continue with other actions or logic
 			console.log("All queries executed successfully");

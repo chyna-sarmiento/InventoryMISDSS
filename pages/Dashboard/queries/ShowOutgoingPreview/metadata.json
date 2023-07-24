@@ -43,7 +43,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -59,7 +59,7 @@
       "moment(GetLatestDate.data).format('YYYY/MM/DD')",
       "tbl_PreviewOutgoing.pageSize"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],

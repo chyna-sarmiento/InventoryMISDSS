@@ -1,0 +1,101 @@
+{
+  "unpublishedPage": {
+    "name": "Sales History",
+    "slug": "sales-history",
+    "customSlug": "history",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 2357.734375,
+          "widgetName": "MainContainer",
+          "topRow": 0,
+          "bottomRow": 1935.0000000000005,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "minHeight": 780,
+          "useAutoLayout": true,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "vertical",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "containerStyle": "none",
+          "snapRows": 60,
+          "version": 80,
+          "mobileTopRow": 0,
+          "responsiveBehavior": "fill",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "j01uxidda6",
+                  "align": "start"
+                },
+                {
+                  "id": "9vymy4s681",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "e3hydespwn",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "dfr838fztn",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "kwrwq8226m",
+                  "align": "center"
+                }
+              ]
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Sales History_apiRunOrder.executeQueriesInOrder",
+              "name": "apiRunOrder.executeQueriesInOrder",
+              "collectionId": "Sales History_apiRunOrder",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  try {\n    await GetLatestDate.run();\n    await GetEarliestDate.run();\n    await GetDailyDetailedCount.run();\n    await ShowDailyDetailed.run();\n    await GetDailyProfit.run();\n    console.log(\"All queries executed successfully\");\n  } catch (error) {\n    console.error(\"Error executing queries:\", error);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Sales History",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6439874f26013158789b34e6_643eb7775689b020f5758e2c"
+}
